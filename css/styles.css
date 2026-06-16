@@ -275,6 +275,26 @@ dd {
   white-space: nowrap;
 }
 
+.tabla-precios-web .precio-web {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabla-precios-web .precio-web span {
+  color: #4f5d54;
+  text-align: left;
+}
+
+.tabla-precios-web .precio-web strong {
+  display: block;
+  min-width: 96px;
+  color: #1f2f25;
+  text-align: right;
+}
+
 .grilla-productos {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
