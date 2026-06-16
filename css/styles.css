@@ -47,8 +47,8 @@ a {
   display: block;
   width: min(320px, 58vw);
   height: 96px;
-  object-fit: cover;
-  object-position: center 52%;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .navegacion {
@@ -374,8 +374,9 @@ dd {
   }
 
   .marca img {
-    width: min(250px, 70vw);
-    height: 64px;
+    width: min(270px, 72vw);
+    height: auto;
+    max-height: 78px;
   }
 
   .encabezado {
