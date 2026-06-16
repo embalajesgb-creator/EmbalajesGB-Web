@@ -213,6 +213,68 @@ dd {
   border-top: 1px solid var(--linea);
 }
 
+.lista-precios-web {
+  margin-top: 36px;
+  padding-top: 26px;
+  border-top: 1px solid var(--linea);
+}
+
+.encabezado-lista-precios {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.encabezado-lista-precios h2 {
+  margin: 0 0 6px;
+  color: var(--azul);
+  font-size: 24px;
+}
+
+.encabezado-lista-precios p {
+  margin: 0;
+  color: #536158;
+  font-size: 14px;
+}
+
+.tabla-precios-web {
+  overflow-x: auto;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+}
+
+.tabla-precios-web table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.tabla-precios-web th,
+.tabla-precios-web td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--linea);
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-precios-web th {
+  color: #fff;
+  background: var(--azul);
+  font-size: 14px;
+}
+
+.tabla-precios-web tr:nth-child(even) td {
+  background: var(--suave);
+}
+
+.tabla-precios-web td:last-child {
+  width: 150px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .grilla-productos {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -259,6 +321,11 @@ dd {
   .principal,
   .grilla-productos {
     grid-template-columns: 1fr;
+  }
+
+  .encabezado-lista-precios {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .marca img {

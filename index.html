@@ -6,7 +6,7 @@
   <meta name="description" content="Embalajes GB - Fabricacion y venta de bolsas." />
   <title>Embalajes GB | Fabricacion y venta de bolsas</title>
   <link rel="icon" href="assets/icono-embalajes-gb.png" />
-  <link rel="stylesheet" href="css/styles.css?v=20260616-4" />
+  <link rel="stylesheet" href="css/styles.css?v=20260616-5" />
 </head>
 <body>
   <header class="encabezado">
@@ -15,6 +15,7 @@
     </a>
     <nav class="navegacion" aria-label="Navegacion principal">
       <a href="#productos">Productos</a>
+      <a href="#lista-precios">Lista de precios</a>
       <a href="#contacto">Contacto</a>
     </nav>
     <div class="aviso-construccion" aria-label="Pagina en construccion">
@@ -76,11 +77,35 @@
         </article>
       </div>
     </section>
+
+    <section class="lista-precios-web" id="lista-precios">
+      <div class="encabezado-lista-precios">
+        <div>
+          <h2>Lista de precios</h2>
+          <p id="estadoListaPrecios">Cargando lista publicada...</p>
+        </div>
+      </div>
+      <div class="tabla-precios-web">
+        <table>
+          <thead>
+            <tr>
+              <th>Articulo</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody id="tablaListaPreciosWeb">
+            <tr><td colspan="3">Sin datos publicados.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   </main>
 
   <footer class="pie">
     <span>Embalajes GB</span>
     <span>Fabricacion y venta de bolsas</span>
   </footer>
+  <script src="js/main.js?v=20260616-5"></script>
 </body>
 </html>
