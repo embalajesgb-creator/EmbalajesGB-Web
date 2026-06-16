@@ -35,7 +35,12 @@ a {
   max-width: 1120px;
   margin: 0 auto;
   padding: 18px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.97);
   border-bottom: 3px solid var(--verde);
+  box-shadow: 0 2px 12px rgba(25, 90, 46, 0.08);
 }
 
 .marca img {
@@ -249,6 +254,22 @@ dd {
   width: 100%;
   border-collapse: collapse;
   min-width: 620px;
+  table-layout: fixed;
+}
+
+.tabla-precios-web th:nth-child(1),
+.tabla-precios-web td:nth-child(1) {
+  width: 32%;
+}
+
+.tabla-precios-web th:nth-child(2),
+.tabla-precios-web td:nth-child(2) {
+  width: 43%;
+}
+
+.tabla-precios-web th:nth-child(3),
+.tabla-precios-web td:nth-child(3) {
+  width: 170px;
 }
 
 .tabla-precios-web th,
@@ -277,8 +298,9 @@ dd {
 
 .tabla-precios-web .precio-web {
   display: grid;
-  grid-template-columns: 18px 1fr;
-  gap: 10px;
+  grid-template-columns: 20px 112px;
+  gap: 14px;
+  justify-content: end;
   align-items: baseline;
   font-variant-numeric: tabular-nums;
 }
@@ -290,7 +312,6 @@ dd {
 
 .tabla-precios-web .precio-web strong {
   display: block;
-  min-width: 96px;
   color: #1f2f25;
   text-align: right;
 }
@@ -349,7 +370,22 @@ dd {
   }
 
   .marca img {
-    height: 82px;
+    width: min(250px, 70vw);
+    height: 64px;
+  }
+
+  .encabezado {
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .navegacion {
+    gap: 4px;
+  }
+
+  .navegacion a {
+    padding: 6px 8px;
+    font-size: 13px;
   }
 
   main {
@@ -360,5 +396,39 @@ dd {
     align-items: flex-start;
     flex-direction: column;
     gap: 6px;
+    padding: 8px 10px;
+  }
+
+  .aviso-construccion span {
+    display: none;
+  }
+
+  .tabla-precios-web table {
+    min-width: 560px;
+  }
+
+  .tabla-precios-web th,
+  .tabla-precios-web td {
+    padding: 9px 10px;
+  }
+
+  .tabla-precios-web th:nth-child(1),
+  .tabla-precios-web td:nth-child(1) {
+    width: 190px;
+  }
+
+  .tabla-precios-web th:nth-child(2),
+  .tabla-precios-web td:nth-child(2) {
+    width: 220px;
+  }
+
+  .tabla-precios-web th:nth-child(3),
+  .tabla-precios-web td:nth-child(3) {
+    width: 150px;
+  }
+
+  .tabla-precios-web .precio-web {
+    grid-template-columns: 18px 98px;
+    gap: 12px;
   }
 }
