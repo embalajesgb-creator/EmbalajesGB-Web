@@ -1,5 +1,286 @@
 {
-  "actualizado": "",
-  "total": 0,
-  "articulos": []
+  "actualizado": "16-06-2026 18:22",
+  "total": 40,
+  "articulos": [
+    {
+      "nombre": "Bolsa camiseta de 40x50 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 3561.0,
+      "precio_formateado": "$ 3.561,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 45x60 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 4787.0,
+      "precio_formateado": "$ 4.787,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 50x60 BD color",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 8171.0,
+      "precio_formateado": "$ 8.171,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 50x60 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 6144.0,
+      "precio_formateado": "$ 6.144,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 50x70 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 7154.0,
+      "precio_formateado": "$ 7.154,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 60x80 BD color",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 13416.0,
+      "precio_formateado": "$ 13.416,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 60x80 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 9780.0,
+      "precio_formateado": "$ 9.780,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa consorcio 60x90 BD negra",
+      "descripcion": "Bulto de 5 pack x 50u (Precio x 100u)",
+      "precio": 12893.0,
+      "precio_formateado": "$ 12.893,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa consorcio 80x100 BD caramelo",
+      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
+      "precio": 20952.0,
+      "precio_formateado": "$ 20.952,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa consorcio 80x100 BD verde",
+      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
+      "precio": 25095.0,
+      "precio_formateado": "$ 25.095,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa consorcio 80x110 BD negra",
+      "descripcion": "Bulto de 4 pack x 50u (precio x 100u)",
+      "precio": 19546.0,
+      "precio_formateado": "$ 19.546,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa de friselina blanca lisa manija asa",
+      "descripcion": "30cm x 30cm x 10cm fuelle en base (pack x 100u)",
+      "precio": 444.0,
+      "precio_formateado": "$ 444,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa de friselina blanca lisa manija asa",
+      "descripcion": "30cm x 40cm x 10cm fuelle en base (pack x 100u)",
+      "precio": 46.0,
+      "precio_formateado": "$ 46,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa de friselina blanca lisa manija asa",
+      "descripcion": "45cm x 40cm x 10cm fuelle base (pack x100u)",
+      "precio": 668.0,
+      "precio_formateado": "$ 668,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa de friselina blanca lisa manija ovalo",
+      "descripcion": "20cm x 30cm x 10cm fuelle en base (pack x 100u)",
+      "precio": 144.0,
+      "precio_formateado": "$ 144,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa de residuo 45x60 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 3629.0,
+      "precio_formateado": "$ 3.629,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa p/escombros de 45x60 BD",
+      "descripcion": "Bulto de 25 pack x 10u",
+      "precio": 18505.0,
+      "precio_formateado": "$ 18.505,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsas de residuo 50x70 BD negra",
+      "descripcion": "Bulto de 20 pack x 50u",
+      "precio": 5096.79,
+      "precio_formateado": "$ 5.096,79",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bs. consorcio 80x110 (80 mic) BD negra",
+      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
+      "precio": 45830.0,
+      "precio_formateado": "$ 45.830,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Cinta adhes. lisa",
+      "descripcion": "48 mm x 50 mts (caja x 36u.)",
+      "precio": 823.42,
+      "precio_formateado": "$ 823,42",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Cinta imp. blanca 1 col. 24 mm x 90 mts",
+      "descripcion": "(5 cajas x 72u.)",
+      "precio": 0.0,
+      "precio_formateado": "$ 0,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. blanca 1 col. 48 mm x 90 mts",
+      "descripcion": "(5 cajas x 36u.)",
+      "precio": 2791.25,
+      "precio_formateado": "$ 2.791,25",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. blanca 2 col. 24 mm x 90 mts",
+      "descripcion": "(5 cajas x 72u.)",
+      "precio": 0.0,
+      "precio_formateado": "$ 0,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. blanca 2 col. 48 mm x 90 mts",
+      "descripcion": "(5 cajas x 36u.)",
+      "precio": 3008.75,
+      "precio_formateado": "$ 3.008,75",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. transparente 1 col. 24 mm x 90 mts",
+      "descripcion": "(5 cajas x 72u.)",
+      "precio": 0.0,
+      "precio_formateado": "$ 0,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. transparente 1 col. 48 mm x 90 mts",
+      "descripcion": "(5 cajas x 36u.)",
+      "precio": 2428.75,
+      "precio_formateado": "$ 2.428,75",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. transparente 2 col. 24 mm x 90 mts",
+      "descripcion": "(5 cajas x 72u.)",
+      "precio": 0.0,
+      "precio_formateado": "$ 0,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Cinta imp. transparente 2 col. 48mm x 90 mts",
+      "descripcion": "(5 cajas x 36u)",
+      "precio": 2610.0,
+      "precio_formateado": "$ 2.610,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Laminas PEBD cristal",
+      "descripcion": "120x110/30 mc",
+      "precio": 9459.0,
+      "precio_formateado": "$ 9.459,00",
+      "proveedor": "Jose Safdiye"
+    },
+    {
+      "nombre": "Rollo 20x30 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 25x35 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) 18 x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 25x35 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 30x40 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 35x45 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 40x50 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 45x60 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 50x70 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 9900.0,
+      "precio_formateado": "$ 9.900,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo de PEBD 60/33 cristal",
+      "descripcion": "Polietileno BD cristal 60/33 abierto un lado",
+      "precio": 8144.0,
+      "precio_formateado": "$ 8.144,00",
+      "proveedor": "Adoc Evases S.R.L."
+    },
+    {
+      "nombre": "Rollo de polietileno cristal BD virgen",
+      "descripcion": "Mas de 21 cm x kg",
+      "precio": 6538.0,
+      "precio_formateado": "$ 6.538,00",
+      "proveedor": "Adoc Evases S.R.L."
+    },
+    {
+      "nombre": "Sobres imp. Meditex",
+      "descripcion": "30x18 cm + 5 cm de solapa BD cristal 60 mc",
+      "precio": 98.5,
+      "precio_formateado": "$ 98,50",
+      "proveedor": "Jose Safdiye"
+    }
+  ]
 }
