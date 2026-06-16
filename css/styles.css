@@ -296,6 +296,10 @@ dd {
   white-space: nowrap;
 }
 
+.tabla-precios-web .precio-celda {
+  text-align: right;
+}
+
 .tabla-precios-web .precio-web {
   display: grid;
   grid-template-columns: 20px 112px;

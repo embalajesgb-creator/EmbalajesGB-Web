@@ -33,7 +33,7 @@ async function cargarListaPrecios() {
         <tr>
           <td>${escaparHtml(articulo.nombre)}</td>
           <td>${escaparHtml(articulo.descripcion)}</td>
-          <td class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></td>
+          <td class="precio-celda"><span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span></td>
         </tr>
       `;
     }).join('');
