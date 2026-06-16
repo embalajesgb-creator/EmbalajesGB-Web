@@ -69,6 +69,31 @@ main {
   padding: 34px 24px 24px;
 }
 
+.aviso-construccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding: 12px 16px;
+  color: #5c3b00;
+  background: #fff4d7;
+  border: 1px solid #e7c46b;
+  border-left: 4px solid #d9980f;
+  border-radius: 6px;
+}
+
+.aviso-construccion strong {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.aviso-construccion span {
+  color: #654b15;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
 .principal {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
@@ -229,5 +254,11 @@ dd {
 
   main {
     padding-top: 22px;
+  }
+
+  .aviso-construccion {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
   }
 }
