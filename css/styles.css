@@ -5,6 +5,7 @@
   --texto: #1f2f25;
   --suave: #f4f8f3;
   --linea: #dbe7d8;
+  color-scheme: light;
 }
 
 * {
@@ -13,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: #ffffff;
 }
 
 body {
