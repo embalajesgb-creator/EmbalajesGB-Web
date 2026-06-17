@@ -1,6 +1,6 @@
 {
-  "actualizado": "16-06-2026 18:56",
-  "total": 34,
+  "actualizado": "16-06-2026 21:28",
+  "total": 35,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -143,6 +143,13 @@
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
+      "nombre": "Cinta imp. blanca 1 col. 24 mm x 90 mts",
+      "descripcion": "(5 cajas x 72u.)",
+      "precio": 0.0,
+      "precio_formateado": "$ 0,00",
+      "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
       "nombre": "Cinta imp. blanca 1 col. 48 mm x 90 mts",
       "descripcion": "(5 cajas x 36u.)",
       "precio": 2791.25,
@@ -154,13 +161,6 @@
       "descripcion": "(5 cajas x 36u.)",
       "precio": 3008.75,
       "precio_formateado": "$ 3.008,75",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. transparente 1 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
       "proveedor": "Bobbio Jorge Nestor"
     },
     {
@@ -176,6 +176,13 @@
       "precio": 2610.0,
       "precio_formateado": "$ 2.610,00",
       "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "Laminas PEBD cristal",
+      "descripcion": "120x110/30 mc",
+      "precio": 9459.0,
+      "precio_formateado": "$ 9.459,00",
+      "proveedor": "Jose Safdiye"
     },
     {
       "nombre": "Rollo 20x30 (1,500 kg)",
