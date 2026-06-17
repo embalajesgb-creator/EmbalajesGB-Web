@@ -384,6 +384,10 @@ dd {
   text-align: left;
 }
 
+.encabezado-tabla-precios-fijo span:nth-child(3) {
+  text-align: right;
+}
+
 .tabla-precios-web td {
   background: var(--superficie);
 }
@@ -398,6 +402,7 @@ dd {
   white-space: nowrap;
 }
 
+.tabla-precios-web th:nth-child(3),
 .tabla-precios-web .precio-celda {
   text-align: right;
 }
