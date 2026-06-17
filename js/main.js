@@ -92,7 +92,16 @@ function actualizarEncabezadoListaPrecios() {
   actualizarEncabezadoTablaPrecios();
 }
 
+function prepararScrollHorizontalTablaPrecios() {
+  const contenedor = document.querySelector('.tabla-precios-web');
+  if (!contenedor || contenedor.dataset.sincronizaTitulos === 'true') return;
+
+  contenedor.dataset.sincronizaTitulos = 'true';
+  contenedor.addEventListener('scroll', actualizarEncabezadoTablaPrecios, { passive: true });
+}
+
 function prepararEncabezadoTablaPrecios() {
+  prepararScrollHorizontalTablaPrecios();
   const titulos = Array.from(document.querySelectorAll('.tabla-precios-web thead th'));
   if (!titulos.length) return;
 
