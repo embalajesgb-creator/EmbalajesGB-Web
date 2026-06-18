@@ -151,7 +151,7 @@ function actualizarEncabezadoTablaPrecios() {
 
 async function obtenerDatosListaPrecios() {
   try {
-    const respuesta = await fetch('data/precios-20260618-0254.json', { cache: 'no-store' });
+    const respuesta = await fetch('data/precios.json?v=' + Date.now(), { cache: 'no-store' });
     if (!respuesta.ok) throw new Error('sin-publicacion');
     return await respuesta.json();
   } catch (error) {
