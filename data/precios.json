@@ -1,6 +1,6 @@
 {
-  "actualizado": "18-06-2026 07:31",
-  "total": 34,
+  "actualizado": "18-06-2026 08:23",
+  "total": 35,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -120,6 +120,13 @@
       "precio": 18505.0,
       "precio_formateado": "$ 18.505,00",
       "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa Sobre PP Cristal 6x10",
+      "descripcion": "Bulto x 5.000 u.",
+      "precio": 6.36,
+      "precio_formateado": "$ 6,36",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas de residuo 50x70 BD negra",
