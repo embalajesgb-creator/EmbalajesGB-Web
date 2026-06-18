@@ -7,10 +7,24 @@ function escaparHtml(valor) {
     .replaceAll("'", '&#039;');
 }
 
+function formatearPrecio(valor) {
+  if (valor === null || valor === undefined || valor === '') return '';
+  const numero = typeof valor === 'number'
+    ? valor
+    : Number(String(valor).replace(/\./g, '').replace(',', '.'));
+  if (!Number.isFinite(numero)) return String(valor);
+  return new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency: 'ARS',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(numero).replace('ARS', '$').trim();
+}
+
 function partesPrecio(precioFormateado) {
   const texto = String(precioFormateado || '').trim();
   const match = texto.match(/^(\$)\s*(.+)$/);
-  if (!match) return { simbolo: '', importe: texto };
+  if (!match) return { simbolo: texto ? '$' : '', importe: texto.replace(/^\$\s*/, '') };
   return { simbolo: match[1], importe: match[2] };
 }
 
@@ -34,7 +48,8 @@ function textoBusquedaArticulo(articulo) {
 }
 
 function filaArticulo(articulo) {
-  const precio = partesPrecio(articulo.precio_formateado);
+  const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio);
+  const precio = partesPrecio(precioTexto);
   return `
     <tr>
       <td>${escaparHtml(articulo.nombre)}</td>
