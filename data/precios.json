@@ -1,12 +1,23 @@
 {
-  "actualizado": "17-06-2026 22:26",
-  "total": 1,
+  "actualizado": "18-06-2026 00:06",
+  "total": 3,
   "articulos": [
+    {
+      "nombre": "Bolsa camiseta de 40x50 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 3934.89,
+      "proveedor": "Industrias Plastik S. A."
+    },
     {
       "nombre": "Bolsa camiseta de 45x60 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
       "precio": 4787.0,
-      "precio_formateado": "$ 4.787,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa camiseta de 50x60 BD color",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 8171.0,
       "proveedor": "Industrias Plastik S. A."
     }
   ]
