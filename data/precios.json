@@ -1,6 +1,6 @@
 {
-  "actualizado": "18-06-2026 08:37",
-  "total": 36,
+  "actualizado": "18-06-2026 08:40",
+  "total": 35,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -123,9 +123,9 @@
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 6x10",
-      "descripcion": "Bulto x 5.000 u.",
-      "precio": 6.36,
-      "precio_formateado": "$ 6,36",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 7.0,
+      "precio_formateado": "$ 7,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
@@ -154,13 +154,6 @@
       "descripcion": "(5 cajas x 36u.)",
       "precio": 2791.25,
       "precio_formateado": "$ 2.791,25",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. blanca 2 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
       "proveedor": "Bobbio Jorge Nestor"
     },
     {
