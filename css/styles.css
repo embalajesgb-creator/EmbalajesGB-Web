@@ -375,7 +375,7 @@ dd {
   left: var(--tabla-precios-izquierda, 0px);
   width: var(--tabla-precios-ancho, 100%);
   z-index: 28;
-  grid-template-columns: 32% 43% 170px;
+  grid-template-columns: var(--tabla-precios-columnas, 32% 43% 170px);
   color: #fff;
   background: var(--azul);
   border: 1px solid var(--linea);
@@ -608,6 +608,6 @@ dd {
   }
 
   .encabezado-tabla-precios-fijo {
-    grid-template-columns: 190px 220px 150px;
+    grid-template-columns: var(--tabla-precios-columnas, 190px 220px 150px);
   }
 }

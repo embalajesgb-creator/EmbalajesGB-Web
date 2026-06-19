@@ -140,12 +140,16 @@ function actualizarEncabezadoTablaPrecios() {
 
   const tablaRect = tabla.getBoundingClientRect();
   const titulosRect = filaTitulos.getBoundingClientRect();
+  const columnas = Array.from(filaTitulos.children)
+    .map((titulo) => `${titulo.getBoundingClientRect().width}px`)
+    .join(' ');
   const altoTitulos = titulosRect.height;
   const limiteSuperior = encabezadoLista.getBoundingClientRect().bottom;
   const debeFijarse = titulosRect.top <= limiteSuperior && tablaRect.bottom > limiteSuperior + altoTitulos;
 
   document.documentElement.style.setProperty('--tabla-precios-izquierda', `${tablaRect.left}px`);
   document.documentElement.style.setProperty('--tabla-precios-ancho', `${tablaRect.width}px`);
+  document.documentElement.style.setProperty('--tabla-precios-columnas', columnas);
   encabezadoTablaPreciosFijo.classList.toggle('visible', debeFijarse);
 }
 
