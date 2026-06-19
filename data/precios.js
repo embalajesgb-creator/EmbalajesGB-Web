@@ -1,5 +1,5 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "18-06-2026 20:01",
+  "actualizado": "18-06-2026 22:29",
   "total": 77,
   "articulos": [
     {
@@ -460,8 +460,8 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "Laminas PEBD cristal",
       "descripcion": "120x110/30 mc",
-      "precio": 9459.0,
-      "precio_formateado": "$ 9.459,00",
+      "precio": 10452.0,
+      "precio_formateado": "$ 10.452,00",
       "proveedor": "Jose Safdiye"
     },
     {
@@ -530,15 +530,15 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "Rollo de polietileno cristal BD virgen",
       "descripcion": "Mas de 21 cm x kg",
-      "precio": 6538.0,
-      "precio_formateado": "$ 6.538,00",
+      "precio": 7224.0,
+      "precio_formateado": "$ 7.224,00",
       "proveedor": "Adoc Evases S.R.L."
     },
     {
       "nombre": "Sobres imp. Meditex",
       "descripcion": "30x18 cm + 5 cm de solapa BD cristal 60 mc",
-      "precio": 98.5,
-      "precio_formateado": "$ 98,50",
+      "precio": 99.0,
+      "precio_formateado": "$ 99,00",
       "proveedor": "Jose Safdiye"
     }
   ]
