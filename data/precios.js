@@ -1,12 +1,12 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "18-06-2026 22:49",
-  "total": 76,
+  "actualizado": "18-06-2026 23:07",
+  "total": 75,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 3999.0,
-      "precio_formateado": "$ 3.999,00",
+      "precio": 3998.23,
+      "precio_formateado": "$ 3.998,23",
       "proveedor": "Industrias Plastik S. A."
     },
     {
@@ -519,13 +519,6 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "precio": 9900.0,
       "precio_formateado": "$ 9.900,00",
       "proveedor": "Papelera DELMAR S.R.L."
-    },
-    {
-      "nombre": "Rollo de PEBD 60/33 cristal",
-      "descripcion": "Polietileno BD cristal 60/33 abierto un lado",
-      "precio": 8144.0,
-      "precio_formateado": "$ 8.144,00",
-      "proveedor": "Adoc Evases S.R.L."
     },
     {
       "nombre": "Rollo de polietileno cristal BD virgen",
