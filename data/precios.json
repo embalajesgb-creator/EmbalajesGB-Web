@@ -1,6 +1,6 @@
 {
-  "actualizado": "18-06-2026 22:40",
-  "total": 77,
+  "actualizado": "18-06-2026 22:49",
+  "total": 76,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -533,13 +533,6 @@
       "precio": 7224.0,
       "precio_formateado": "$ 7.224,00",
       "proveedor": "Adoc Evases S.R.L."
-    },
-    {
-      "nombre": "Sobres imp. Meditex",
-      "descripcion": "30x18 cm + 5 cm de solapa BD cristal 60 mc",
-      "precio": 99.0,
-      "precio_formateado": "$ 99,00",
-      "proveedor": "Jose Safdiye"
     }
   ]
 }
