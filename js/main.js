@@ -127,7 +127,7 @@ function prepararEncabezadoTablaPrecios() {
   }
 
   encabezadoTablaPreciosFijo.innerHTML = titulos
-    .map((titulo) => `<span>${escaparHtml(titulo.textContent)}</span>`)
+    .map((titulo) => `<span>${titulo.innerHTML}</span>`)
     .join('');
   actualizarEncabezadoTablaPrecios();
 }

@@ -356,6 +356,15 @@ dd {
   font-size: 14px;
 }
 
+.tabla-precios-web th.precio-titulo {
+  text-align: right;
+  line-height: 1.15;
+}
+
+.tabla-precios-web th.precio-titulo span {
+  display: block;
+}
+
 .encabezado-tabla-precios-fijo {
   display: none;
   position: fixed;
@@ -386,6 +395,11 @@ dd {
 
 .encabezado-tabla-precios-fijo span:nth-child(3) {
   text-align: right;
+  line-height: 1.15;
+}
+
+.encabezado-tabla-precios-fijo span:nth-child(3) span {
+  display: block;
 }
 
 .tabla-precios-web td {
