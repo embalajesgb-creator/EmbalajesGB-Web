@@ -344,7 +344,7 @@ dd {
 
 .tabla-precios-web th,
 .tabla-precios-web td {
-  padding: 10px 12px;
+  padding: 9px 12px;
   border-bottom: 1px solid var(--linea);
   text-align: left;
   vertical-align: top;
@@ -354,11 +354,14 @@ dd {
   color: #fff;
   background: var(--azul);
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .tabla-precios-web th.precio-titulo {
   text-align: right;
-  line-height: 1.15;
+  line-height: 1.12;
+  padding-right: 16px;
+  font-size: 13px;
 }
 
 .tabla-precios-web th.precio-titulo span {
@@ -385,20 +388,23 @@ dd {
   display: grid;
 }
 
-.encabezado-tabla-precios-fijo span {
-  padding: 10px 12px;
+.encabezado-tabla-precios-fijo > span {
+  padding: 9px 12px;
   border-bottom: 1px solid var(--linea);
   font-size: 14px;
   font-weight: 700;
   text-align: left;
+  align-content: center;
 }
 
-.encabezado-tabla-precios-fijo span:nth-child(3) {
+.encabezado-tabla-precios-fijo > span:nth-child(3) {
   text-align: right;
-  line-height: 1.15;
+  line-height: 1.12;
+  padding-right: 16px;
+  font-size: 13px;
 }
 
-.encabezado-tabla-precios-fijo span:nth-child(3) span {
+.encabezado-tabla-precios-fijo > span:nth-child(3) span {
   display: block;
 }
 
