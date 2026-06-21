@@ -1,6 +1,6 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "18-06-2026 23:07",
-  "total": 75,
+  "actualizado": "21-06-2026 20:56",
+  "total": 76,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -397,8 +397,8 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "Cinta adhes. lisa",
       "descripcion": "48 mm x 50 mts (caja x 36u.)",
-      "precio": 823.42,
-      "precio_formateado": "$ 823,42",
+      "precio": 824.0,
+      "precio_formateado": "$ 824,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
@@ -456,6 +456,13 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "precio": 2610.0,
       "precio_formateado": "$ 2.610,00",
       "proveedor": "Bobbio Jorge Nestor"
+    },
+    {
+      "nombre": "FOLEX  2025",
+      "descripcion": "FOLEX  20 x 25 CM x KG ( Bulto x 10 kilos)",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
+      "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Laminas PEBD cristal",
