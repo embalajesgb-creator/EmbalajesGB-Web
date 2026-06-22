@@ -1,5 +1,5 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "21-06-2026 23:22",
+  "actualizado": "22-06-2026 17:55",
   "total": 76,
   "articulos": [
     {
@@ -460,71 +460,71 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "FOLEX  2025",
       "descripcion": "FOLEX  20 x 25 CM x KG ( Bulto x 10 kilos)",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Laminas PEBD cristal",
       "descripcion": "120x110/30 mc",
-      "precio": 10452.0,
-      "precio_formateado": "$ 10.452,00",
+      "precio": 9421.0,
+      "precio_formateado": "$ 9.421,00",
       "proveedor": "Jose Safdiye"
     },
     {
       "nombre": "Rollo 20x30 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
-      "proveedor": "Papelera DELMAR S.R.L."
-    },
-    {
-      "nombre": "Rollo 25x35 (1,500 kg)",
-      "descripcion": "(pack x 6 rollos) 18 x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 25x35 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 30x40 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 35x45 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 40x50 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 45x60 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 50x70 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 11088.0,
-      "precio_formateado": "$ 11.088,00",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
+      "proveedor": "Papelera DELMAR S.R.L."
+    },
+    {
+      "nombre": "Rollo 60x90 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) 18 x kg",
+      "precio": 10080.0,
+      "precio_formateado": "$ 10.080,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
