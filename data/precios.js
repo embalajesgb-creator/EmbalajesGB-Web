@@ -1,5 +1,5 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "21-06-2026 20:56",
+  "actualizado": "21-06-2026 21:33",
   "total": 76,
   "articulos": [
     {
@@ -110,8 +110,8 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "Bolsa de residuo 45x60 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 4190.0,
-      "precio_formateado": "$ 4.190,00",
+      "precio": 4513.0,
+      "precio_formateado": "$ 4.513,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
@@ -474,57 +474,57 @@ window.LISTA_PRECIOS_PUBLICADA = {
     {
       "nombre": "Rollo 20x30 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 25x35 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) 18 x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 25x35 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 30x40 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 35x45 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 40x50 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 45x60 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo 50x70 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 9900.0,
-      "precio_formateado": "$ 9.900,00",
+      "precio": 11088.0,
+      "precio_formateado": "$ 11.088,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
