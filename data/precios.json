@@ -1,6 +1,6 @@
 {
-  "actualizado": "22-06-2026 17:55",
-  "total": 76,
+  "actualizado": "23-06-2026 00:46",
+  "total": 93,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -378,6 +378,125 @@
       "descripcion": "X 100u (Bulto x 500 u.)",
       "precio": 19840.0,
       "precio_formateado": "$ 19.840,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 20x30",
+      "descripcion": "20x30/12mic",
+      "precio": 2601.0,
+      "precio_formateado": "$ 2.601,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 25x35",
+      "descripcion": "AD Blanco 25x35/12mic",
+      "precio": 3562.0,
+      "precio_formateado": "$ 3.562,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 30x40/12mic",
+      "descripcion": "AD Blanco 30x40/12mic",
+      "precio": 3587.0,
+      "precio_formateado": "$ 3.587,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 40x50/12mic",
+      "descripcion": "AD Blanco 40x50/12mic",
+      "precio": 5293.0,
+      "precio_formateado": "$ 5.293,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
+      "descripcion": "AD Blanco 40x50/12mic Eco",
+      "precio": 4698.0,
+      "precio_formateado": "$ 4.698,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 40x50/15mic",
+      "descripcion": "AD Blanco 40x50/15mic",
+      "precio": 5420.0,
+      "precio_formateado": "$ 5.420,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 45x60/15mic",
+      "descripcion": "AD Blanco 45x60/15mic",
+      "precio": 9604.0,
+      "precio_formateado": "$ 9.604,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 50x50/15mic",
+      "descripcion": "AD Blanco 50x50/15mic",
+      "precio": 8900.0,
+      "precio_formateado": "$ 8.900,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 50x60/15mic",
+      "descripcion": "AD Blanco 50x60/15mic",
+      "precio": 10671.0,
+      "precio_formateado": "$ 10.671,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 50x70/15mic",
+      "descripcion": "AD Blanco 50x70/15mic",
+      "precio": 12461.0,
+      "precio_formateado": "$ 12.461,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 60x50/17mic",
+      "descripcion": "AD Blanco 60x50/17mic",
+      "precio": 11989.0,
+      "precio_formateado": "$ 11.989,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 60x70/23mic",
+      "descripcion": "AD Blanco 60x70/23mic",
+      "precio": 22927.0,
+      "precio_formateado": "$ 22.927,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Blanco 60x80/23mic",
+      "descripcion": "AD Blanco 60x80/23mic",
+      "precio": 26193.0,
+      "precio_formateado": "$ 26.193,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Color 30x40/12mic",
+      "descripcion": "AD Color 30x40/12mic",
+      "precio": 3094.0,
+      "precio_formateado": "$ 3.094,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Color 40x50/12mic Eco",
+      "descripcion": "AD Color 40x50/12mic Eco",
+      "precio": 3998.0,
+      "precio_formateado": "$ 3.998,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Color 50x60/15mic",
+      "descripcion": "AD Color 50x60/15mic",
+      "precio": 9662.0,
+      "precio_formateado": "$ 9.662,00",
+      "proveedor": "Ludoplast S. R. L"
+    },
+    {
+      "nombre": "Bolsas camiseta AD Negro 40x50/12mic",
+      "descripcion": "AD Negro 40x50/12mic",
+      "precio": 4743.0,
+      "precio_formateado": "$ 4.743,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
