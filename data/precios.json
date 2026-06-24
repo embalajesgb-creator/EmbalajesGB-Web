@@ -1,124 +1,131 @@
 {
-  "actualizado": "24-06-2026 12:13",
+  "actualizado": "24-06-2026 19:26",
   "total": 87,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 3691.0,
-      "precio_formateado": "$ 3.691,00",
+      "precio": 3845.0,
+      "precio_formateado": "$ 3.845,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 45x60 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 4960.0,
-      "precio_formateado": "$ 4.960,00",
+      "precio": 5167.0,
+      "precio_formateado": "$ 5.167,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x60 BD color",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 8522.0,
-      "precio_formateado": "$ 8.522,00",
+      "precio": 8878.0,
+      "precio_formateado": "$ 8.878,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x60 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 6367.0,
-      "precio_formateado": "$ 6.367,00",
+      "precio": 6632.0,
+      "precio_formateado": "$ 6.632,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x70 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 7413.0,
-      "precio_formateado": "$ 7.413,00",
+      "precio": 7722.0,
+      "precio_formateado": "$ 7.722,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 60x80 BD color",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 13991.0,
-      "precio_formateado": "$ 13.991,00",
+      "precio": 14574.0,
+      "precio_formateado": "$ 14.574,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 60x80 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 10133.0,
-      "precio_formateado": "$ 10.133,00",
+      "precio": 10555.0,
+      "precio_formateado": "$ 10.555,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa consorcio 60x90 BD negra",
       "descripcion": "Bulto de 5 pack x 50u (Precio x 100u)",
-      "precio": 14474.0,
-      "precio_formateado": "$ 14.474,00",
+      "precio": 13917.0,
+      "precio_formateado": "$ 13.917,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
-      "nombre": "Bolsa consorcio 80x100 BD caramelo",
+      "nombre": "Bolsa consorcio 80 x 100 cm caramelo",
       "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
-      "precio": 24188.0,
-      "precio_formateado": "$ 24.188,00",
+      "precio": 23258.0,
+      "precio_formateado": "$ 23.258,00",
+      "proveedor": "Industrias Plastik S. A."
+    },
+    {
+      "nombre": "Bolsa consorcio 80 x 110 cm negra 80 mic",
+      "descripcion": "Bulto x 4 packs de 50 u. | Precio x 100 u.",
+      "precio": 51434.0,
+      "precio_formateado": "$ 51.434,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa consorcio 80x100 BD verde",
       "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
-      "precio": 28355.0,
-      "precio_formateado": "$ 28.355,00",
+      "precio": 27264.0,
+      "precio_formateado": "$ 27.264,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa consorcio 80x110 BD negra",
       "descripcion": "Bulto de 4 pack x 50u (precio x 100u)",
-      "precio": 21943.0,
-      "precio_formateado": "$ 21.943,00",
+      "precio": 21099.0,
+      "precio_formateado": "$ 21.099,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
-      "nombre": "Bolsa de friselina blanca lisa c/asa x unidad",
-      "descripcion": "30cm x 30cm x 10cm fuelle base",
-      "precio": 444.0,
-      "precio_formateado": "$ 444,00",
-      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
-    },
-    {
-      "nombre": "Bolsa de friselina blanca lisa c/asa x unidad",
-      "descripcion": "30cm x 40cm x 10cm fuelle base",
-      "precio": 460.0,
-      "precio_formateado": "$ 460,00",
-      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
-    },
-    {
-      "nombre": "Bolsa de friselina blanca lisa c/asa x unidad",
-      "descripcion": "45cm x 40cm x 10cm fuelle base",
-      "precio": 668.0,
-      "precio_formateado": "$ 668,00",
-      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
-    },
-    {
-      "nombre": "Bolsa de friselina blanca lisa c/ovalo x unidad",
-      "descripcion": "20cm x 30cm x 10cm fuelle base",
-      "precio": 668.0,
-      "precio_formateado": "$ 668,00",
+      "nombre": "Bolsa de friselina blanca c/asa x unid.",
+      "descripcion": "45 x 40 x 10 cm, fuelle base",
+      "precio": 642.0,
+      "precio_formateado": "$ 642,00",
       "proveedor": "Coop. de Trabajo Sublitextil Ltda."
     },
     {
       "nombre": "Bolsa de residuo 45x60 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 4513.0,
-      "precio_formateado": "$ 4.513,00",
+      "precio": 4029.0,
+      "precio_formateado": "$ 4.029,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
-      "nombre": "Bolsa p/escombros de 45x60 BD",
+      "nombre": "Bolsa friselina blanca c/óvalo x unid",
+      "descripcion": "20 x 30 x 10 cm – fuelle base",
+      "precio": 668.0,
+      "precio_formateado": "$ 668,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa friselina blanca lisa c/asa x unid.",
+      "descripcion": "30 x 30 x 10 cm – fuelle base",
+      "precio": 444.0,
+      "precio_formateado": "$ 444,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa friselina blanca lisa c/asa x unid.",
+      "descripcion": "30 x 40 x 10 cm – fuelle base",
+      "precio": 460.0,
+      "precio_formateado": "$ 460,00",
+      "proveedor": "Coop. de Trabajo Sublitextil Ltda."
+    },
+    {
+      "nombre": "Bolsa reforzada para escombros 45 x 60 cm",
       "descripcion": "Bulto de 25 pack x 10u",
-      "precio": 18505.0,
-      "precio_formateado": "$ 18.505,00",
+      "precio": 17793.0,
+      "precio_formateado": "$ 17.793,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
@@ -502,15 +509,8 @@
     {
       "nombre": "Bolsas de residuo 50x70 BD negra",
       "descripcion": "Bulto de 20 pack x 50u",
-      "precio": 5886.0,
-      "precio_formateado": "$ 5.886,00",
-      "proveedor": "Industrias Plastik S. A."
-    },
-    {
-      "nombre": "Bs. consorcio 80x110 (80 mic) BD negra",
-      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
-      "precio": 51434.0,
-      "precio_formateado": "$ 51.434,00",
+      "precio": 5660.0,
+      "precio_formateado": "$ 5.660,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
