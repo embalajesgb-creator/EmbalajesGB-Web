@@ -1,6 +1,6 @@
 {
-  "actualizado": "23-06-2026 00:46",
-  "total": 93,
+  "actualizado": "24-06-2026 11:43",
+  "total": 87,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
@@ -521,66 +521,24 @@
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
-      "nombre": "Cinta imp. blanca 1 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. blanca 1 col. 48 mm x 90 mts",
+      "nombre": "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
       "descripcion": "(5 cajas x 36u.)",
-      "precio": 2791.25,
-      "precio_formateado": "$ 2.791,25",
+      "precio": 2400.0,
+      "precio_formateado": "$ 2.400,00",
       "proveedor": "Bobbio Jorge Nestor"
     },
     {
-      "nombre": "Cinta imp. blanca 2 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. blanca 2 col. 48 mm x 90 mts",
-      "descripcion": "(5 cajas x 36u.)",
-      "precio": 3008.75,
-      "precio_formateado": "$ 3.008,75",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. transparente 1 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. transparente 1 col. 48 mm x 90 mts",
-      "descripcion": "(5 cajas x 36u.)",
-      "precio": 2428.75,
-      "precio_formateado": "$ 2.428,75",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. transparente 2 col. 24 mm x 90 mts",
-      "descripcion": "(5 cajas x 72u.)",
-      "precio": 0.0,
-      "precio_formateado": "$ 0,00",
-      "proveedor": "Bobbio Jorge Nestor"
-    },
-    {
-      "nombre": "Cinta imp. transparente 2 col. 48mm x 90 mts",
+      "nombre": "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
       "descripcion": "(5 cajas x 36u)",
-      "precio": 2610.0,
-      "precio_formateado": "$ 2.610,00",
+      "precio": 2086.0,
+      "precio_formateado": "$ 2.086,00",
       "proveedor": "Bobbio Jorge Nestor"
     },
     {
       "nombre": "FOLEX  2025",
       "descripcion": "FOLEX  20 x 25 CM x KG ( Bulto x 10 kilos)",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
+      "precio": 8640.0,
+      "precio_formateado": "$ 8.640,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
@@ -593,64 +551,64 @@
     {
       "nombre": "Rollo 20x30 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Rollo 25x35 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Rollo 30x40 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Rollo 35x45 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Rollo 40x50 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
-      "nombre": "Rollo 45x60 (1,500 kg)",
-      "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "nombre": "Rollo 45x60 (2,00kg)",
+      "descripcion": "(pack x 9 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
-      "nombre": "Rollo 50x70 (1,500 kg)",
-      "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
-      "proveedor": "Papelera DELMAR S.R.L."
+      "nombre": "Rollo 50x70 (2,00 kg)",
+      "descripcion": "(pack x 9 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "proveedor": "Ludoplast S. R. L"
     },
     {
-      "nombre": "Rollo 60x90 (1,500 kg)",
-      "descripcion": "(pack x 6 rollos) 18 x kg",
-      "precio": 10080.0,
-      "precio_formateado": "$ 10.080,00",
+      "nombre": "Rollo 60x90 (3,00 kg)",
+      "descripcion": "(pack x 9 rollos) 18 x kg",
+      "precio": 8640.0,
+      "precio_formateado": "$ 8.640,00",
       "proveedor": "Papelera DELMAR S.R.L."
     },
     {
       "nombre": "Rollo de polietileno cristal BD virgen",
       "descripcion": "Mas de 21 cm x kg",
-      "precio": 7224.0,
-      "precio_formateado": "$ 7.224,00",
+      "precio": 7045.0,
+      "precio_formateado": "$ 7.045,00",
       "proveedor": "Adoc Evases S.R.L."
     }
   ]
