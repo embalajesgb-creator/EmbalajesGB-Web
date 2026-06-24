@@ -1,54 +1,54 @@
 {
-  "actualizado": "24-06-2026 11:43",
+  "actualizado": "24-06-2026 12:13",
   "total": 87,
   "articulos": [
     {
       "nombre": "Bolsa camiseta de 40x50 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 3998.23,
-      "precio_formateado": "$ 3.998,23",
+      "precio": 3691.0,
+      "precio_formateado": "$ 3.691,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 45x60 BD negra",
       "descripcion": "Bulto de 10 pack x 100u",
-      "precio": 5374.0,
-      "precio_formateado": "$ 5.374,00",
+      "precio": 4960.0,
+      "precio_formateado": "$ 4.960,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x60 BD color",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 9233.0,
-      "precio_formateado": "$ 9.233,00",
+      "precio": 8522.0,
+      "precio_formateado": "$ 8.522,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x60 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 6897.0,
-      "precio_formateado": "$ 6.897,00",
+      "precio": 6367.0,
+      "precio_formateado": "$ 6.367,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 50x70 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 8030.0,
-      "precio_formateado": "$ 8.030,00",
+      "precio": 7413.0,
+      "precio_formateado": "$ 7.413,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 60x80 BD color",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 15156.0,
-      "precio_formateado": "$ 15.156,00",
+      "precio": 13991.0,
+      "precio_formateado": "$ 13.991,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
       "nombre": "Bolsa camiseta de 60x80 BD negra",
       "descripcion": "Bulto de 5 pack x 100u",
-      "precio": 10977.0,
-      "precio_formateado": "$ 10.977,00",
+      "precio": 10133.0,
+      "precio_formateado": "$ 10.133,00",
       "proveedor": "Industrias Plastik S. A."
     },
     {
@@ -124,127 +124,127 @@
     {
       "nombre": "Bolsa Sobre PP Cristal 06x10",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 637.0,
-      "precio_formateado": "$ 637,00",
+      "precio": 612.0,
+      "precio_formateado": "$ 612,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 06x15",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 956.0,
-      "precio_formateado": "$ 956,00",
+      "precio": 832.0,
+      "precio_formateado": "$ 832,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 06x20",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1105.0,
-      "precio_formateado": "$ 1.105,00",
+      "precio": 962.0,
+      "precio_formateado": "$ 962,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 06x25",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1381.0,
-      "precio_formateado": "$ 1.381,00",
+      "precio": 1202.0,
+      "precio_formateado": "$ 1.202,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 06x30",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1657.0,
-      "precio_formateado": "$ 1.657,00",
+      "precio": 1442.0,
+      "precio_formateado": "$ 1.442,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 08x10",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 852.0,
-      "precio_formateado": "$ 852,00",
+      "precio": 742.0,
+      "precio_formateado": "$ 742,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 08x15",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1105.0,
-      "precio_formateado": "$ 1.105,00",
+      "precio": 962.0,
+      "precio_formateado": "$ 962,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 08x20",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1473.0,
-      "precio_formateado": "$ 1.473,00",
+      "precio": 1282.0,
+      "precio_formateado": "$ 1.282,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 08x25",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1794.0,
-      "precio_formateado": "$ 1.794,00",
+      "precio": 1561.0,
+      "precio_formateado": "$ 1.561,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 08x30",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 2151.0,
-      "precio_formateado": "$ 2.151,00",
+      "precio": 1872.0,
+      "precio_formateado": "$ 1.872,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 10x15",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1243.0,
-      "precio_formateado": "$ 1.243,00",
+      "precio": 1081.0,
+      "precio_formateado": "$ 1.081,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 10x20",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1654.0,
-      "precio_formateado": "$ 1.654,00",
+      "precio": 1439.0,
+      "precio_formateado": "$ 1.439,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 10x25",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 2064.0,
-      "precio_formateado": "$ 2.064,00",
+      "precio": 1796.0,
+      "precio_formateado": "$ 1.796,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 10x30",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 2474.0,
-      "precio_formateado": "$ 2.474,00",
+      "precio": 2239.0,
+      "precio_formateado": "$ 2.239,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 12x15",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1487.0,
-      "precio_formateado": "$ 1.487,00",
+      "precio": 1346.0,
+      "precio_formateado": "$ 1.346,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 12x20",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 1753.0,
-      "precio_formateado": "$ 1.753,00",
+      "precio": 1525.0,
+      "precio_formateado": "$ 1.525,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 12x25",
       "descripcion": "X 100u (Bulto x 5.000 u.)",
-      "precio": 2193.0,
-      "precio_formateado": "$ 2.193,00",
+      "precio": 1908.0,
+      "precio_formateado": "$ 1.908,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 12x30",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 2635.0,
-      "precio_formateado": "$ 2.635,00",
+      "precio": 2293.0,
+      "precio_formateado": "$ 2.293,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
@@ -257,246 +257,246 @@
     {
       "nombre": "Bolsa Sobre PP Cristal 15x25",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 2475.0,
-      "precio_formateado": "$ 2.475,00",
+      "precio": 2153.0,
+      "precio_formateado": "$ 2.153,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 15x30",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 2918.0,
-      "precio_formateado": "$ 2.918,00",
+      "precio": 2539.0,
+      "precio_formateado": "$ 2.539,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 15x35",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 3406.0,
-      "precio_formateado": "$ 3.406,00",
+      "precio": 2964.0,
+      "precio_formateado": "$ 2.964,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 20x25",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 3127.26,
-      "precio_formateado": "$ 3.127,26",
+      "precio": 2722.0,
+      "precio_formateado": "$ 2.722,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 20x30",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 3750.0,
-      "precio_formateado": "$ 3.750,00",
+      "precio": 3263.0,
+      "precio_formateado": "$ 3.263,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 20x35",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 4373.0,
-      "precio_formateado": "$ 4.373,00",
+      "precio": 3805.0,
+      "precio_formateado": "$ 3.805,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 25x30",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 4511.0,
-      "precio_formateado": "$ 4.511,00",
+      "precio": 3925.0,
+      "precio_formateado": "$ 3.925,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 25x35",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 5260.0,
-      "precio_formateado": "$ 5.260,00",
+      "precio": 4577.0,
+      "precio_formateado": "$ 4.577,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 25x40",
       "descripcion": "X 100u (Bulto x 2.500 u.)",
-      "precio": 6009.0,
-      "precio_formateado": "$ 6.009,00",
+      "precio": 5229.0,
+      "precio_formateado": "$ 5.229,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 30x40",
       "descripcion": "X 100u (Bulto x 1.000 u.)",
-      "precio": 7078.0,
-      "precio_formateado": "$ 7.078,00",
+      "precio": 6159.0,
+      "precio_formateado": "$ 6.159,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 30x45",
       "descripcion": "X 100u (Bulto x 1.000 u.)",
-      "precio": 7964.0,
-      "precio_formateado": "$ 7.964,00",
+      "precio": 6930.0,
+      "precio_formateado": "$ 6.930,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 30x50",
       "descripcion": "X 100u (Bulto x 1.000 u.)",
-      "precio": 8842.0,
-      "precio_formateado": "$ 8.842,00",
+      "precio": 7694.0,
+      "precio_formateado": "$ 7.694,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 35x45",
       "descripcion": "X 100u (Bulto x 1.000 u.)",
-      "precio": 9286.0,
-      "precio_formateado": "$ 9.286,00",
+      "precio": 8081.0,
+      "precio_formateado": "$ 8.081,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 35x50",
       "descripcion": "X 100u (Bulto x 1.000 u.)",
-      "precio": 10320.0,
-      "precio_formateado": "$ 10.320,00",
+      "precio": 8980.0,
+      "precio_formateado": "$ 8.980,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 40x50",
       "descripcion": "X 100u (Bulto x 500 u.)",
-      "precio": 11795.0,
-      "precio_formateado": "$ 11.795,00",
+      "precio": 10263.0,
+      "precio_formateado": "$ 10.263,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 40x60",
       "descripcion": "X 100u (Bulto x 500 u.)",
-      "precio": 13605.0,
-      "precio_formateado": "$ 13.605,00",
+      "precio": 12312.0,
+      "precio_formateado": "$ 12.312,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 50x60",
       "descripcion": "X 100u (Bulto x 500 u.)",
-      "precio": 17006.0,
-      "precio_formateado": "$ 17.006,00",
+      "precio": 15390.0,
+      "precio_formateado": "$ 15.390,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsa Sobre PP Cristal 50x70",
       "descripcion": "X 100u (Bulto x 500 u.)",
-      "precio": 19840.0,
-      "precio_formateado": "$ 19.840,00",
+      "precio": 17955.0,
+      "precio_formateado": "$ 17.955,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 20x30",
       "descripcion": "20x30/12mic",
-      "precio": 2601.0,
-      "precio_formateado": "$ 2.601,00",
+      "precio": 1984.0,
+      "precio_formateado": "$ 1.984,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 25x35",
       "descripcion": "AD Blanco 25x35/12mic",
-      "precio": 3562.0,
-      "precio_formateado": "$ 3.562,00",
+      "precio": 2717.0,
+      "precio_formateado": "$ 2.717,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 30x40/12mic",
       "descripcion": "AD Blanco 30x40/12mic",
-      "precio": 3587.0,
-      "precio_formateado": "$ 3.587,00",
+      "precio": 2736.0,
+      "precio_formateado": "$ 2.736,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 40x50/12mic",
       "descripcion": "AD Blanco 40x50/12mic",
-      "precio": 5293.0,
-      "precio_formateado": "$ 5.293,00",
+      "precio": 4038.0,
+      "precio_formateado": "$ 4.038,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
       "descripcion": "AD Blanco 40x50/12mic Eco",
-      "precio": 4698.0,
-      "precio_formateado": "$ 4.698,00",
+      "precio": 3584.0,
+      "precio_formateado": "$ 3.584,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 40x50/15mic",
       "descripcion": "AD Blanco 40x50/15mic",
-      "precio": 5420.0,
-      "precio_formateado": "$ 5.420,00",
+      "precio": 4135.0,
+      "precio_formateado": "$ 4.135,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 45x60/15mic",
       "descripcion": "AD Blanco 45x60/15mic",
-      "precio": 9604.0,
-      "precio_formateado": "$ 9.604,00",
+      "precio": 7326.0,
+      "precio_formateado": "$ 7.326,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 50x50/15mic",
       "descripcion": "AD Blanco 50x50/15mic",
-      "precio": 8900.0,
-      "precio_formateado": "$ 8.900,00",
+      "precio": 6790.0,
+      "precio_formateado": "$ 6.790,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 50x60/15mic",
       "descripcion": "AD Blanco 50x60/15mic",
-      "precio": 10671.0,
-      "precio_formateado": "$ 10.671,00",
+      "precio": 8141.0,
+      "precio_formateado": "$ 8.141,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 50x70/15mic",
       "descripcion": "AD Blanco 50x70/15mic",
-      "precio": 12461.0,
-      "precio_formateado": "$ 12.461,00",
+      "precio": 9506.0,
+      "precio_formateado": "$ 9.506,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 60x50/17mic",
       "descripcion": "AD Blanco 60x50/17mic",
-      "precio": 11989.0,
-      "precio_formateado": "$ 11.989,00",
+      "precio": 9230.0,
+      "precio_formateado": "$ 9.230,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 60x70/23mic",
       "descripcion": "AD Blanco 60x70/23mic",
-      "precio": 22927.0,
-      "precio_formateado": "$ 22.927,00",
+      "precio": 17490.0,
+      "precio_formateado": "$ 17.490,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Blanco 60x80/23mic",
       "descripcion": "AD Blanco 60x80/23mic",
-      "precio": 26193.0,
-      "precio_formateado": "$ 26.193,00",
+      "precio": 19982.0,
+      "precio_formateado": "$ 19.982,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Color 30x40/12mic",
       "descripcion": "AD Color 30x40/12mic",
-      "precio": 3094.0,
-      "precio_formateado": "$ 3.094,00",
+      "precio": 2360.0,
+      "precio_formateado": "$ 2.360,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Color 40x50/12mic Eco",
       "descripcion": "AD Color 40x50/12mic Eco",
-      "precio": 3998.0,
-      "precio_formateado": "$ 3.998,00",
+      "precio": 3050.0,
+      "precio_formateado": "$ 3.050,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Color 50x60/15mic",
       "descripcion": "AD Color 50x60/15mic",
-      "precio": 9662.0,
-      "precio_formateado": "$ 9.662,00",
+      "precio": 7371.0,
+      "precio_formateado": "$ 7.371,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
       "nombre": "Bolsas camiseta AD Negro 40x50/12mic",
       "descripcion": "AD Negro 40x50/12mic",
-      "precio": 4743.0,
-      "precio_formateado": "$ 4.743,00",
+      "precio": 3618.0,
+      "precio_formateado": "$ 3.618,00",
       "proveedor": "Ludoplast S. R. L"
     },
     {
