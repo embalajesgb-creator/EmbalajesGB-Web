@@ -1,5 +1,5 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "24-06-2026 19:26",
+  "actualizado": "25-06-2026 01:34",
   "total": 87,
   "articulos": [
     {
