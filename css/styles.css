@@ -152,6 +152,20 @@ h1 {
   line-height: 1.5;
 }
 
+.servicio-domicilio {
+  align-self: flex-start;
+  margin: 18px 0 0;
+  padding: 8px 12px;
+  color: var(--verde-oscuro);
+  background: var(--suave);
+  border: 1px solid var(--linea);
+  border-left: 4px solid var(--verde);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .acciones {
   display: flex;
   flex-wrap: wrap;
