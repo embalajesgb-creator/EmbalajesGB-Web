@@ -430,16 +430,19 @@ dd {
   vertical-align: middle;
 }
 
+.tabla-precios-web .precio-celda {
+  text-align: right;
+}
+
 .tabla-precios-web th.precio-titulo,
 .tabla-precios-web th:nth-child(4),
-.tabla-precios-web .precio-celda,
 .consulta-celda {
-  text-align: right;
+  text-align: center;
 }
 
 .tabla-precios-web th.precio-titulo {
   line-height: 1.12;
-  padding-right: 16px;
+  padding-right: 0;
   font-size: 13px;
 }
 
@@ -478,7 +481,7 @@ dd {
 
 .encabezado-tabla-precios-fijo > span:nth-child(3),
 .encabezado-tabla-precios-fijo > span:nth-child(4) {
-  text-align: right;
+  text-align: center;
 }
 
 .encabezado-tabla-precios-fijo > span:nth-child(3) span {
@@ -528,12 +531,14 @@ dd {
 }
 
 .boton-consultar {
-  min-height: 28px;
-  padding: 5px 8px;
+  min-height: 24px;
+  padding: 3px 7px;
   color: #fff;
   background: #128c3a;
   border-color: #128c3a;
-  font-size: 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1.1;
 }
 
 .boton-consultar:hover,
