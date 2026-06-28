@@ -6,7 +6,7 @@
   <meta name="description" content="Embalajes GB - Bolsas y embalajes para comercios, industrias y emprendimientos." />
   <title>Embalajes GB | Bolsas y embalajes para comercios</title>
   <link rel="icon" href="assets/icono-embalajes-gb.png" />
-  <link rel="stylesheet" href="css/styles.css?v=202606280315" />
+  <link rel="stylesheet" href="css/styles.css?v=202606280345" />
 </head>
 <body>
   <header class="encabezado">
@@ -142,11 +142,25 @@
             <option value="Otro"></option>
           </datalist>
         </label>
-        <label>
+        <div class="campo-formulario-cotizacion campo-medida-cotizacion">
           <span>Medida</span>
-          <small class="ayuda-campo">Cargar ancho, largo y espesor.</small>
-          <input name="medida" type="text" placeholder="Ej: ancho 40 cm, largo 50 cm, espesor 30 micrones" />
-        </label>
+          <small class="ayuda-campo">Completa ancho, largo y espesor si los tenes.</small>
+          <div class="medida-guiada" data-medida-guiada aria-label="Medida de la bolsa">
+            <label class="medida-segmento" data-medida-segmento="ancho">
+              <span>Ancho</span>
+              <input name="medidaAncho" type="text" placeholder="40 cm" autocomplete="off" />
+            </label>
+            <label class="medida-segmento" data-medida-segmento="largo">
+              <span>Largo</span>
+              <input name="medidaLargo" type="text" placeholder="50 cm" autocomplete="off" />
+            </label>
+            <label class="medida-segmento" data-medida-segmento="espesor">
+              <span>Espesor</span>
+              <input name="medidaEspesor" type="text" placeholder="30 mic" autocomplete="off" />
+            </label>
+          </div>
+          <input name="medida" type="hidden" />
+        </div>
         <label>
           <span>Cantidad</span>
           <input name="cantidad" type="text" placeholder="Ej: 10.000 unidades" />
@@ -252,7 +266,7 @@
     <span>Bolsas, embalajes y cotizaciones por WhatsApp</span>
   </footer>
   <script src="data/precios.js?v=202606280130"></script>
-  <script src="js/main-precios-20260618-0254.js?v=202606280315"></script>
+  <script src="js/main-precios-20260618-0254.js?v=202606280345"></script>
   <!-- GoatCounter visitas EmbalajesGB-Web: codigo configurado: embalajesgb. -->
   <script data-goatcounter="https://embalajesgb.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>

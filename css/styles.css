@@ -339,7 +339,8 @@ dd {
 }
 
 .campo-lista-precios,
-.formulario-cotizacion label {
+.formulario-cotizacion label,
+.formulario-cotizacion .campo-formulario-cotizacion {
   display: grid;
   gap: 6px;
   color: var(--texto-suave);
@@ -387,6 +388,67 @@ dd {
   outline: 2px solid rgba(20, 82, 163, 0.38);
   outline-offset: 2px;
   border-color: var(--azul);
+}
+
+.formulario-cotizacion .medida-guiada {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  min-height: 42px;
+  padding: 8px 10px 7px;
+  color: var(--texto);
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-radius: 5px;
+}
+
+.formulario-cotizacion .medida-guiada:focus-within {
+  outline: 2px solid rgba(20, 82, 163, 0.38);
+  outline-offset: 2px;
+  border-color: var(--azul);
+}
+
+.formulario-cotizacion .medida-segmento {
+  min-width: 0;
+  gap: 4px;
+  color: var(--texto-suave);
+  font-size: 11px;
+}
+
+.formulario-cotizacion .medida-segmento span {
+  line-height: 1;
+}
+
+.formulario-cotizacion .medida-segmento input {
+  min-height: 26px;
+  padding: 0 0 4px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c7d2ca;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.formulario-cotizacion .medida-segmento input:focus {
+  outline: 0;
+  border-color: var(--azul);
+}
+
+.formulario-cotizacion .medida-segmento.esta-pendiente {
+  color: var(--azul);
+}
+
+.formulario-cotizacion .medida-segmento.esta-pendiente input {
+  border-bottom-color: var(--azul);
+  box-shadow: inset 0 -5px 0 rgba(20, 82, 163, 0.08);
+}
+
+.formulario-cotizacion .medida-segmento.completo {
+  color: #128c3a;
+}
+
+.formulario-cotizacion .medida-segmento.completo input {
+  border-bottom-color: #128c3a;
 }
 
 .tabla-precios-web {

@@ -306,6 +306,7 @@ async function cargarListaPrecios() {
 }
 
 function camposCotizacionDesdeFormulario(formulario) {
+  sincronizarMedidaCotizacion(formulario);
   const datos = new FormData(formulario);
   const material = String(datos.get('material') || '').trim();
   const impresion = String(datos.get('impresion') || '').trim();
@@ -330,6 +331,46 @@ function camposCotizacionDesdeFormulario(formulario) {
   }
   campos.push(['Observaciones', datos.get('observaciones')]);
   return campos;
+}
+
+const partesMedidaCotizacion = [
+  ['ancho', 'medidaAncho'],
+  ['largo', 'medidaLargo'],
+  ['espesor', 'medidaEspesor'],
+];
+
+function sincronizarMedidaCotizacion(formulario) {
+  const medida = formulario.elements.medida;
+  if (!medida) return;
+
+  const partes = partesMedidaCotizacion.map(([etiqueta, nombre]) => {
+    const campo = formulario.elements[nombre];
+    return {
+      etiqueta,
+      campo,
+      valor: String(campo?.value || '').trim(),
+      segmento: campo?.closest('.medida-segmento'),
+    };
+  });
+  medida.value = partes
+    .filter((parte) => parte.valor)
+    .map((parte) => `${parte.etiqueta} ${parte.valor}`)
+    .join(', ');
+
+  const hayAlgunDato = partes.some((parte) => parte.valor);
+  const indicePendiente = hayAlgunDato ? partes.findIndex((parte) => !parte.valor) : -1;
+  partes.forEach((parte, indice) => {
+    if (!parte.segmento) return;
+    parte.segmento.classList.toggle('completo', Boolean(parte.valor));
+    parte.segmento.classList.toggle('esta-pendiente', indice === indicePendiente);
+  });
+}
+
+function prepararMedidaCotizacion(formulario) {
+  partesMedidaCotizacion.forEach(([, nombre]) => {
+    formulario.elements[nombre]?.addEventListener('input', () => sincronizarMedidaCotizacion(formulario));
+  });
+  sincronizarMedidaCotizacion(formulario);
 }
 
 function mensajeCotizacionWhatsapp(campos) {
@@ -373,6 +414,7 @@ function prepararFormularioCotizacion() {
   const formulario = document.getElementById('formularioCotizacionWhatsapp');
   if (!formulario) return;
 
+  prepararMedidaCotizacion(formulario);
   actualizarCamposCondicionalesCotizacion(formulario);
   formulario.elements.material?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
   formulario.elements.colorMaterial?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
