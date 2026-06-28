@@ -308,15 +308,20 @@ function camposCotizacionDesdeFormulario(formulario) {
   const datos = new FormData(formulario);
   const material = String(datos.get('material') || '').trim();
   const impresion = String(datos.get('impresion') || '').trim();
+  const colorMaterialSeleccionado = String(datos.get('colorMaterial') || '').trim();
+  const otroColorMaterial = String(datos.get('otroColorMaterial') || '').trim();
+  const colorMaterial = colorMaterialSeleccionado === 'Otro'
+    ? (otroColorMaterial || 'Otro')
+    : colorMaterialSeleccionado;
   const campos = [
     ['Nombre del cliente', datos.get('nombreCliente')],
     ['Zona', datos.get('zonaEntrega')],
     ['Tipo de bolsa', datos.get('tipoProducto')],
-    ['Medida', datos.get('medida')],
+    ['Medida (ancho, largo y espesor)', datos.get('medida')],
     ['Cantidad', datos.get('cantidad')],
     ['Material', material],
   ];
-  if (material !== 'PP') campos.push(['Color material', datos.get('colorMaterial')]);
+  campos.push(['Color material', colorMaterial]);
   campos.push(['Impresion', impresion]);
   if (impresion === 'Si') {
     campos.push(['Cantidad de colores', datos.get('cantidadColoresImpresion')]);
@@ -338,14 +343,14 @@ function mensajeCotizacionWhatsapp(campos) {
 }
 
 function actualizarCamposCondicionalesCotizacion(formulario) {
-  const material = formulario.elements.material?.value || '';
-  const campoColorMaterial = document.getElementById('campoColorMaterialCotizacion');
-  const colorMaterial = formulario.elements.colorMaterial;
-  const ocultarColorMaterial = material === 'PP';
-  if (campoColorMaterial) campoColorMaterial.hidden = ocultarColorMaterial;
-  if (colorMaterial) {
-    colorMaterial.disabled = ocultarColorMaterial;
-    if (ocultarColorMaterial) colorMaterial.value = '';
+  const colorMaterial = formulario.elements.colorMaterial?.value || '';
+  const campoOtroColorMaterial = document.getElementById('campoOtroColorMaterialCotizacion');
+  const otroColorMaterial = formulario.elements.otroColorMaterial;
+  const mostrarOtroColor = colorMaterial === 'Otro';
+  if (campoOtroColorMaterial) campoOtroColorMaterial.hidden = !mostrarOtroColor;
+  if (otroColorMaterial) {
+    otroColorMaterial.disabled = !mostrarOtroColor;
+    if (!mostrarOtroColor) otroColorMaterial.value = '';
   }
 
   const conImpresion = formulario.elements.impresion?.value === 'Si';
@@ -369,6 +374,7 @@ function prepararFormularioCotizacion() {
 
   actualizarCamposCondicionalesCotizacion(formulario);
   formulario.elements.material?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
+  formulario.elements.colorMaterial?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
   formulario.elements.impresion?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
 
   formulario.addEventListener('submit', (evento) => {

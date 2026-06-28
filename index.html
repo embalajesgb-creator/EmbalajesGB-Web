@@ -6,7 +6,7 @@
   <meta name="description" content="Embalajes GB - Bolsas y embalajes para comercios, industrias y emprendimientos." />
   <title>Embalajes GB | Bolsas y embalajes para comercios</title>
   <link rel="icon" href="assets/icono-embalajes-gb.png" />
-  <link rel="stylesheet" href="css/styles.css?v=202606280103" />
+  <link rel="stylesheet" href="css/styles.css?v=202606280202" />
 </head>
 <body>
   <header class="encabezado">
@@ -144,7 +144,8 @@
         </label>
         <label>
           <span>Medida</span>
-          <input name="medida" type="text" placeholder="Ej: 40x50, ancho x largo" />
+          <small class="ayuda-campo">Cargar ancho, largo y espesor.</small>
+          <input name="medida" type="text" placeholder="Ej: ancho 40 cm, largo 50 cm, espesor 30 micrones" />
         </label>
         <label>
           <span>Cantidad</span>
@@ -160,7 +161,15 @@
         </label>
         <label id="campoColorMaterialCotizacion">
           <span>Color material</span>
-          <input name="colorMaterial" type="text" placeholder="Transparente, blanco, negro, color especial..." />
+          <select name="colorMaterial" id="colorMaterialCotizacion">
+            <option value="Cristal">Cristal</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </label>
+        <label id="campoOtroColorMaterialCotizacion" hidden>
+          <span>Otro color</span>
+          <input name="otroColorMaterial" type="text" placeholder="Especificar color del material" />
         </label>
         <label>
           <span>Impresion</span>
@@ -243,7 +252,7 @@
     <span>Bolsas, embalajes y cotizaciones por WhatsApp</span>
   </footer>
   <script src="data/precios.js?v=202606280130"></script>
-  <script src="js/main-precios-20260618-0254.js?v=202606280123"></script>
+  <script src="js/main-precios-20260618-0254.js?v=202606280202"></script>
   <!-- GoatCounter visitas EmbalajesGB-Web: codigo configurado: embalajesgb. -->
   <script data-goatcounter="https://embalajesgb.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
