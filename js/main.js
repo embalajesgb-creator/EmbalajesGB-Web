@@ -128,7 +128,6 @@ function filaArticulo(articulo) {
     <tr>
       <td>
         <span class="nombre-articulo">${escaparHtml(articulo.articulo || articulo.nombre)}</span>
-        <span class="etiqueta-categoria">${escaparHtml(articulo.categoria)}</span>
       </td>
       <td>${escaparHtml(articulo.descripcion)}</td>
       <td class="precio-celda">
