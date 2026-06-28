@@ -350,7 +350,7 @@ function actualizarCamposCondicionalesCotizacion(formulario) {
 
   const conImpresion = formulario.elements.impresion?.value === 'Si';
   document.querySelectorAll('.campo-impresion-cotizacion').forEach((campo) => {
-    campo.hidden = false;
+    campo.hidden = !conImpresion;
     campo.querySelectorAll('input, select, textarea').forEach((control) => {
       control.disabled = !conImpresion;
     });
