@@ -1,876 +1,876 @@
-﻿{
-    "actualizado":  "27-06-2026 23:31",
-    "total":  87,
-    "articulos":  [
-                      {
-                          "articulo":  "Bolsa camiseta de 40x50 BD negra",
-                          "codigo":  "Bolsa camiseta de 40x50 BD negra",
-                          "nombre":  "Bolsa camiseta de 40x50 BD negra",
-                          "descripcion":  "Bulto de 10 pack x 100u",
-                          "precio":  3845.0,
-                          "precio_formateado":  "$ 3.845,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 45x60 BD negra",
-                          "codigo":  "Bolsa camiseta de 45x60 BD negra",
-                          "nombre":  "Bolsa camiseta de 45x60 BD negra",
-                          "descripcion":  "Bulto de 10 pack x 100u",
-                          "precio":  5167.0,
-                          "precio_formateado":  "$ 5.167,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 50x60 BD color",
-                          "codigo":  "Bolsa camiseta de 50x60 BD color",
-                          "nombre":  "Bolsa camiseta de 50x60 BD color",
-                          "descripcion":  "Bulto de 5 pack x 100u",
-                          "precio":  8878.0,
-                          "precio_formateado":  "$ 8.878,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 50x60 BD negra",
-                          "codigo":  "Bolsa camiseta de 50x60 BD negra",
-                          "nombre":  "Bolsa camiseta de 50x60 BD negra",
-                          "descripcion":  "Bulto de 5 pack x 100u",
-                          "precio":  6632.0,
-                          "precio_formateado":  "$ 6.632,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 50x70 BD negra",
-                          "codigo":  "Bolsa camiseta de 50x70 BD negra",
-                          "nombre":  "Bolsa camiseta de 50x70 BD negra",
-                          "descripcion":  "Bulto de 5 pack x 100u",
-                          "precio":  7722.0,
-                          "precio_formateado":  "$ 7.722,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 60x80 BD color",
-                          "codigo":  "Bolsa camiseta de 60x80 BD color",
-                          "nombre":  "Bolsa camiseta de 60x80 BD color",
-                          "descripcion":  "Bulto de 5 pack x 100u",
-                          "precio":  14574.0,
-                          "precio_formateado":  "$ 14.574,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa camiseta de 60x80 BD negra",
-                          "codigo":  "Bolsa camiseta de 60x80 BD negra",
-                          "nombre":  "Bolsa camiseta de 60x80 BD negra",
-                          "descripcion":  "Bulto de 5 pack x 100u",
-                          "precio":  10555.0,
-                          "precio_formateado":  "$ 10.555,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsa consorcio 60x90 BD negra",
-                          "codigo":  "Bolsa consorcio 60x90 BD negra",
-                          "nombre":  "Bolsa consorcio 60x90 BD negra",
-                          "descripcion":  "Bulto de 5 pack x 50u (Precio x 100u)",
-                          "precio":  13917.0,
-                          "precio_formateado":  "$ 13.917,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa consorcio 80 x 100 cm caramelo",
-                          "codigo":  "Bolsa consorcio 80 x 100 cm caramelo",
-                          "nombre":  "Bolsa consorcio 80 x 100 cm caramelo",
-                          "descripcion":  "Bulto de 4 pack x 50u (Precio x 100u)",
-                          "precio":  23258.0,
-                          "precio_formateado":  "$ 23.258,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa consorcio 80 x 110 cm negra 80 mic",
-                          "codigo":  "Bolsa consorcio 80 x 110 cm negra 80 mic",
-                          "nombre":  "Bolsa consorcio 80 x 110 cm negra 80 mic",
-                          "descripcion":  "Bulto x 4 packs de 50 u.  Precio x 100 u.",
-                          "precio":  51434.0,
-                          "precio_formateado":  "$ 51.434,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa consorcio 80x100 BD verde",
-                          "codigo":  "Bolsa consorcio 80x100 BD verde",
-                          "nombre":  "Bolsa consorcio 80x100 BD verde",
-                          "descripcion":  "Bulto de 4 pack x 50u (Precio x 100u)",
-                          "precio":  27264.0,
-                          "precio_formateado":  "$ 27.264,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa consorcio 80x110 BD negra",
-                          "codigo":  "Bolsa consorcio 80x110 BD negra",
-                          "nombre":  "Bolsa consorcio 80x110 BD negra",
-                          "descripcion":  "Bulto de 4 pack x 50u (precio x 100u)",
-                          "precio":  21099.0,
-                          "precio_formateado":  "$ 21.099,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa de friselina blanca c/asa x unid.",
-                          "codigo":  "Bolsa de friselina blanca c/asa x unid.",
-                          "nombre":  "Bolsa de friselina blanca c/asa x unid.",
-                          "descripcion":  "45 x 40 x 10 cm, fuelle base",
-                          "precio":  642.0,
-                          "precio_formateado":  "$ 642,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Friselina"
-                      },
-                      {
-                          "articulo":  "Bolsa de residuo 45x60 BD negra",
-                          "codigo":  "Bolsa de residuo 45x60 BD negra",
-                          "nombre":  "Bolsa de residuo 45x60 BD negra",
-                          "descripcion":  "Bulto de 10 pack x 100u",
-                          "precio":  4029.0,
-                          "precio_formateado":  "$ 4.029,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Bolsa friselina blanca c/ovalo x unid",
-                          "codigo":  "Bolsa friselina blanca c/ovalo x unid",
-                          "nombre":  "Bolsa friselina blanca c/ovalo x unid",
-                          "descripcion":  "20 x 30 x 10 cm, fuelle base",
-                          "precio":  668.0,
-                          "precio_formateado":  "$ 668,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Friselina"
-                      },
-                      {
-                          "articulo":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "codigo":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "nombre":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "descripcion":  "30 x 30 x 10 cm, fuelle base",
-                          "precio":  444.0,
-                          "precio_formateado":  "$ 444,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Friselina"
-                      },
-                      {
-                          "articulo":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "codigo":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "nombre":  "Bolsa friselina blanca lisa c/asa x unid.",
-                          "descripcion":  "30 x 40 x 10 cm, fuelle base",
-                          "precio":  460.0,
-                          "precio_formateado":  "$ 460,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Friselina"
-                      },
-                      {
-                          "articulo":  "Bolsa reforzada para escombros 45 x 60 cm",
-                          "codigo":  "Bolsa reforzada para escombros 45 x 60 cm",
-                          "nombre":  "Bolsa reforzada para escombros 45 x 60 cm",
-                          "descripcion":  "Bulto de 25 pack x 10u",
-                          "precio":  17793.0,
-                          "precio_formateado":  "$ 17.793,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Otros"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 06x10",
-                          "codigo":  "Bolsa Sobre PP Cristal 06x10",
-                          "nombre":  "Bolsa Sobre PP Cristal 06x10",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  612.0,
-                          "precio_formateado":  "$ 612,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 06x15",
-                          "codigo":  "Bolsa Sobre PP Cristal 06x15",
-                          "nombre":  "Bolsa Sobre PP Cristal 06x15",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  832.0,
-                          "precio_formateado":  "$ 832,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 06x20",
-                          "codigo":  "Bolsa Sobre PP Cristal 06x20",
-                          "nombre":  "Bolsa Sobre PP Cristal 06x20",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  962.0,
-                          "precio_formateado":  "$ 962,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 06x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 06x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 06x25",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1202.0,
-                          "precio_formateado":  "$ 1.202,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 06x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 06x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 06x30",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1442.0,
-                          "precio_formateado":  "$ 1.442,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 08x10",
-                          "codigo":  "Bolsa Sobre PP Cristal 08x10",
-                          "nombre":  "Bolsa Sobre PP Cristal 08x10",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  742.0,
-                          "precio_formateado":  "$ 742,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 08x15",
-                          "codigo":  "Bolsa Sobre PP Cristal 08x15",
-                          "nombre":  "Bolsa Sobre PP Cristal 08x15",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  962.0,
-                          "precio_formateado":  "$ 962,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 08x20",
-                          "codigo":  "Bolsa Sobre PP Cristal 08x20",
-                          "nombre":  "Bolsa Sobre PP Cristal 08x20",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1282.0,
-                          "precio_formateado":  "$ 1.282,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 08x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 08x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 08x25",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1561.0,
-                          "precio_formateado":  "$ 1.561,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 08x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 08x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 08x30",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1872.0,
-                          "precio_formateado":  "$ 1.872,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 10x15",
-                          "codigo":  "Bolsa Sobre PP Cristal 10x15",
-                          "nombre":  "Bolsa Sobre PP Cristal 10x15",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1081.0,
-                          "precio_formateado":  "$ 1.081,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 10x20",
-                          "codigo":  "Bolsa Sobre PP Cristal 10x20",
-                          "nombre":  "Bolsa Sobre PP Cristal 10x20",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1439.0,
-                          "precio_formateado":  "$ 1.439,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 10x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 10x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 10x25",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1796.0,
-                          "precio_formateado":  "$ 1.796,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 10x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 10x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 10x30",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  2239.0,
-                          "precio_formateado":  "$ 2.239,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 12x15",
-                          "codigo":  "Bolsa Sobre PP Cristal 12x15",
-                          "nombre":  "Bolsa Sobre PP Cristal 12x15",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1346.0,
-                          "precio_formateado":  "$ 1.346,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 12x20",
-                          "codigo":  "Bolsa Sobre PP Cristal 12x20",
-                          "nombre":  "Bolsa Sobre PP Cristal 12x20",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1525.0,
-                          "precio_formateado":  "$ 1.525,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 12x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 12x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 12x25",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1908.0,
-                          "precio_formateado":  "$ 1.908,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 12x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 12x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 12x30",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  2293.0,
-                          "precio_formateado":  "$ 2.293,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 15x20",
-                          "codigo":  "Bolsa Sobre PP Cristal 15x20",
-                          "nombre":  "Bolsa Sobre PP Cristal 15x20",
-                          "descripcion":  "X 100u (Bulto x 5.000 u.)",
-                          "precio":  1790.0,
-                          "precio_formateado":  "$ 1.790,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 15x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 15x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 15x25",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  2153.0,
-                          "precio_formateado":  "$ 2.153,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 15x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 15x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 15x30",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  2539.0,
-                          "precio_formateado":  "$ 2.539,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 15x35",
-                          "codigo":  "Bolsa Sobre PP Cristal 15x35",
-                          "nombre":  "Bolsa Sobre PP Cristal 15x35",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  2964.0,
-                          "precio_formateado":  "$ 2.964,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 20x25",
-                          "codigo":  "Bolsa Sobre PP Cristal 20x25",
-                          "nombre":  "Bolsa Sobre PP Cristal 20x25",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  2722.0,
-                          "precio_formateado":  "$ 2.722,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 20x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 20x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 20x30",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  3263.0,
-                          "precio_formateado":  "$ 3.263,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 20x35",
-                          "codigo":  "Bolsa Sobre PP Cristal 20x35",
-                          "nombre":  "Bolsa Sobre PP Cristal 20x35",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  3805.0,
-                          "precio_formateado":  "$ 3.805,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 25x30",
-                          "codigo":  "Bolsa Sobre PP Cristal 25x30",
-                          "nombre":  "Bolsa Sobre PP Cristal 25x30",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  3925.0,
-                          "precio_formateado":  "$ 3.925,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 25x35",
-                          "codigo":  "Bolsa Sobre PP Cristal 25x35",
-                          "nombre":  "Bolsa Sobre PP Cristal 25x35",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  4577.0,
-                          "precio_formateado":  "$ 4.577,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 25x40",
-                          "codigo":  "Bolsa Sobre PP Cristal 25x40",
-                          "nombre":  "Bolsa Sobre PP Cristal 25x40",
-                          "descripcion":  "X 100u (Bulto x 2.500 u.)",
-                          "precio":  5229.0,
-                          "precio_formateado":  "$ 5.229,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 30x40",
-                          "codigo":  "Bolsa Sobre PP Cristal 30x40",
-                          "nombre":  "Bolsa Sobre PP Cristal 30x40",
-                          "descripcion":  "X 100u (Bulto x 1.000 u.)",
-                          "precio":  6159.0,
-                          "precio_formateado":  "$ 6.159,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 30x45",
-                          "codigo":  "Bolsa Sobre PP Cristal 30x45",
-                          "nombre":  "Bolsa Sobre PP Cristal 30x45",
-                          "descripcion":  "X 100u (Bulto x 1.000 u.)",
-                          "precio":  6930.0,
-                          "precio_formateado":  "$ 6.930,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 30x50",
-                          "codigo":  "Bolsa Sobre PP Cristal 30x50",
-                          "nombre":  "Bolsa Sobre PP Cristal 30x50",
-                          "descripcion":  "X 100u (Bulto x 1.000 u.)",
-                          "precio":  7694.0,
-                          "precio_formateado":  "$ 7.694,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 35x45",
-                          "codigo":  "Bolsa Sobre PP Cristal 35x45",
-                          "nombre":  "Bolsa Sobre PP Cristal 35x45",
-                          "descripcion":  "X 100u (Bulto x 1.000 u.)",
-                          "precio":  8081.0,
-                          "precio_formateado":  "$ 8.081,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 35x50",
-                          "codigo":  "Bolsa Sobre PP Cristal 35x50",
-                          "nombre":  "Bolsa Sobre PP Cristal 35x50",
-                          "descripcion":  "X 100u (Bulto x 1.000 u.)",
-                          "precio":  8980.0,
-                          "precio_formateado":  "$ 8.980,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 40x50",
-                          "codigo":  "Bolsa Sobre PP Cristal 40x50",
-                          "nombre":  "Bolsa Sobre PP Cristal 40x50",
-                          "descripcion":  "X 100u (Bulto x 500 u.)",
-                          "precio":  10263.0,
-                          "precio_formateado":  "$ 10.263,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 40x60",
-                          "codigo":  "Bolsa Sobre PP Cristal 40x60",
-                          "nombre":  "Bolsa Sobre PP Cristal 40x60",
-                          "descripcion":  "X 100u (Bulto x 500 u.)",
-                          "precio":  12312.0,
-                          "precio_formateado":  "$ 12.312,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 50x60",
-                          "codigo":  "Bolsa Sobre PP Cristal 50x60",
-                          "nombre":  "Bolsa Sobre PP Cristal 50x60",
-                          "descripcion":  "X 100u (Bulto x 500 u.)",
-                          "precio":  15390.0,
-                          "precio_formateado":  "$ 15.390,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsa Sobre PP Cristal 50x70",
-                          "codigo":  "Bolsa Sobre PP Cristal 50x70",
-                          "nombre":  "Bolsa Sobre PP Cristal 50x70",
-                          "descripcion":  "X 100u (Bulto x 500 u.)",
-                          "precio":  17955.0,
-                          "precio_formateado":  "$ 17.955,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 20x30",
-                          "codigo":  "Bolsas camiseta AD Blanco 20x30",
-                          "nombre":  "Bolsas camiseta AD Blanco 20x30",
-                          "descripcion":  "20x30/12mic",
-                          "precio":  1984.0,
-                          "precio_formateado":  "$ 1.984,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 25x35",
-                          "codigo":  "Bolsas camiseta AD Blanco 25x35",
-                          "nombre":  "Bolsas camiseta AD Blanco 25x35",
-                          "descripcion":  "AD Blanco 25x35/12mic",
-                          "precio":  2717.0,
-                          "precio_formateado":  "$ 2.717,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 30x40/12mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 30x40/12mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 30x40/12mic",
-                          "descripcion":  "AD Blanco 30x40/12mic",
-                          "precio":  2736.0,
-                          "precio_formateado":  "$ 2.736,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 40x50/12mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 40x50/12mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 40x50/12mic",
-                          "descripcion":  "AD Blanco 40x50/12mic",
-                          "precio":  4038.0,
-                          "precio_formateado":  "$ 4.038,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-                          "codigo":  "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-                          "nombre":  "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-                          "descripcion":  "AD Blanco 40x50/12mic Eco",
-                          "precio":  3584.0,
-                          "precio_formateado":  "$ 3.584,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 40x50/15mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 40x50/15mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 40x50/15mic",
-                          "descripcion":  "AD Blanco 40x50/15mic",
-                          "precio":  4135.0,
-                          "precio_formateado":  "$ 4.135,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 45x60/15mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 45x60/15mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 45x60/15mic",
-                          "descripcion":  "AD Blanco 45x60/15mic",
-                          "precio":  7326.0,
-                          "precio_formateado":  "$ 7.326,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 50x50/15mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 50x50/15mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 50x50/15mic",
-                          "descripcion":  "AD Blanco 50x50/15mic",
-                          "precio":  6790.0,
-                          "precio_formateado":  "$ 6.790,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 50x60/15mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 50x60/15mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 50x60/15mic",
-                          "descripcion":  "AD Blanco 50x60/15mic",
-                          "precio":  8141.0,
-                          "precio_formateado":  "$ 8.141,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 50x70/15mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 50x70/15mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 50x70/15mic",
-                          "descripcion":  "AD Blanco 50x70/15mic",
-                          "precio":  9506.0,
-                          "precio_formateado":  "$ 9.506,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 60x50/17mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 60x50/17mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 60x50/17mic",
-                          "descripcion":  "AD Blanco 60x50/17mic",
-                          "precio":  9230.0,
-                          "precio_formateado":  "$ 9.230,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 60x70/23mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 60x70/23mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 60x70/23mic",
-                          "descripcion":  "AD Blanco 60x70/23mic",
-                          "precio":  17490.0,
-                          "precio_formateado":  "$ 17.490,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Blanco 60x80/23mic",
-                          "codigo":  "Bolsas camiseta AD Blanco 60x80/23mic",
-                          "nombre":  "Bolsas camiseta AD Blanco 60x80/23mic",
-                          "descripcion":  "AD Blanco 60x80/23mic",
-                          "precio":  19982.0,
-                          "precio_formateado":  "$ 19.982,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Color 30x40/12mic",
-                          "codigo":  "Bolsas camiseta AD Color 30x40/12mic",
-                          "nombre":  "Bolsas camiseta AD Color 30x40/12mic",
-                          "descripcion":  "AD Color 30x40/12mic",
-                          "precio":  2360.0,
-                          "precio_formateado":  "$ 2.360,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Color 40x50/12mic Eco",
-                          "codigo":  "Bolsas camiseta AD Color 40x50/12mic Eco",
-                          "nombre":  "Bolsas camiseta AD Color 40x50/12mic Eco",
-                          "descripcion":  "AD Color 40x50/12mic Eco",
-                          "precio":  3050.0,
-                          "precio_formateado":  "$ 3.050,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Color 50x60/15mic",
-                          "codigo":  "Bolsas camiseta AD Color 50x60/15mic",
-                          "nombre":  "Bolsas camiseta AD Color 50x60/15mic",
-                          "descripcion":  "AD Color 50x60/15mic",
-                          "precio":  7371.0,
-                          "precio_formateado":  "$ 7.371,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas camiseta AD Negro 40x50/12mic",
-                          "codigo":  "Bolsas camiseta AD Negro 40x50/12mic",
-                          "nombre":  "Bolsas camiseta AD Negro 40x50/12mic",
-                          "descripcion":  "AD Negro 40x50/12mic",
-                          "precio":  3618.0,
-                          "precio_formateado":  "$ 3.618,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas camiseta"
-                      },
-                      {
-                          "articulo":  "Bolsas de residuo 50x70 BD negra",
-                          "codigo":  "Bolsas de residuo 50x70 BD negra",
-                          "nombre":  "Bolsas de residuo 50x70 BD negra",
-                          "descripcion":  "Bulto de 20 pack x 50u",
-                          "precio":  5660.0,
-                          "precio_formateado":  "$ 5.660,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas consorcio / residuo"
-                      },
-                      {
-                          "articulo":  "Cinta adhes. lisa",
-                          "codigo":  "Cinta adhes. lisa",
-                          "nombre":  "Cinta adhes. lisa",
-                          "descripcion":  "48 mm x 50 mts (caja x 36u.)",
-                          "precio":  824.0,
-                          "precio_formateado":  "$ 824,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Cintas"
-                      },
-                      {
-                          "articulo":  "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
-                          "codigo":  "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
-                          "nombre":  "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
-                          "descripcion":  "(5 cajas x 36u.)",
-                          "precio":  2400.0,
-                          "precio_formateado":  "$ 2.400,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Cintas"
-                      },
-                      {
-                          "articulo":  "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
-                          "codigo":  "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
-                          "nombre":  "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
-                          "descripcion":  "(5 cajas x 36u)",
-                          "precio":  2086.0,
-                          "precio_formateado":  "$ 2.086,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Cintas"
-                      },
-                      {
-                          "articulo":  "FOLEX  2025",
-                          "codigo":  "FOLEX  2025",
-                          "nombre":  "FOLEX  2025",
-                          "descripcion":  "FOLEX  20 x 25 CM x KG ( Bulto x 10 kilos)",
-                          "precio":  8640.0,
-                          "precio_formateado":  "$ 8.640,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Otros"
-                      },
-                      {
-                          "articulo":  "Laminas PEBD cristal",
-                          "codigo":  "Laminas PEBD cristal",
-                          "nombre":  "Laminas PEBD cristal",
-                          "descripcion":  "120x110/30 mc",
-                          "precio":  9421.0,
-                          "precio_formateado":  "$ 9.421,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      },
-                      {
-                          "articulo":  "Rollo 20x30 (1,500 kg)",
-                          "codigo":  "Rollo 20x30 (1,500 kg)",
-                          "nombre":  "Rollo 20x30 (1,500 kg)",
-                          "descripcion":  "(pack x 6 rollos) x kg",
-                          "precio":  7563.0,
-                          "precio_formateado":  "$ 7.563,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 25x35 (1,500 kg)",
-                          "codigo":  "Rollo 25x35 (1,500 kg)",
-                          "nombre":  "Rollo 25x35 (1,500 kg)",
-                          "descripcion":  "(pack x 6 rollos) x kg",
-                          "precio":  7565.0,
-                          "precio_formateado":  "$ 7.565,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 30x40 (1,500 kg)",
-                          "codigo":  "Rollo 30x40 (1,500 kg)",
-                          "nombre":  "Rollo 30x40 (1,500 kg)",
-                          "descripcion":  "(pack x 6 rollos) x kg",
-                          "precio":  7565.0,
-                          "precio_formateado":  "$ 7.565,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 35x45 (1,500 kg)",
-                          "codigo":  "Rollo 35x45 (1,500 kg)",
-                          "nombre":  "Rollo 35x45 (1,500 kg)",
-                          "descripcion":  "(pack x 6 rollos) x kg",
-                          "precio":  7563.0,
-                          "precio_formateado":  "$ 7.563,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 40x50 (1,500 kg)",
-                          "codigo":  "Rollo 40x50 (1,500 kg)",
-                          "nombre":  "Rollo 40x50 (1,500 kg)",
-                          "descripcion":  "(pack x 6 rollos) x kg",
-                          "precio":  7563.0,
-                          "precio_formateado":  "$ 7.563,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 45x60 (2,00kg)",
-                          "codigo":  "Rollo 45x60 (2,00kg)",
-                          "nombre":  "Rollo 45x60 (2,00kg)",
-                          "descripcion":  "(pack x 9 rollos) x kg",
-                          "precio":  7563.0,
-                          "precio_formateado":  "$ 7.563,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 50x70 (2,00 kg)",
-                          "codigo":  "Rollo 50x70 (2,00 kg)",
-                          "nombre":  "Rollo 50x70 (2,00 kg)",
-                          "descripcion":  "(pack x 9 rollos) x kg",
-                          "precio":  7563.0,
-                          "precio_formateado":  "$ 7.563,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo 60x90 (3,00 kg)",
-                          "codigo":  "Rollo 60x90 (3,00 kg)",
-                          "nombre":  "Rollo 60x90 (3,00 kg)",
-                          "descripcion":  "(pack x 9 rollos) 18 x kg",
-                          "precio":  8640.0,
-                          "precio_formateado":  "$ 8.640,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Laminas / rollos"
-                      },
-                      {
-                          "articulo":  "Rollo de polietileno cristal BD virgen",
-                          "codigo":  "Rollo de polietileno cristal BD virgen",
-                          "nombre":  "Rollo de polietileno cristal BD virgen",
-                          "descripcion":  "Mas de 21 cm x kg",
-                          "precio":  7045.0,
-                          "precio_formateado":  "$ 7.045,00",
-                          "unidad":  "unidad",
-                          "categoria":  "Bolsas PP / cristal"
-                      }
-                  ]
+{
+  "actualizado": "28-06-2026 16:51",
+  "total": 87,
+  "articulos": [
+    {
+      "articulo": "Bolsa camiseta de 40x50 BD negra",
+      "codigo": "Bolsa camiseta de 40x50 BD negra",
+      "nombre": "Bolsa camiseta de 40x50 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 3845.0,
+      "precio_formateado": "$ 3.845,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 45x60 BD negra",
+      "codigo": "Bolsa camiseta de 45x60 BD negra",
+      "nombre": "Bolsa camiseta de 45x60 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 5167.0,
+      "precio_formateado": "$ 5.167,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 50x60 BD color",
+      "codigo": "Bolsa camiseta de 50x60 BD color",
+      "nombre": "Bolsa camiseta de 50x60 BD color",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 8878.0,
+      "precio_formateado": "$ 8.878,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 50x60 BD negra",
+      "codigo": "Bolsa camiseta de 50x60 BD negra",
+      "nombre": "Bolsa camiseta de 50x60 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 6632.0,
+      "precio_formateado": "$ 6.632,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 50x70 BD negra",
+      "codigo": "Bolsa camiseta de 50x70 BD negra",
+      "nombre": "Bolsa camiseta de 50x70 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 7722.0,
+      "precio_formateado": "$ 7.722,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 60x80 BD color",
+      "codigo": "Bolsa camiseta de 60x80 BD color",
+      "nombre": "Bolsa camiseta de 60x80 BD color",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 14574.0,
+      "precio_formateado": "$ 14.574,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta de 60x80 BD negra",
+      "codigo": "Bolsa camiseta de 60x80 BD negra",
+      "nombre": "Bolsa camiseta de 60x80 BD negra",
+      "descripcion": "Bulto de 5 pack x 100u",
+      "precio": 10555.0,
+      "precio_formateado": "$ 10.555,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa consorcio 60x90 BD negra",
+      "codigo": "Bolsa consorcio 60x90 BD negra",
+      "nombre": "Bolsa consorcio 60x90 BD negra",
+      "descripcion": "Bulto de 5 pack x 50u (Precio x 100u)",
+      "precio": 13917.0,
+      "precio_formateado": "$ 13.917,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa consorcio 80 x 100 cm caramelo",
+      "codigo": "Bolsa consorcio 80 x 100 cm caramelo",
+      "nombre": "Bolsa consorcio 80 x 100 cm caramelo",
+      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
+      "precio": 23258.0,
+      "precio_formateado": "$ 23.258,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa consorcio 80 x 110 cm negra 80 mic",
+      "codigo": "Bolsa consorcio 80 x 110 cm negra 80 mic",
+      "nombre": "Bolsa consorcio 80 x 110 cm negra 80 mic",
+      "descripcion": "Bulto x 4 packs de 50 u. Precio x 100 u.",
+      "precio": 51434.0,
+      "precio_formateado": "$ 51.434,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa consorcio 80x100 BD verde",
+      "codigo": "Bolsa consorcio 80x100 BD verde",
+      "nombre": "Bolsa consorcio 80x100 BD verde",
+      "descripcion": "Bulto de 4 pack x 50u (Precio x 100u)",
+      "precio": 27264.0,
+      "precio_formateado": "$ 27.264,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa consorcio 80x110 BD negra",
+      "codigo": "Bolsa consorcio 80x110 BD negra",
+      "nombre": "Bolsa consorcio 80x110 BD negra",
+      "descripcion": "Bulto de 4 pack x 50u (precio x 100u)",
+      "precio": 21099.0,
+      "precio_formateado": "$ 21.099,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa de friselina blanca c/asa x unid.",
+      "codigo": "Bolsa de friselina blanca c/asa x unid.",
+      "nombre": "Bolsa de friselina blanca c/asa x unid.",
+      "descripcion": "45 x 40 x 10 cm fuelle base",
+      "precio": 642.0,
+      "precio_formateado": "$ 642,00",
+      "unidad": "unidad",
+      "categoria": "Friselina"
+    },
+    {
+      "articulo": "Bolsa de residuo 45x60 BD negra",
+      "codigo": "Bolsa de residuo 45x60 BD negra",
+      "nombre": "Bolsa de residuo 45x60 BD negra",
+      "descripcion": "Bulto de 10 pack x 100u",
+      "precio": 4029.0,
+      "precio_formateado": "$ 4.029,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Bolsa friselina blanca c/ovalo x unid.",
+      "codigo": "Bolsa friselina blanca c/ovalo x unid.",
+      "nombre": "Bolsa friselina blanca c/ovalo x unid.",
+      "descripcion": "20 x 30 x 10 cm fuelle base",
+      "precio": 668.0,
+      "precio_formateado": "$ 668,00",
+      "unidad": "unidad",
+      "categoria": "Friselina"
+    },
+    {
+      "articulo": "Bolsa friselina blanca lisa c/asa x unid.",
+      "codigo": "Bolsa friselina blanca lisa c/asa x unid.",
+      "nombre": "Bolsa friselina blanca lisa c/asa x unid.",
+      "descripcion": "30 x 30 x 10 cm fuelle base",
+      "precio": 444.0,
+      "precio_formateado": "$ 444,00",
+      "unidad": "unidad",
+      "categoria": "Friselina"
+    },
+    {
+      "articulo": "Bolsa friselina blanca lisa c/asa x unid.",
+      "codigo": "Bolsa friselina blanca lisa c/asa x unid.",
+      "nombre": "Bolsa friselina blanca lisa c/asa x unid.",
+      "descripcion": "30 x 40 x 10 cm fuelle base",
+      "precio": 460.0,
+      "precio_formateado": "$ 460,00",
+      "unidad": "unidad",
+      "categoria": "Friselina"
+    },
+    {
+      "articulo": "Bolsa reforzada para escombros 45 x 60 cm",
+      "codigo": "Bolsa reforzada para escombros 45 x 60 cm",
+      "nombre": "Bolsa reforzada para escombros 45 x 60 cm",
+      "descripcion": "Bulto de 25 pack x 10u",
+      "precio": 17793.0,
+      "precio_formateado": "$ 17.793,00",
+      "unidad": "unidad",
+      "categoria": "Otros"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 06x10",
+      "codigo": "Bolsa Sobre PP Cristal 06x10",
+      "nombre": "Bolsa Sobre PP Cristal 06x10",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 612.0,
+      "precio_formateado": "$ 612,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 06x15",
+      "codigo": "Bolsa Sobre PP Cristal 06x15",
+      "nombre": "Bolsa Sobre PP Cristal 06x15",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 832.0,
+      "precio_formateado": "$ 832,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 06x20",
+      "codigo": "Bolsa Sobre PP Cristal 06x20",
+      "nombre": "Bolsa Sobre PP Cristal 06x20",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 962.0,
+      "precio_formateado": "$ 962,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 06x25",
+      "codigo": "Bolsa Sobre PP Cristal 06x25",
+      "nombre": "Bolsa Sobre PP Cristal 06x25",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1202.0,
+      "precio_formateado": "$ 1.202,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 06x30",
+      "codigo": "Bolsa Sobre PP Cristal 06x30",
+      "nombre": "Bolsa Sobre PP Cristal 06x30",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1442.0,
+      "precio_formateado": "$ 1.442,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 08x10",
+      "codigo": "Bolsa Sobre PP Cristal 08x10",
+      "nombre": "Bolsa Sobre PP Cristal 08x10",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 742.0,
+      "precio_formateado": "$ 742,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 08x15",
+      "codigo": "Bolsa Sobre PP Cristal 08x15",
+      "nombre": "Bolsa Sobre PP Cristal 08x15",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 962.0,
+      "precio_formateado": "$ 962,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 08x20",
+      "codigo": "Bolsa Sobre PP Cristal 08x20",
+      "nombre": "Bolsa Sobre PP Cristal 08x20",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1282.0,
+      "precio_formateado": "$ 1.282,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 08x25",
+      "codigo": "Bolsa Sobre PP Cristal 08x25",
+      "nombre": "Bolsa Sobre PP Cristal 08x25",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1561.0,
+      "precio_formateado": "$ 1.561,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 08x30",
+      "codigo": "Bolsa Sobre PP Cristal 08x30",
+      "nombre": "Bolsa Sobre PP Cristal 08x30",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1872.0,
+      "precio_formateado": "$ 1.872,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 10x15",
+      "codigo": "Bolsa Sobre PP Cristal 10x15",
+      "nombre": "Bolsa Sobre PP Cristal 10x15",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1081.0,
+      "precio_formateado": "$ 1.081,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 10x20",
+      "codigo": "Bolsa Sobre PP Cristal 10x20",
+      "nombre": "Bolsa Sobre PP Cristal 10x20",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1439.0,
+      "precio_formateado": "$ 1.439,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 10x25",
+      "codigo": "Bolsa Sobre PP Cristal 10x25",
+      "nombre": "Bolsa Sobre PP Cristal 10x25",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1796.0,
+      "precio_formateado": "$ 1.796,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 10x30",
+      "codigo": "Bolsa Sobre PP Cristal 10x30",
+      "nombre": "Bolsa Sobre PP Cristal 10x30",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 2239.0,
+      "precio_formateado": "$ 2.239,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 12x15",
+      "codigo": "Bolsa Sobre PP Cristal 12x15",
+      "nombre": "Bolsa Sobre PP Cristal 12x15",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1346.0,
+      "precio_formateado": "$ 1.346,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 12x20",
+      "codigo": "Bolsa Sobre PP Cristal 12x20",
+      "nombre": "Bolsa Sobre PP Cristal 12x20",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1525.0,
+      "precio_formateado": "$ 1.525,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 12x25",
+      "codigo": "Bolsa Sobre PP Cristal 12x25",
+      "nombre": "Bolsa Sobre PP Cristal 12x25",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1908.0,
+      "precio_formateado": "$ 1.908,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 12x30",
+      "codigo": "Bolsa Sobre PP Cristal 12x30",
+      "nombre": "Bolsa Sobre PP Cristal 12x30",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 2293.0,
+      "precio_formateado": "$ 2.293,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 15x20",
+      "codigo": "Bolsa Sobre PP Cristal 15x20",
+      "nombre": "Bolsa Sobre PP Cristal 15x20",
+      "descripcion": "X 100u (Bulto x 5.000 u.)",
+      "precio": 1790.0,
+      "precio_formateado": "$ 1.790,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 15x25",
+      "codigo": "Bolsa Sobre PP Cristal 15x25",
+      "nombre": "Bolsa Sobre PP Cristal 15x25",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 2153.0,
+      "precio_formateado": "$ 2.153,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 15x30",
+      "codigo": "Bolsa Sobre PP Cristal 15x30",
+      "nombre": "Bolsa Sobre PP Cristal 15x30",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 2539.0,
+      "precio_formateado": "$ 2.539,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 15x35",
+      "codigo": "Bolsa Sobre PP Cristal 15x35",
+      "nombre": "Bolsa Sobre PP Cristal 15x35",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 2964.0,
+      "precio_formateado": "$ 2.964,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 20x25",
+      "codigo": "Bolsa Sobre PP Cristal 20x25",
+      "nombre": "Bolsa Sobre PP Cristal 20x25",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 2722.0,
+      "precio_formateado": "$ 2.722,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 20x30",
+      "codigo": "Bolsa Sobre PP Cristal 20x30",
+      "nombre": "Bolsa Sobre PP Cristal 20x30",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 3263.0,
+      "precio_formateado": "$ 3.263,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 20x35",
+      "codigo": "Bolsa Sobre PP Cristal 20x35",
+      "nombre": "Bolsa Sobre PP Cristal 20x35",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 3805.0,
+      "precio_formateado": "$ 3.805,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 25x30",
+      "codigo": "Bolsa Sobre PP Cristal 25x30",
+      "nombre": "Bolsa Sobre PP Cristal 25x30",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 3925.0,
+      "precio_formateado": "$ 3.925,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 25x35",
+      "codigo": "Bolsa Sobre PP Cristal 25x35",
+      "nombre": "Bolsa Sobre PP Cristal 25x35",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 4577.0,
+      "precio_formateado": "$ 4.577,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 25x40",
+      "codigo": "Bolsa Sobre PP Cristal 25x40",
+      "nombre": "Bolsa Sobre PP Cristal 25x40",
+      "descripcion": "X 100u (Bulto x 2.500 u.)",
+      "precio": 5229.0,
+      "precio_formateado": "$ 5.229,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 30x40",
+      "codigo": "Bolsa Sobre PP Cristal 30x40",
+      "nombre": "Bolsa Sobre PP Cristal 30x40",
+      "descripcion": "X 100u (Bulto x 1.000 u.)",
+      "precio": 6159.0,
+      "precio_formateado": "$ 6.159,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 30x45",
+      "codigo": "Bolsa Sobre PP Cristal 30x45",
+      "nombre": "Bolsa Sobre PP Cristal 30x45",
+      "descripcion": "X 100u (Bulto x 1.000 u.)",
+      "precio": 6930.0,
+      "precio_formateado": "$ 6.930,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 30x50",
+      "codigo": "Bolsa Sobre PP Cristal 30x50",
+      "nombre": "Bolsa Sobre PP Cristal 30x50",
+      "descripcion": "X 100u (Bulto x 1.000 u.)",
+      "precio": 7694.0,
+      "precio_formateado": "$ 7.694,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 35x45",
+      "codigo": "Bolsa Sobre PP Cristal 35x45",
+      "nombre": "Bolsa Sobre PP Cristal 35x45",
+      "descripcion": "X 100u (Bulto x 1.000 u.)",
+      "precio": 8081.0,
+      "precio_formateado": "$ 8.081,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 35x50",
+      "codigo": "Bolsa Sobre PP Cristal 35x50",
+      "nombre": "Bolsa Sobre PP Cristal 35x50",
+      "descripcion": "X 100u (Bulto x 1.000 u.)",
+      "precio": 8980.0,
+      "precio_formateado": "$ 8.980,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 40x50",
+      "codigo": "Bolsa Sobre PP Cristal 40x50",
+      "nombre": "Bolsa Sobre PP Cristal 40x50",
+      "descripcion": "X 100u (Bulto x 500 u.)",
+      "precio": 10263.0,
+      "precio_formateado": "$ 10.263,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 40x60",
+      "codigo": "Bolsa Sobre PP Cristal 40x60",
+      "nombre": "Bolsa Sobre PP Cristal 40x60",
+      "descripcion": "X 100u (Bulto x 500 u.)",
+      "precio": 12312.0,
+      "precio_formateado": "$ 12.312,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 50x60",
+      "codigo": "Bolsa Sobre PP Cristal 50x60",
+      "nombre": "Bolsa Sobre PP Cristal 50x60",
+      "descripcion": "X 100u (Bulto x 500 u.)",
+      "precio": 15390.0,
+      "precio_formateado": "$ 15.390,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa Sobre PP Cristal 50x70",
+      "codigo": "Bolsa Sobre PP Cristal 50x70",
+      "nombre": "Bolsa Sobre PP Cristal 50x70",
+      "descripcion": "X 100u (Bulto x 500 u.)",
+      "precio": 17955.0,
+      "precio_formateado": "$ 17.955,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 20x30",
+      "codigo": "Bolsas camiseta AD Blanco 20x30",
+      "nombre": "Bolsas camiseta AD Blanco 20x30",
+      "descripcion": "AD 20x30/12mic",
+      "precio": 1984.0,
+      "precio_formateado": "$ 1.984,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 25x35",
+      "codigo": "Bolsas camiseta AD Blanco 25x35",
+      "nombre": "Bolsas camiseta AD Blanco 25x35",
+      "descripcion": "AD Blanco 25x35/12mic",
+      "precio": 2717.0,
+      "precio_formateado": "$ 2.717,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 30x40/12mic",
+      "codigo": "Bolsas camiseta AD Blanco 30x40/12mic",
+      "nombre": "Bolsas camiseta AD Blanco 30x40/12mic",
+      "descripcion": "AD Blanco 30x40/12mic",
+      "precio": 2736.0,
+      "precio_formateado": "$ 2.736,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 40x50/12mic",
+      "codigo": "Bolsas camiseta AD Blanco 40x50/12mic",
+      "nombre": "Bolsas camiseta AD Blanco 40x50/12mic",
+      "descripcion": "AD Blanco 40x50/12mic",
+      "precio": 4038.0,
+      "precio_formateado": "$ 4.038,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
+      "codigo": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
+      "nombre": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
+      "descripcion": "AD Blanco 40x50/12mic Eco",
+      "precio": 3584.0,
+      "precio_formateado": "$ 3.584,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 40x50/15mic",
+      "codigo": "Bolsas camiseta AD Blanco 40x50/15mic",
+      "nombre": "Bolsas camiseta AD Blanco 40x50/15mic",
+      "descripcion": "AD Blanco 40x50/15mic",
+      "precio": 4135.0,
+      "precio_formateado": "$ 4.135,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 45x60/15mic",
+      "codigo": "Bolsas camiseta AD Blanco 45x60/15mic",
+      "nombre": "Bolsas camiseta AD Blanco 45x60/15mic",
+      "descripcion": "AD Blanco 45x60/15mic",
+      "precio": 7326.0,
+      "precio_formateado": "$ 7.326,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 50x50/15mic",
+      "codigo": "Bolsas camiseta AD Blanco 50x50/15mic",
+      "nombre": "Bolsas camiseta AD Blanco 50x50/15mic",
+      "descripcion": "AD Blanco 50x50/15mic",
+      "precio": 6790.0,
+      "precio_formateado": "$ 6.790,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 50x60/15mic",
+      "codigo": "Bolsas camiseta AD Blanco 50x60/15mic",
+      "nombre": "Bolsas camiseta AD Blanco 50x60/15mic",
+      "descripcion": "AD Blanco 50x60/15mic",
+      "precio": 8141.0,
+      "precio_formateado": "$ 8.141,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 50x70/15mic",
+      "codigo": "Bolsas camiseta AD Blanco 50x70/15mic",
+      "nombre": "Bolsas camiseta AD Blanco 50x70/15mic",
+      "descripcion": "AD Blanco 50x70/15mic",
+      "precio": 9506.0,
+      "precio_formateado": "$ 9.506,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 60x50/17mic",
+      "codigo": "Bolsas camiseta AD Blanco 60x50/17mic",
+      "nombre": "Bolsas camiseta AD Blanco 60x50/17mic",
+      "descripcion": "AD Blanco 60x50/17mic",
+      "precio": 9230.0,
+      "precio_formateado": "$ 9.230,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 60x70/23mic",
+      "codigo": "Bolsas camiseta AD Blanco 60x70/23mic",
+      "nombre": "Bolsas camiseta AD Blanco 60x70/23mic",
+      "descripcion": "AD Blanco 60x70/23mic",
+      "precio": 17490.0,
+      "precio_formateado": "$ 17.490,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Blanco 60x80/23mic",
+      "codigo": "Bolsas camiseta AD Blanco 60x80/23mic",
+      "nombre": "Bolsas camiseta AD Blanco 60x80/23mic",
+      "descripcion": "AD Blanco 60x80/23mic",
+      "precio": 19982.0,
+      "precio_formateado": "$ 19.982,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Color 30x40/12mic",
+      "codigo": "Bolsas camiseta AD Color 30x40/12mic",
+      "nombre": "Bolsas camiseta AD Color 30x40/12mic",
+      "descripcion": "AD Color 30x40/12mic",
+      "precio": 2360.0,
+      "precio_formateado": "$ 2.360,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Color 40x50/12mic Eco",
+      "codigo": "Bolsas camiseta AD Color 40x50/12mic Eco",
+      "nombre": "Bolsas camiseta AD Color 40x50/12mic Eco",
+      "descripcion": "AD Color 40x50/12mic Eco",
+      "precio": 3050.0,
+      "precio_formateado": "$ 3.050,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Color 50x60/15mic",
+      "codigo": "Bolsas camiseta AD Color 50x60/15mic",
+      "nombre": "Bolsas camiseta AD Color 50x60/15mic",
+      "descripcion": "AD Color 50x60/15mic",
+      "precio": 7371.0,
+      "precio_formateado": "$ 7.371,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas camiseta AD Negro 40x50/12mic",
+      "codigo": "Bolsas camiseta AD Negro 40x50/12mic",
+      "nombre": "Bolsas camiseta AD Negro 40x50/12mic",
+      "descripcion": "AD Negro 40x50/12mic",
+      "precio": 3618.0,
+      "precio_formateado": "$ 3.618,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsas de residuo 50x70 BD negra",
+      "codigo": "Bolsas de residuo 50x70 BD negra",
+      "nombre": "Bolsas de residuo 50x70 BD negra",
+      "descripcion": "Bulto de 20 pack x 50u",
+      "precio": 5660.0,
+      "precio_formateado": "$ 5.660,00",
+      "unidad": "unidad",
+      "categoria": "Bolsas consorcio / residuo"
+    },
+    {
+      "articulo": "Cinta adhes. lisa",
+      "codigo": "Cinta adhes. lisa",
+      "nombre": "Cinta adhes. lisa",
+      "descripcion": "48 mm x 50 mts (caja x 36u.)",
+      "precio": 824.0,
+      "precio_formateado": "$ 824,00",
+      "unidad": "unidad",
+      "categoria": "Cintas"
+    },
+    {
+      "articulo": "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
+      "codigo": "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
+      "nombre": "Cinta adhesiva impresa Blanca 1/2 colores 48 mm x 90 mts",
+      "descripcion": "(5 cajas x 36u.)",
+      "precio": 2400.0,
+      "precio_formateado": "$ 2.400,00",
+      "unidad": "unidad",
+      "categoria": "Cintas"
+    },
+    {
+      "articulo": "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
+      "codigo": "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
+      "nombre": "Cinta adhesiva impresa transparente 1/2 colores 48 mm x 90 mts",
+      "descripcion": "(5 cajas x 36u)",
+      "precio": 2086.0,
+      "precio_formateado": "$ 2.086,00",
+      "unidad": "unidad",
+      "categoria": "Cintas"
+    },
+    {
+      "articulo": "FOLEX 2025",
+      "codigo": "FOLEX 2025",
+      "nombre": "FOLEX 2025",
+      "descripcion": "FOLEX 20 x 25 CM x KG ( Bulto x 10 kilos)",
+      "precio": 8640.0,
+      "precio_formateado": "$ 8.640,00",
+      "unidad": "kg",
+      "categoria": "Otros"
+    },
+    {
+      "articulo": "Laminas PEBD cristal",
+      "codigo": "Laminas PEBD cristal",
+      "nombre": "Laminas PEBD cristal",
+      "descripcion": "120x110/30 mc",
+      "precio": 9421.0,
+      "precio_formateado": "$ 9.421,00",
+      "unidad": "kg",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Rollo arranque 20x30 (1,500 kg)",
+      "codigo": "Rollo arranque 20x30 (1,500 kg)",
+      "nombre": "Rollo arranque 20x30 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 25x35 (1,500 kg)",
+      "codigo": "Rollo arranque 25x35 (1,500 kg)",
+      "nombre": "Rollo arranque 25x35 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 7565.0,
+      "precio_formateado": "$ 7.565,00",
+      "unidad": "unidad",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 30x40 (1,500 kg)",
+      "codigo": "Rollo arranque 30x40 (1,500 kg)",
+      "nombre": "Rollo arranque 30x40 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 7565.0,
+      "precio_formateado": "$ 7.565,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 35x45 (1,500 kg)",
+      "codigo": "Rollo arranque 35x45 (1,500 kg)",
+      "nombre": "Rollo arranque 35x45 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 40x50 (1,500 kg)",
+      "codigo": "Rollo arranque 40x50 (1,500 kg)",
+      "nombre": "Rollo arranque 40x50 (1,500 kg)",
+      "descripcion": "(pack x 6 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 45x60 (2,00kg)",
+      "codigo": "Rollo arranque 45x60 (2,00kg)",
+      "nombre": "Rollo arranque 45x60 (2,00kg)",
+      "descripcion": "(pack x 9 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 50x70 (2,00 kg)",
+      "codigo": "Rollo arranque 50x70 (2,00 kg)",
+      "nombre": "Rollo arranque 50x70 (2,00 kg)",
+      "descripcion": "(pack x 9 rollos) x kg",
+      "precio": 7563.0,
+      "precio_formateado": "$ 7.563,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo arranque 60x90 (3,00 kg)",
+      "codigo": "Rollo arranque 60x90 (3,00 kg)",
+      "nombre": "Rollo arranque 60x90 (3,00 kg)",
+      "descripcion": "(pack x 9 rollos) 18 x kg",
+      "precio": 8640.0,
+      "precio_formateado": "$ 8.640,00",
+      "unidad": "kg",
+      "categoria": "Laminas / rollos"
+    },
+    {
+      "articulo": "Rollo de polietileno cristal BD virgen",
+      "codigo": "Rollo de polietileno cristal BD virgen",
+      "nombre": "Rollo de polietileno cristal BD virgen",
+      "descripcion": "Mas de 21 cm x kg",
+      "precio": 7045.0,
+      "precio_formateado": "$ 7.045,00",
+      "unidad": "kg",
+      "categoria": "Bolsas PP / cristal"
+    }
+  ]
 }
