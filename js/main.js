@@ -1,3 +1,17 @@
+﻿const WHATSAPP_NUMERO = '541164902019';
+const MENSAJE_INICIAL_WHATSAPP = 'Hola Embalajes GB, quiero hacer una consulta/cotización.';
+const CATEGORIAS_PUBLICAS = [
+  'Todas',
+  'Bolsas camiseta',
+  'Bolsas consorcio / residuo',
+  'Bolsas PP / cristal',
+  'Friselina',
+  'Cintas',
+  'Laminas / rollos',
+  'Medidas especiales',
+  'Otros',
+];
+
 function escaparHtml(valor) {
   return String(valor ?? '')
     .replaceAll('&', '&amp;')
@@ -36,15 +50,75 @@ function normalizarBusqueda(valor) {
     .trim();
 }
 
+function urlWhatsApp(mensaje) {
+  return `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
+}
+
+function categoriaInferida(articulo) {
+  const texto = ` ${normalizarBusqueda([articulo.articulo, articulo.codigo, articulo.nombre, articulo.descripcion].join(' '))} `;
+  const reglas = [
+    ['Bolsas camiseta', ['camiseta']],
+    ['Bolsas consorcio / residuo', ['consorcio', 'residuo', 'basura']],
+    ['Bolsas PP / cristal', [' pp ', 'polipropileno', 'cristal', 'bopp', 'celofan']],
+    ['Friselina', ['friselina', 'frizelina', 'tnt']],
+    ['Cintas', ['cinta', 'adhesiva', 'embalar']],
+    ['Laminas / rollos', ['lamina', 'rollo', 'bobina', 'film', 'stretch']],
+    ['Medidas especiales', ['especial', 'a medida', 'medida especial']],
+  ];
+  const encontrada = reglas.find(([, palabras]) => palabras.some((palabra) => texto.includes(palabra)));
+  return encontrada ? encontrada[0] : 'Otros';
+}
+
+function unidadPublica(articulo) {
+  const unidad = String(articulo.unidad || articulo.tipo_cantidad || articulo.medida_unidad || '').trim();
+  if (!unidad) return 'unidad';
+  if (normalizarBusqueda(unidad).includes('peso')) return 'kg';
+  return unidad;
+}
+
+function normalizarArticuloPublico(articulo, indice) {
+  const codigo = String(articulo.codigo || articulo.articulo || articulo.nombre || '').trim();
+  const nombre = String(articulo.articulo || articulo.nombre || codigo).trim();
+  const descripcion = String(articulo.descripcion || '').trim();
+  const precioFormateado = articulo.precio_formateado || formatearPrecio(articulo.precio);
+  const base = {
+    indice,
+    articulo: nombre,
+    codigo,
+    nombre,
+    descripcion,
+    precio: articulo.precio ?? '',
+    precio_formateado: precioFormateado,
+    unidad: unidadPublica(articulo),
+    categoria: CATEGORIAS_PUBLICAS.includes(articulo.categoria) ? articulo.categoria : '',
+  };
+  base.categoria = base.categoria || categoriaInferida(base);
+  base.textoBusqueda = textoBusquedaArticulo(base);
+  return base;
+}
+
 function textoBusquedaArticulo(articulo) {
   return normalizarBusqueda([
+    articulo.articulo,
+    articulo.codigo,
     articulo.nombre,
     articulo.descripcion,
     articulo.precio_formateado,
     articulo.precio,
-    articulo.codigo,
-    articulo.medida,
+    articulo.unidad,
+    articulo.categoria,
   ].join(' '));
+}
+
+function mensajeProducto(articulo) {
+  const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio) || 'A consultar';
+  return [
+    'Hola Embalajes GB, quiero consultar por este producto:',
+    `Articulo/codigo: ${articulo.codigo || articulo.articulo || '-'}`,
+    `Descripcion: ${articulo.descripcion || '-'}`,
+    `Precio mostrado: ${precioTexto}`,
+    `Unidad: ${articulo.unidad || '-'}`,
+  ].join('\n');
 }
 
 function filaArticulo(articulo) {
@@ -52,9 +126,16 @@ function filaArticulo(articulo) {
   const precio = partesPrecio(precioTexto);
   return `
     <tr>
-      <td>${escaparHtml(articulo.nombre)}</td>
+      <td>
+        <span class="nombre-articulo">${escaparHtml(articulo.articulo || articulo.nombre)}</span>
+        <span class="etiqueta-categoria">${escaparHtml(articulo.categoria)}</span>
+      </td>
       <td>${escaparHtml(articulo.descripcion)}</td>
-      <td class="precio-celda"><span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span></td>
+      <td class="precio-celda">
+        <span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span>
+        <span class="unidad-precio">${escaparHtml(articulo.unidad)}</span>
+      </td>
+      <td class="consulta-celda"><button type="button" class="boton-consultar" data-indice="${articulo.indice}">Consultar</button></td>
     </tr>
   `;
 }
@@ -62,6 +143,7 @@ function filaArticulo(articulo) {
 let espaciadorListaPrecios;
 let posicionNaturalListaPrecios = 0;
 let encabezadoTablaPreciosFijo;
+let articulosListaPrecios = [];
 
 function actualizarAlturaEncabezado() {
   const encabezado = document.querySelector('.encabezado');
@@ -92,14 +174,14 @@ function actualizarEncabezadoListaPrecios() {
 
   const altoEncabezado = encabezado.getBoundingClientRect().height;
   const mainRect = document.querySelector('main')?.getBoundingClientRect();
-  const margenHorizontal = window.innerWidth <= 760 ? 16 : 24;
-  const izquierda = mainRect ? mainRect.left + margenHorizontal : 0;
-  const ancho = mainRect ? mainRect.width - (margenHorizontal * 2) : window.innerWidth;
+  const espacioHorizontal = window.innerWidth <= 760 ? 16 : 24;
+  const izquierda = mainRect ? mainRect.left + espacioHorizontal : 0;
+  const ancho = mainRect ? mainRect.width - (espacioHorizontal * 2) : window.innerWidth;
   const debeFijarse = window.scrollY + altoEncabezado >= posicionNaturalListaPrecios;
 
   document.documentElement.style.setProperty('--altura-encabezado', `${altoEncabezado}px`);
-  document.documentElement.style.setProperty('--lista-precios-izquierda', `${izquierda - margenHorizontal}px`);
-  document.documentElement.style.setProperty('--lista-precios-ancho', `${ancho + (margenHorizontal * 2)}px`);
+  document.documentElement.style.setProperty('--lista-precios-izquierda', `${izquierda - espacioHorizontal}px`);
+  document.documentElement.style.setProperty('--lista-precios-ancho', `${ancho + (espacioHorizontal * 2)}px`);
   document.documentElement.style.setProperty('--alto-encabezado-lista', `${encabezadoLista.offsetHeight}px`);
 
   encabezadoLista.classList.toggle('esta-fijo', debeFijarse);
@@ -155,7 +237,7 @@ function actualizarEncabezadoTablaPrecios() {
 
 async function obtenerDatosListaPrecios() {
   try {
-    const respuesta = await fetch('data/precios.json', { cache: 'no-store' });
+    const respuesta = await fetch('data/precios.json?v=' + Date.now(), { cache: 'no-store' });
     if (!respuesta.ok) throw new Error('sin-publicacion');
     return await respuesta.json();
   } catch (error) {
@@ -168,6 +250,7 @@ async function cargarListaPrecios() {
   const estado = document.getElementById('estadoListaPrecios');
   const tabla = document.getElementById('tablaListaPreciosWeb');
   const buscador = document.getElementById('buscadorListaPrecios');
+  const filtroCategoria = document.getElementById('filtroCategoriaListaPrecios');
   if (!estado || !tabla) return;
 
   try {
@@ -175,44 +258,90 @@ async function cargarListaPrecios() {
     const articulos = Array.isArray(datos.articulos) ? datos.articulos : [];
     if (!articulos.length) throw new Error('sin-articulos');
 
-    const articulosConBusqueda = articulos.map((articulo) => ({
-      ...articulo,
-      textoBusqueda: textoBusquedaArticulo(articulo),
-    }));
+    articulosListaPrecios = articulos.map(normalizarArticuloPublico);
 
     function renderizarLista() {
       const busqueda = normalizarBusqueda(buscador?.value || '');
-      const articulosVisibles = busqueda
-        ? articulosConBusqueda.filter((articulo) => articulo.textoBusqueda.includes(busqueda))
-        : articulosConBusqueda;
+      const categoria = filtroCategoria?.value || 'Todas';
+      const articulosVisibles = articulosListaPrecios.filter((articulo) => {
+        const coincideBusqueda = !busqueda || articulo.textoBusqueda.includes(busqueda);
+        const coincideCategoria = categoria === 'Todas' || articulo.categoria === categoria;
+        return coincideBusqueda && coincideCategoria;
+      });
 
-      const total = articulos.length;
+      const total = articulosListaPrecios.length;
       const visibles = articulosVisibles.length;
       const fecha = datos.actualizado || '-';
-      estado.textContent = busqueda
-        ? `Actualizada: ${fecha} - ${visibles} de ${total} articulos encontrados`
+      const detalleCategoria = categoria === 'Todas' ? '' : ` - ${categoria}`;
+      estado.textContent = (busqueda || categoria !== 'Todas')
+        ? `Actualizada: ${fecha} - ${visibles} de ${total} articulos encontrados${detalleCategoria}`
         : `Actualizada: ${fecha} - ${total} articulos publicados`;
 
       tabla.innerHTML = articulosVisibles.length
         ? articulosVisibles.map(filaArticulo).join('')
-        : '<tr><td colspan="3">No se encontraron productos para esa busqueda.</td></tr>';
+        : '<tr><td colspan="4">No se encontraron productos para esa busqueda.</td></tr>';
     }
 
     buscador?.addEventListener('input', () => {
       renderizarLista();
       prepararEncabezadoTablaPrecios();
     });
+    filtroCategoria?.addEventListener('change', () => {
+      renderizarLista();
+      prepararEncabezadoTablaPrecios();
+    });
+    tabla.addEventListener('click', (evento) => {
+      const boton = evento.target.closest('.boton-consultar');
+      if (!boton) return;
+      const articulo = articulosListaPrecios[Number(boton.dataset.indice)];
+      if (!articulo) return;
+      window.open(urlWhatsApp(mensajeProducto(articulo)), '_blank', 'noopener');
+    });
+
     renderizarLista();
     prepararEncabezadoTablaPrecios();
   } catch (error) {
     estado.textContent = 'Lista pendiente de publicacion.';
-    tabla.innerHTML = '<tr><td colspan="3">Todavia no hay precios publicados en la web.</td></tr>';
+    tabla.innerHTML = '<tr><td colspan="4">Todavia no hay precios publicados en la web.</td></tr>';
   }
+}
+
+function mensajeCotizacionWhatsapp(campos) {
+  const lineas = campos
+    .map(([etiqueta, valor]) => [etiqueta, String(valor || '').trim()])
+    .filter(([, valor]) => valor)
+    .map(([etiqueta, valor]) => `${etiqueta}: ${valor}`);
+  return [
+    'Hola Embalajes GB, quiero solicitar una cotizacion.',
+    ...lineas,
+  ].join('\n');
+}
+
+function prepararFormularioCotizacion() {
+  const formulario = document.getElementById('formularioCotizacionWhatsapp');
+  if (!formulario) return;
+
+  formulario.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+    const datos = new FormData(formulario);
+    const mensaje = mensajeCotizacionWhatsapp([
+      ['Tipo de producto', datos.get('tipoProducto')],
+      ['Medida', datos.get('medida')],
+      ['Cantidad', datos.get('cantidad')],
+      ['Material', datos.get('material')],
+      ['Color', datos.get('color')],
+      ['Con impresion', datos.get('impresion')],
+      ['Zona de entrega', datos.get('zonaEntrega')],
+      ['Observaciones', datos.get('observaciones')],
+    ]);
+    window.open(urlWhatsApp(mensaje), '_blank', 'noopener');
+  });
 }
 
 actualizarAlturaEncabezado();
 prepararEncabezadoListaPrecios();
 prepararEncabezadoTablaPrecios();
+prepararFormularioCotizacion();
 window.addEventListener('scroll', actualizarEncabezadoListaPrecios, { passive: true });
 window.addEventListener('resize', () => {
   prepararEncabezadoListaPrecios();
@@ -223,3 +352,5 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
+
+

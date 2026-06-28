@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Embalajes GB - Fabricacion y venta de bolsas." />
-  <title>Embalajes GB | Fabricacion y venta de bolsas</title>
+  <meta name="description" content="Embalajes GB - Bolsas y embalajes para comercios, industrias y emprendimientos." />
+  <title>Embalajes GB | Bolsas y embalajes para comercios</title>
   <link rel="icon" href="assets/icono-embalajes-gb.png" />
-  <link rel="stylesheet" href="css/styles.css?v=202606260001" />
+  <link rel="stylesheet" href="css/styles.css?v=202606280001" />
 </head>
 <body>
   <header class="encabezado">
@@ -15,31 +15,28 @@
     </a>
     <nav class="navegacion" aria-label="Navegacion principal">
       <a href="#productos">Productos</a>
-      <a href="#lista-precios">Lista de precios</a>
+      <a href="#lista-precios">Precios</a>
+      <a href="#cotiza-tu-pedido">Cotizar</a>
+      <a href="#como-comprar">Como comprar</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <div class="aviso-construccion" aria-label="Pagina en construccion">
-      <strong>Pagina en construccion</strong>
-      <span>Estamos preparando el sitio web de Embalajes GB. Mientras tanto, podes contactarnos por WhatsApp o email.</span>
-    </div>
   </header>
 
   <main id="inicio">
     <section class="principal">
       <div class="principal-texto">
-        <p class="rubro">Fabricacion y venta de bolsas</p>
-        <h1>Embalajes para comercios, industria y produccion.</h1>
+        <p class="rubro">Venta directa por WhatsApp</p>
+        <h1>Bolsas y embalajes para comercios, industrias y emprendimientos</h1>
         <p>
-          Bolsas lisas e impresas, trabajos a medida y atencion directa para
-          acompanar cada pedido desde la cotizacion hasta la entrega.
+          Venta de bolsas lisas, impresas y medidas especiales. Cotizacion directa por WhatsApp,
+          atencion personalizada y entregas a domicilio.
         </p>
-        <p class="servicio-domicilio">Entregas a domicilio</p>
         <div class="acciones">
-          <a class="boton principal-boton boton-whatsapp" href="https://wa.me/541164902019" target="_blank" rel="noopener">
+          <a class="boton principal-boton boton-whatsapp" href="https://wa.me/541164902019?text=Hola%20Embalajes%20GB%2C%20quiero%20hacer%20una%20consulta%2Fcotizaci%C3%B3n." target="_blank" rel="noopener">
             <img src="assets/icono-whatsapp.svg" alt="" aria-hidden="true" />
-            <span>WhatsApp</span>
+            <span>Consultar por WhatsApp</span>
           </a>
-          <a class="boton secundario" href="mailto:Embalajesgb@gmail.com?subject=Consulta%20desde%20la%20web%20Embalajes%20GB&body=Hola%20Embalajes%20GB%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">Enviar email</a>
+          <a class="boton secundario" href="#cotiza-tu-pedido">Cotizar un pedido</a>
         </div>
       </div>
       <aside class="datos-contacto" id="contacto">
@@ -47,7 +44,7 @@
         <dl>
           <div>
             <dt>WhatsApp</dt>
-            <dd><a href="https://wa.me/541164902019">011-6490-2019</a></dd>
+            <dd><a href="https://wa.me/541164902019?text=Hola%20Embalajes%20GB%2C%20quiero%20hacer%20una%20consulta%2Fcotizaci%C3%B3n." target="_blank" rel="noopener">011-6490-2019</a></dd>
           </div>
           <div>
             <dt>Email</dt>
@@ -66,15 +63,15 @@
       <div class="grilla-productos">
         <article>
           <h3>Bolsas lisas</h3>
-          <p>Soluciones simples y prolijas para uso comercial e industrial.</p>
+          <p>Bolsas camiseta, consorcio, cristal y embalajes para mostrador o deposito.</p>
         </article>
         <article>
           <h3>Bolsas impresas</h3>
-          <p>Trabajos personalizados para identificar productos y marcas.</p>
+          <p>Trabajos personalizados para comercios, marcas y productos con identidad propia.</p>
         </article>
         <article>
           <h3>Medidas especiales</h3>
-          <p>Cotizaciones segun cantidad, material, medida y terminacion.</p>
+          <p>Cotizaciones segun medida, cantidad, material, color y terminacion.</p>
         </article>
       </div>
     </section>
@@ -85,10 +82,26 @@
           <h2>Lista de precios</h2>
           <p id="estadoListaPrecios">Cargando lista publicada...</p>
         </div>
-        <label class="buscador-lista-precios">
-          <span>Buscar producto</span>
-          <input id="buscadorListaPrecios" type="search" placeholder="Codigo, medida, descripcion..." autocomplete="off" />
-        </label>
+        <div class="controles-lista-precios">
+          <label class="campo-lista-precios" for="buscadorListaPrecios">
+            <span>Buscar producto</span>
+            <input id="buscadorListaPrecios" type="search" placeholder="Codigo, medida, descripcion..." autocomplete="off" />
+          </label>
+          <label class="campo-lista-precios" for="filtroCategoriaListaPrecios">
+            <span>Categoria</span>
+            <select id="filtroCategoriaListaPrecios">
+              <option value="Todas">Todas</option>
+              <option value="Bolsas camiseta">Bolsas camiseta</option>
+              <option value="Bolsas consorcio / residuo">Bolsas consorcio / residuo</option>
+              <option value="Bolsas PP / cristal">Bolsas PP / cristal</option>
+              <option value="Friselina">Friselina</option>
+              <option value="Cintas">Cintas</option>
+              <option value="Laminas / rollos">Laminas / rollos</option>
+              <option value="Medidas especiales">Medidas especiales</option>
+              <option value="Otros">Otros</option>
+            </select>
+          </label>
+        </div>
       </div>
       <div class="tabla-precios-web">
         <table>
@@ -96,23 +109,107 @@
             <tr>
               <th>Articulo</th>
               <th>Descripcion</th>
-              <th class="precio-titulo"><span>Precio por</span><span>x100u o 1kg.</span></th>
+              <th class="precio-titulo"><span>Precio</span><span>orientativo</span></th>
+              <th>Consultar</th>
             </tr>
           </thead>
           <tbody id="tablaListaPreciosWeb">
-            <tr><td colspan="3">Sin datos publicados.</td></tr>
+            <tr><td colspan="4">Sin datos publicados.</td></tr>
           </tbody>
         </table>
+      </div>
+      <div class="avisos-precios" aria-label="Avisos sobre lista de precios">
+        <p>Precios sujetos a cambios sin previo aviso.</p>
+        <p>Consultar stock, cantidades minimas y condiciones de entrega.</p>
+        <p>Los precios son orientativos y no confirman disponibilidad.</p>
+      </div>
+    </section>
+
+    <section class="cotizacion-web" id="cotiza-tu-pedido">
+      <div class="titulo-seccion">
+        <h2>Cotiza tu pedido</h2>
+        <p>Completa los datos principales y envialos directo por WhatsApp.</p>
+      </div>
+      <form id="formularioCotizacionWhatsapp" class="formulario-cotizacion">
+        <label>
+          <span>Tipo de producto</span>
+          <input name="tipoProducto" type="text" placeholder="Bolsa camiseta, consorcio, rollo..." />
+        </label>
+        <label>
+          <span>Medida</span>
+          <input name="medida" type="text" placeholder="Ej: 40x50" />
+        </label>
+        <label>
+          <span>Cantidad</span>
+          <input name="cantidad" type="text" placeholder="Ej: 10.000 unidades" />
+        </label>
+        <label>
+          <span>Material</span>
+          <input name="material" type="text" placeholder="Polietileno, PP, friselina..." />
+        </label>
+        <label>
+          <span>Color</span>
+          <input name="color" type="text" placeholder="Transparente, blanco, negro..." />
+        </label>
+        <label>
+          <span>Con impresion</span>
+          <select name="impresion">
+            <option value="No">No</option>
+            <option value="Si">Si</option>
+          </select>
+        </label>
+        <label>
+          <span>Zona de entrega</span>
+          <input name="zonaEntrega" type="text" placeholder="Localidad o barrio" />
+        </label>
+        <label class="campo-ancho">
+          <span>Observaciones</span>
+          <textarea name="observaciones" rows="4" placeholder="Detalles, uso, plazos o referencias del pedido"></textarea>
+        </label>
+        <button class="boton principal-boton boton-enviar-cotizacion" type="submit">Enviar cotizacion por WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="info-comercial" id="como-comprar">
+      <div class="titulo-seccion">
+        <h2>Comprar en Embalajes GB</h2>
+        <p>Atencion simple, directa y pensada para resolver pedidos comerciales.</p>
+      </div>
+      <div class="grilla-info">
+        <article>
+          <h3>Como comprar</h3>
+          <p>Consulta el producto, cantidad y zona. Confirmamos precio, stock y entrega por WhatsApp.</p>
+        </article>
+        <article>
+          <h3>Zonas de entrega</h3>
+          <p>Entregas a domicilio y coordinacion segun volumen, recorrido y disponibilidad.</p>
+        </article>
+        <article>
+          <h3>Trabajos a medida</h3>
+          <p>Cotizamos bolsas por medida, material, espesor, color y cantidad requerida.</p>
+        </article>
+        <article>
+          <h3>Bolsas impresas</h3>
+          <p>Preparamos opciones para marca, comercio o industria segun diseno y tirada.</p>
+        </article>
+        <article>
+          <h3>Preguntas frecuentes</h3>
+          <p>Los precios son orientativos. Antes de comprar confirmamos stock, minimo y entrega.</p>
+        </article>
       </div>
     </section>
   </main>
 
+  <a class="whatsapp-flotante" href="https://wa.me/541164902019?text=Hola%20Embalajes%20GB%2C%20quiero%20hacer%20una%20consulta%2Fcotizaci%C3%B3n." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+    <img src="assets/icono-whatsapp.svg" alt="" aria-hidden="true" />
+  </a>
+
   <footer class="pie">
     <span>Embalajes GB</span>
-    <span>Fabricacion y venta de bolsas</span>
+    <span>Bolsas, embalajes y cotizaciones por WhatsApp</span>
   </footer>
-  <script src="data/precios.js?v=20260627010213"></script>
-  <script src="js/main-precios-20260618-0254.js?v=20260627010213"></script>
+  <script src="data/precios.js?v=202606280001"></script>
+  <script src="js/main-precios-20260618-0254.js?v=202606280001"></script>
   <!-- GoatCounter visitas EmbalajesGB-Web: codigo configurado: embalajesgb. -->
   <script data-goatcounter="https://embalajesgb.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
