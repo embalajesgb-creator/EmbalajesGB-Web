@@ -311,7 +311,7 @@ function camposCotizacionDesdeFormulario(formulario) {
   const campos = [
     ['Nombre del cliente', datos.get('nombreCliente')],
     ['Zona', datos.get('zonaEntrega')],
-    ['Tipo de producto', datos.get('tipoProducto')],
+    ['Tipo de bolsa', datos.get('tipoProducto')],
     ['Medida', datos.get('medida')],
     ['Cantidad', datos.get('cantidad')],
     ['Material', material],
@@ -320,7 +320,7 @@ function camposCotizacionDesdeFormulario(formulario) {
   campos.push(['Impresion', impresion]);
   if (impresion === 'Si') {
     campos.push(['Cantidad de colores', datos.get('cantidadColoresImpresion')]);
-    campos.push(['Caras de impresion', datos.get('carasImpresion')]);
+    campos.push(['Lado de impresion', datos.get('carasImpresion')]);
   }
   campos.push(['Observaciones', datos.get('observaciones')]);
   return campos;
@@ -350,7 +350,7 @@ function actualizarCamposCondicionalesCotizacion(formulario) {
 
   const conImpresion = formulario.elements.impresion?.value === 'Si';
   document.querySelectorAll('.campo-impresion-cotizacion').forEach((campo) => {
-    campo.hidden = !conImpresion;
+    campo.hidden = false;
     campo.querySelectorAll('input, select, textarea').forEach((control) => {
       control.disabled = !conImpresion;
     });
