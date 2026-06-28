@@ -431,7 +431,7 @@ dd {
 }
 
 .tabla-precios-web .precio-celda {
-  text-align: right;
+  text-align: center;
 }
 
 .tabla-precios-web th.precio-titulo,
@@ -512,16 +512,16 @@ dd {
 
 .tabla-precios-web .precio-web {
   display: grid;
-  grid-template-columns: 20px 112px;
-  gap: 14px;
-  justify-content: end;
+  grid-template-columns: 14px 104px;
+  gap: 8px;
+  justify-content: center;
   align-items: baseline;
   font-variant-numeric: tabular-nums;
 }
 
 .tabla-precios-web .precio-web span {
   color: var(--texto-suave);
-  text-align: left;
+  text-align: right;
 }
 
 .tabla-precios-web .precio-web strong {
