@@ -133,7 +133,6 @@ function filaArticulo(articulo) {
       <td>${escaparHtml(articulo.descripcion)}</td>
       <td class="precio-celda">
         <span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span>
-        <span class="unidad-precio">${escaparHtml(articulo.unidad)}</span>
       </td>
       <td class="consulta-celda"><button type="button" class="boton-consultar" data-indice="${articulo.indice}">Consultar</button></td>
     </tr>

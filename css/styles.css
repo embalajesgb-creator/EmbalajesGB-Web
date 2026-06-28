@@ -528,12 +528,12 @@ dd {
 }
 
 .boton-consultar {
-  min-height: 36px;
-  padding: 8px 10px;
+  min-height: 28px;
+  padding: 5px 8px;
   color: #fff;
   background: #128c3a;
   border-color: #128c3a;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .boton-consultar:hover,
