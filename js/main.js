@@ -306,6 +306,28 @@ async function cargarListaPrecios() {
   }
 }
 
+function camposCotizacionDesdeFormulario(formulario) {
+  const datos = new FormData(formulario);
+  const material = String(datos.get('material') || '').trim();
+  const impresion = String(datos.get('impresion') || '').trim();
+  const campos = [
+    ['Nombre del cliente', datos.get('nombreCliente')],
+    ['Zona', datos.get('zonaEntrega')],
+    ['Tipo de producto', datos.get('tipoProducto')],
+    ['Medida', datos.get('medida')],
+    ['Cantidad', datos.get('cantidad')],
+    ['Material', material],
+  ];
+  if (material !== 'PP') campos.push(['Color material', datos.get('colorMaterial')]);
+  campos.push(['Impresion', impresion]);
+  if (impresion === 'Si') {
+    campos.push(['Cantidad de colores', datos.get('cantidadColoresImpresion')]);
+    campos.push(['Caras de impresion', datos.get('carasImpresion')]);
+  }
+  campos.push(['Observaciones', datos.get('observaciones')]);
+  return campos;
+}
+
 function mensajeCotizacionWhatsapp(campos) {
   const lineas = campos
     .map(([etiqueta, valor]) => [etiqueta, String(valor || '').trim()])
@@ -317,24 +339,49 @@ function mensajeCotizacionWhatsapp(campos) {
   ].join('\n');
 }
 
+function actualizarCamposCondicionalesCotizacion(formulario) {
+  const material = formulario.elements.material?.value || '';
+  const campoColorMaterial = document.getElementById('campoColorMaterialCotizacion');
+  const colorMaterial = formulario.elements.colorMaterial;
+  const ocultarColorMaterial = material === 'PP';
+  if (campoColorMaterial) campoColorMaterial.hidden = ocultarColorMaterial;
+  if (colorMaterial) {
+    colorMaterial.disabled = ocultarColorMaterial;
+    if (ocultarColorMaterial) colorMaterial.value = '';
+  }
+
+  const conImpresion = formulario.elements.impresion?.value === 'Si';
+  document.querySelectorAll('.campo-impresion-cotizacion').forEach((campo) => {
+    campo.hidden = !conImpresion;
+    campo.querySelectorAll('input, select, textarea').forEach((control) => {
+      control.disabled = !conImpresion;
+    });
+  });
+}
+
+function abrirEmailCotizacion(mensaje) {
+  const asunto = encodeURIComponent('Solicitud de cotizacion desde la web');
+  const cuerpo = encodeURIComponent(mensaje);
+  window.location.href = `mailto:Embalajesgb@gmail.com?subject=${asunto}&body=${cuerpo}`;
+}
+
 function prepararFormularioCotizacion() {
   const formulario = document.getElementById('formularioCotizacionWhatsapp');
   if (!formulario) return;
 
+  actualizarCamposCondicionalesCotizacion(formulario);
+  formulario.elements.material?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
+  formulario.elements.impresion?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
+
   formulario.addEventListener('submit', (evento) => {
     evento.preventDefault();
-    const datos = new FormData(formulario);
-    const mensaje = mensajeCotizacionWhatsapp([
-      ['Tipo de producto', datos.get('tipoProducto')],
-      ['Medida', datos.get('medida')],
-      ['Cantidad', datos.get('cantidad')],
-      ['Material', datos.get('material')],
-      ['Color', datos.get('color')],
-      ['Con impresion', datos.get('impresion')],
-      ['Zona de entrega', datos.get('zonaEntrega')],
-      ['Observaciones', datos.get('observaciones')],
-    ]);
+    const mensaje = mensajeCotizacionWhatsapp(camposCotizacionDesdeFormulario(formulario));
     window.open(urlWhatsApp(mensaje), '_blank', 'noopener');
+  });
+
+  document.getElementById('enviarCotizacionEmail')?.addEventListener('click', () => {
+    const mensaje = mensajeCotizacionWhatsapp(camposCotizacionDesdeFormulario(formulario));
+    abrirEmailCotizacion(mensaje);
   });
 }
 
@@ -352,5 +399,6 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
+
 
 

@@ -6,7 +6,7 @@
   <meta name="description" content="Embalajes GB - Bolsas y embalajes para comercios, industrias y emprendimientos." />
   <title>Embalajes GB | Bolsas y embalajes para comercios</title>
   <link rel="icon" href="assets/icono-embalajes-gb.png" />
-  <link rel="stylesheet" href="css/styles.css?v=202606280001" />
+  <link rel="stylesheet" href="css/styles.css?v=202606280002" />
 </head>
 <body>
   <header class="encabezado">
@@ -133,11 +133,21 @@
       <form id="formularioCotizacionWhatsapp" class="formulario-cotizacion">
         <label>
           <span>Tipo de producto</span>
-          <input name="tipoProducto" type="text" placeholder="Bolsa camiseta, consorcio, rollo..." />
+          <input name="tipoProducto" type="text" list="tiposProductoCotizacion" placeholder="Elegir o escribir otro tipo" />
+          <datalist id="tiposProductoCotizacion">
+            <option value="Bolsa camiseta"></option>
+            <option value="Bolsa consorcio / residuo"></option>
+            <option value="Bolsa de arranque"></option>
+            <option value="Bolsa cristal PP"></option>
+            <option value="Bolsa para alimentos"></option>
+            <option value="Bolsa impresa"></option>
+            <option value="Rollo / lamina"></option>
+            <option value="Medida especial"></option>
+          </datalist>
         </label>
         <label>
           <span>Medida</span>
-          <input name="medida" type="text" placeholder="Ej: 40x50" />
+          <input name="medida" type="text" placeholder="Ej: 40x50, ancho x largo" />
         </label>
         <label>
           <span>Cantidad</span>
@@ -145,28 +155,55 @@
         </label>
         <label>
           <span>Material</span>
-          <input name="material" type="text" placeholder="Polietileno, PP, friselina..." />
+          <select name="material" id="materialCotizacion">
+            <option value="BD">BD</option>
+            <option value="AD">AD</option>
+            <option value="PP">PP</option>
+          </select>
+        </label>
+        <label id="campoColorMaterialCotizacion">
+          <span>Color material</span>
+          <input name="colorMaterial" type="text" placeholder="Transparente, blanco, negro, color especial..." />
         </label>
         <label>
-          <span>Color</span>
-          <input name="color" type="text" placeholder="Transparente, blanco, negro..." />
-        </label>
-        <label>
-          <span>Con impresion</span>
-          <select name="impresion">
+          <span>Impresion</span>
+          <select name="impresion" id="impresionCotizacion">
             <option value="No">No</option>
             <option value="Si">Si</option>
           </select>
         </label>
+        <label class="campo-impresion-cotizacion" hidden>
+          <span>Cantidad de colores</span>
+          <select name="cantidadColoresImpresion">
+            <option value="1">1 color</option>
+            <option value="2">2 colores</option>
+            <option value="3">3 colores</option>
+            <option value="4">4 colores</option>
+          </select>
+        </label>
+        <label class="campo-impresion-cotizacion" hidden>
+          <span>Caras de impresion</span>
+          <select name="carasImpresion">
+            <option value="1 lado">1 lado</option>
+            <option value="2 lados">2 lados</option>
+          </select>
+        </label>
         <label>
-          <span>Zona de entrega</span>
+          <span>Nombre del cliente</span>
+          <input name="nombreCliente" type="text" placeholder="Nombre o comercio" />
+        </label>
+        <label>
+          <span>Zona</span>
           <input name="zonaEntrega" type="text" placeholder="Localidad o barrio" />
         </label>
         <label class="campo-ancho">
           <span>Observaciones</span>
           <textarea name="observaciones" rows="4" placeholder="Detalles, uso, plazos o referencias del pedido"></textarea>
         </label>
-        <button class="boton principal-boton boton-enviar-cotizacion" type="submit">Enviar cotizacion por WhatsApp</button>
+        <div class="acciones-cotizacion campo-ancho">
+          <button class="boton principal-boton boton-enviar-cotizacion" type="submit">Enviar por WhatsApp</button>
+          <button class="boton secundario boton-enviar-email" type="button" id="enviarCotizacionEmail">Enviar por email</button>
+        </div>
       </form>
     </section>
 
@@ -216,3 +253,5 @@
   <!-- Fin GoatCounter visitas EmbalajesGB-Web -->
 </body>
 </html>
+
+

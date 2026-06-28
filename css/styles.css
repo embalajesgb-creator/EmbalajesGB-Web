@@ -45,6 +45,10 @@ textarea {
   font: inherit;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .encabezado {
   display: flex;
   flex-wrap: wrap;
@@ -569,8 +573,17 @@ dd {
 }
 
 .boton-enviar-cotizacion {
-  grid-column: 1 / -1;
   justify-self: start;
+}
+.acciones-cotizacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.acciones-cotizacion .boton {
+  min-width: 190px;
 }
 
 .whatsapp-flotante {
@@ -723,7 +736,7 @@ dd {
     grid-column: auto;
   }
 
-  .boton-enviar-cotizacion {
+  .acciones-cotizacion .boton {
     width: 100%;
   }
 
@@ -734,3 +747,4 @@ dd {
     height: 54px;
   }
 }
+
