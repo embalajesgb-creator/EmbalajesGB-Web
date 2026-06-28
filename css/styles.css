@@ -440,6 +440,17 @@ dd {
   text-align: center;
 }
 
+.consulta-celda {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.consulta-celda .boton-consultar {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+}
+
 .tabla-precios-web th.precio-titulo {
   line-height: 1.12;
   padding-right: 0;
@@ -599,24 +610,24 @@ dd {
   right: 18px;
   bottom: 18px;
   z-index: 60;
-  width: 58px;
-  height: 58px;
-  background: #128c3a;
-  border: 1px solid #0d7530;
-  border-radius: 50%;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .whatsapp-flotante:hover,
 .whatsapp-flotante:focus-visible {
-  background: #0d7530;
-  outline: 3px solid rgba(18, 140, 58, 0.28);
-  outline-offset: 3px;
+  background: transparent;
+  outline: 0;
+  transform: scale(1.04);
 }
 
 .whatsapp-flotante img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 
 .pie {
@@ -728,8 +739,8 @@ dd {
   }
 
   .tabla-precios-web .precio-web {
-    grid-template-columns: 18px 98px;
-    gap: 12px;
+    grid-template-columns: 14px 96px;
+    gap: 6px;
   }
 
   .encabezado-tabla-precios-fijo {
@@ -748,8 +759,13 @@ dd {
   .whatsapp-flotante {
     right: 14px;
     bottom: 14px;
-    width: 54px;
-    height: 54px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .whatsapp-flotante img {
+    width: 30px;
+    height: 30px;
   }
 }
 
