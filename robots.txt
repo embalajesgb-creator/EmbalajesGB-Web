@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://embalajesgb-creator.github.io/EmbalajesGB-Web/sitemap.xml

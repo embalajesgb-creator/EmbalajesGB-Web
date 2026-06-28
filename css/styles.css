@@ -239,6 +239,7 @@ dd {
 }
 
 .productos,
+.seo-comercial,
 .lista-precios-web,
 .cotizacion-web,
 .info-comercial {
@@ -279,6 +280,37 @@ dd {
   margin: 0;
   color: var(--texto-suave);
   line-height: 1.45;
+}
+
+.contenido-seo {
+  display: grid;
+  gap: 10px;
+  max-width: 920px;
+  color: var(--texto-suave);
+  line-height: 1.55;
+}
+
+.contenido-seo p {
+  margin: 0;
+}
+
+.contenido-seo ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contenido-seo li {
+  padding: 6px 9px;
+  color: var(--verde-oscuro);
+  background: var(--suave);
+  border: 1px solid var(--linea);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .titulo-seccion {
