@@ -672,10 +672,10 @@ dd {
   .encabezado-lista-precios {
     align-items: flex-start;
     flex-direction: column;
-    margin-right: -16px;
-    margin-left: -16px;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .controles-lista-precios {
@@ -717,41 +717,74 @@ dd {
   }
 
   .tabla-precios-web table {
-    min-width: 720px;
+    min-width: 620px;
   }
 
   .tabla-precios-web th,
   .tabla-precios-web td {
-    padding: 9px 10px;
+    padding: 6px 7px;
+    font-size: 12px;
+    line-height: 1.25;
   }
 
   .tabla-precios-web th:nth-child(1),
   .tabla-precios-web td:nth-child(1) {
-    width: 190px;
+    width: 175px;
   }
 
   .tabla-precios-web th:nth-child(2),
   .tabla-precios-web td:nth-child(2) {
-    width: 240px;
+    width: 205px;
   }
 
   .tabla-precios-web th:nth-child(3),
   .tabla-precios-web td:nth-child(3) {
-    width: 150px;
+    width: 130px;
   }
 
   .tabla-precios-web th:nth-child(4),
   .tabla-precios-web td:nth-child(4) {
-    width: 120px;
+    width: 110px;
   }
 
   .tabla-precios-web .precio-web {
-    grid-template-columns: 14px 96px;
-    gap: 6px;
+    grid-template-columns: 12px 82px;
+    gap: 4px;
+  }
+
+  .tabla-precios-web th.precio-titulo {
+    font-size: 11px;
+  }
+
+  .nombre-articulo {
+    font-size: 12px;
+  }
+
+  .etiqueta-categoria,
+  .unidad-precio {
+    margin-top: 3px;
+    font-size: 10.5px;
+  }
+
+  .boton-consultar {
+    min-height: 22px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 10px;
   }
 
   .encabezado-tabla-precios-fijo {
-    grid-template-columns: var(--tabla-precios-columnas, 190px 240px 150px 120px);
+    grid-template-columns: var(--tabla-precios-columnas, 175px 205px 130px 110px);
+  }
+
+  .encabezado-tabla-precios-fijo > span {
+    padding: 6px 7px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .encabezado-tabla-precios-fijo > span:nth-child(3) {
+    font-size: 11px;
   }
 
   .campo-ancho,

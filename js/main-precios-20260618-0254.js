@@ -173,13 +173,14 @@ function actualizarEncabezadoListaPrecios() {
   const altoEncabezado = encabezado.getBoundingClientRect().height;
   const mainRect = document.querySelector('main')?.getBoundingClientRect();
   const espacioHorizontal = window.innerWidth <= 760 ? 16 : 24;
+  const expandirEncabezado = window.innerWidth <= 760 ? 0 : espacioHorizontal;
   const izquierda = mainRect ? mainRect.left + espacioHorizontal : 0;
   const ancho = mainRect ? mainRect.width - (espacioHorizontal * 2) : window.innerWidth;
   const debeFijarse = window.scrollY + altoEncabezado >= posicionNaturalListaPrecios;
 
   document.documentElement.style.setProperty('--altura-encabezado', `${altoEncabezado}px`);
-  document.documentElement.style.setProperty('--lista-precios-izquierda', `${izquierda - espacioHorizontal}px`);
-  document.documentElement.style.setProperty('--lista-precios-ancho', `${ancho + (espacioHorizontal * 2)}px`);
+  document.documentElement.style.setProperty('--lista-precios-izquierda', `${izquierda - expandirEncabezado}px`);
+  document.documentElement.style.setProperty('--lista-precios-ancho', `${ancho + (expandirEncabezado * 2)}px`);
   document.documentElement.style.setProperty('--alto-encabezado-lista', `${encabezadoLista.offsetHeight}px`);
 
   encabezadoLista.classList.toggle('esta-fijo', debeFijarse);
