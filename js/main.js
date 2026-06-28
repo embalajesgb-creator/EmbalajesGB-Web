@@ -307,6 +307,7 @@ async function cargarListaPrecios() {
 
 function camposCotizacionDesdeFormulario(formulario) {
   sincronizarMedidaCotizacion(formulario);
+  normalizarCamposCotizacion(formulario);
   const datos = new FormData(formulario);
   const material = String(datos.get('material') || '').trim();
   const impresion = String(datos.get('impresion') || '').trim();
@@ -331,6 +332,41 @@ function camposCotizacionDesdeFormulario(formulario) {
   }
   campos.push(['Observaciones', datos.get('observaciones')]);
   return campos;
+}
+
+function formatearCantidadMiles(valor) {
+  const digitos = String(valor || '').replace(/\D/g, '');
+  return digitos.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function capitalizarPrimerLetra(valor) {
+  return String(valor || '').replace(/^(\s*)(\S)/, (_, espacios, letra) => espacios + letra.toUpperCase());
+}
+
+function normalizarCamposCotizacion(formulario) {
+  const cantidad = formulario.elements.cantidad;
+  if (cantidad) cantidad.value = formatearCantidadMiles(cantidad.value);
+
+  const nombreCliente = formulario.elements.nombreCliente;
+  if (nombreCliente) nombreCliente.value = capitalizarPrimerLetra(nombreCliente.value);
+}
+
+function prepararFormatoCamposCotizacion(formulario) {
+  const cantidad = formulario.elements.cantidad;
+  if (cantidad) {
+    cantidad.addEventListener('input', () => {
+      const formateado = formatearCantidadMiles(cantidad.value);
+      if (cantidad.value !== formateado) cantidad.value = formateado;
+    });
+  }
+
+  const nombreCliente = formulario.elements.nombreCliente;
+  if (nombreCliente) {
+    nombreCliente.addEventListener('input', () => {
+      const formateado = capitalizarPrimerLetra(nombreCliente.value);
+      if (nombreCliente.value !== formateado) nombreCliente.value = formateado;
+    });
+  }
 }
 
 const partesMedidaCotizacion = [
@@ -414,6 +450,7 @@ function prepararFormularioCotizacion() {
   const formulario = document.getElementById('formularioCotizacionWhatsapp');
   if (!formulario) return;
 
+  prepararFormatoCamposCotizacion(formulario);
   prepararMedidaCotizacion(formulario);
   actualizarCamposCondicionalesCotizacion(formulario);
   formulario.elements.material?.addEventListener('change', () => actualizarCamposCondicionalesCotizacion(formulario));
