@@ -1,6 +1,6 @@
 {
-  "actualizado": "28-06-2026 16:51",
-  "total": 87,
+  "actualizado": "29-06-2026 21:13",
+  "total": 86,
   "articulos": [
     {
       "articulo": "Bolsa camiseta de 40x50 BD negra",
@@ -556,7 +556,7 @@
       "articulo": "Bolsas camiseta AD Blanco 20x30",
       "codigo": "Bolsas camiseta AD Blanco 20x30",
       "nombre": "Bolsas camiseta AD Blanco 20x30",
-      "descripcion": "AD 20x30/12mic",
+      "descripcion": "AD Blanco 20x30/12mic",
       "precio": 1984.0,
       "precio_formateado": "$ 1.984,00",
       "unidad": "unidad",
@@ -573,9 +573,9 @@
       "categoria": "Bolsas camiseta"
     },
     {
-      "articulo": "Bolsas camiseta AD Blanco 30x40/12mic",
-      "codigo": "Bolsas camiseta AD Blanco 30x40/12mic",
-      "nombre": "Bolsas camiseta AD Blanco 30x40/12mic",
+      "articulo": "Bolsas camiseta AD Blanco 30x40",
+      "codigo": "Bolsas camiseta AD Blanco 30x40",
+      "nombre": "Bolsas camiseta AD Blanco 30x40",
       "descripcion": "AD Blanco 30x40/12mic",
       "precio": 2736.0,
       "precio_formateado": "$ 2.736,00",
@@ -589,16 +589,6 @@
       "descripcion": "AD Blanco 40x50/12mic",
       "precio": 4038.0,
       "precio_formateado": "$ 4.038,00",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-      "codigo": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-      "nombre": "Bolsas camiseta AD Blanco 40x50/12mic Eco",
-      "descripcion": "AD Blanco 40x50/12mic Eco",
-      "precio": 3584.0,
-      "precio_formateado": "$ 3.584,00",
       "unidad": "unidad",
       "categoria": "Bolsas camiseta"
     },
@@ -787,8 +777,8 @@
       "codigo": "Rollo arranque 20x30 (1,500 kg)",
       "nombre": "Rollo arranque 20x30 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 7563.0,
-      "precio_formateado": "$ 7.563,00",
+      "precio": 8092.0,
+      "precio_formateado": "$ 8.092,00",
       "unidad": "kg",
       "categoria": "Laminas / rollos"
     },
@@ -797,8 +787,8 @@
       "codigo": "Rollo arranque 25x35 (1,500 kg)",
       "nombre": "Rollo arranque 25x35 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 7565.0,
-      "precio_formateado": "$ 7.565,00",
+      "precio": 8092.0,
+      "precio_formateado": "$ 8.092,00",
       "unidad": "unidad",
       "categoria": "Laminas / rollos"
     },
@@ -807,8 +797,8 @@
       "codigo": "Rollo arranque 30x40 (1,500 kg)",
       "nombre": "Rollo arranque 30x40 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 7565.0,
-      "precio_formateado": "$ 7.565,00",
+      "precio": 8092.0,
+      "precio_formateado": "$ 8.092,00",
       "unidad": "kg",
       "categoria": "Laminas / rollos"
     },
@@ -817,8 +807,8 @@
       "codigo": "Rollo arranque 35x45 (1,500 kg)",
       "nombre": "Rollo arranque 35x45 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 7563.0,
-      "precio_formateado": "$ 7.563,00",
+      "precio": 8094.0,
+      "precio_formateado": "$ 8.094,00",
       "unidad": "kg",
       "categoria": "Laminas / rollos"
     },
@@ -827,8 +817,8 @@
       "codigo": "Rollo arranque 40x50 (1,500 kg)",
       "nombre": "Rollo arranque 40x50 (1,500 kg)",
       "descripcion": "(pack x 6 rollos) x kg",
-      "precio": 7563.0,
-      "precio_formateado": "$ 7.563,00",
+      "precio": 8092.0,
+      "precio_formateado": "$ 8.092,00",
       "unidad": "kg",
       "categoria": "Laminas / rollos"
     },
