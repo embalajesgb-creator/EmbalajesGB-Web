@@ -81,6 +81,10 @@ function normalizarArticuloPublico(articulo, indice) {
   const nombre = String(articulo.articulo || articulo.nombre || codigo).trim();
   const descripcion = String(articulo.descripcion || '').trim();
   const precioFormateado = articulo.precio_formateado || formatearPrecio(articulo.precio);
+  const precioBulto = articulo.precio_bulto ?? null;
+  const precioBultoFormateado = precioBulto !== null && precioBulto !== undefined
+    ? (articulo.precio_bulto_formateado || formatearPrecio(precioBulto))
+    : '';
   const base = {
     indice,
     articulo: nombre,
@@ -89,6 +93,8 @@ function normalizarArticuloPublico(articulo, indice) {
     descripcion,
     precio: articulo.precio ?? '',
     precio_formateado: precioFormateado,
+    precio_bulto: precioBulto,
+    precio_bulto_formateado: precioBultoFormateado,
     unidad: unidadPublica(articulo),
     categoria: CATEGORIAS_PUBLICAS.includes(articulo.categoria) ? articulo.categoria : '',
   };
@@ -105,6 +111,8 @@ function textoBusquedaArticulo(articulo) {
     articulo.descripcion,
     articulo.precio_formateado,
     articulo.precio,
+    articulo.precio_bulto_formateado,
+    articulo.precio_bulto,
     articulo.unidad,
     articulo.categoria,
   ].join(' '));
@@ -112,11 +120,13 @@ function textoBusquedaArticulo(articulo) {
 
 function mensajeProducto(articulo) {
   const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio) || 'A consultar';
+  const precioBultoTexto = articulo.precio_bulto_formateado || '';
   return [
     'Hola Embalajes GB, quiero consultar por este producto:',
     `Articulo/codigo: ${articulo.codigo || articulo.articulo || '-'}`,
     `Descripcion: ${articulo.descripcion || '-'}`,
     `Precio mostrado: ${precioTexto}`,
+    ...(precioBultoTexto ? [`Precio por bulto: ${precioBultoTexto}`] : []),
     `Unidad: ${articulo.unidad || '-'}`,
   ].join('\n');
 }
@@ -124,6 +134,11 @@ function mensajeProducto(articulo) {
 function filaArticulo(articulo) {
   const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio);
   const precio = partesPrecio(precioTexto);
+  const precioBultoTexto = articulo.precio_bulto_formateado || '';
+  const precioBulto = partesPrecio(precioBultoTexto);
+  const precioBultoHtml = precioBultoTexto
+    ? `<span class="precio-web precio-bulto-web"><span>${escaparHtml(precioBulto.simbolo)}</span><strong>${escaparHtml(precioBulto.importe)}</strong></span>`
+    : '<span class="sin-precio-bulto">-</span>';
   return `
     <tr>
       <td>
@@ -132,6 +147,9 @@ function filaArticulo(articulo) {
       <td>${escaparHtml(articulo.descripcion)}</td>
       <td class="precio-celda">
         <span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span>
+      </td>
+      <td class="precio-celda precio-bulto-celda">
+        ${precioBultoHtml}
       </td>
       <td class="consulta-celda"><button type="button" class="boton-consultar" data-indice="${articulo.indice}">Consultar</button></td>
     </tr>
@@ -301,7 +319,7 @@ async function cargarListaPrecios() {
     prepararEncabezadoTablaPrecios();
   } catch (error) {
     estado.textContent = 'Lista pendiente de publicacion.';
-    tabla.innerHTML = '<tr><td colspan="4">Todavia no hay precios publicados en la web.</td></tr>';
+    tabla.innerHTML = '<tr><td colspan="5">Todavia no hay precios publicados en la web.</td></tr>';
   }
 }
 

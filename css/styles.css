@@ -491,29 +491,34 @@ dd {
 
 .tabla-precios-web table {
   width: 100%;
-  min-width: 760px;
+  min-width: 920px;
   border-collapse: collapse;
   table-layout: fixed;
 }
 
 .tabla-precios-web th:nth-child(1),
 .tabla-precios-web td:nth-child(1) {
-  width: 28%;
+  width: 24%;
 }
 
 .tabla-precios-web th:nth-child(2),
 .tabla-precios-web td:nth-child(2) {
-  width: 39%;
+  width: 31%;
 }
 
 .tabla-precios-web th:nth-child(3),
 .tabla-precios-web td:nth-child(3) {
-  width: 170px;
+  width: 145px;
 }
 
 .tabla-precios-web th:nth-child(4),
 .tabla-precios-web td:nth-child(4) {
-  width: 132px;
+  width: 145px;
+}
+
+.tabla-precios-web th:nth-child(5),
+.tabla-precios-web td:nth-child(5) {
+  width: 120px;
 }
 
 .tabla-precios-web th,
@@ -536,7 +541,8 @@ dd {
 }
 
 .tabla-precios-web th.precio-titulo,
-.tabla-precios-web th:nth-child(4),
+.tabla-precios-web th.precio-bulto-titulo,
+.tabla-precios-web th:nth-child(5),
 .consulta-celda {
   text-align: center;
 }
@@ -569,7 +575,7 @@ dd {
   left: var(--tabla-precios-izquierda, 0px);
   width: var(--tabla-precios-ancho, 100%);
   z-index: 28;
-  grid-template-columns: var(--tabla-precios-columnas, 28% 39% 170px 132px);
+  grid-template-columns: var(--tabla-precios-columnas, 24% 31% 145px 145px 120px);
   color: #fff;
   background: var(--azul);
   border: 1px solid var(--linea);
@@ -592,7 +598,8 @@ dd {
 }
 
 .encabezado-tabla-precios-fijo > span:nth-child(3),
-.encabezado-tabla-precios-fijo > span:nth-child(4) {
+.encabezado-tabla-precios-fijo > span:nth-child(4),
+.encabezado-tabla-precios-fijo > span:nth-child(5) {
   text-align: center;
 }
 
@@ -640,6 +647,19 @@ dd {
   display: block;
   color: var(--texto);
   text-align: right;
+}
+
+.precio-bulto-celda .precio-web strong {
+  color: #113f24;
+}
+
+.sin-precio-bulto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22px;
+  color: #7a837d;
+  font-weight: 700;
 }
 
 .boton-consultar {
@@ -811,7 +831,7 @@ dd {
   }
 
   .tabla-precios-web table {
-    min-width: 620px;
+    min-width: 760px;
   }
 
   .tabla-precios-web th,
@@ -838,7 +858,12 @@ dd {
 
   .tabla-precios-web th:nth-child(4),
   .tabla-precios-web td:nth-child(4) {
-    width: 110px;
+    width: 120px;
+  }
+
+  .tabla-precios-web th:nth-child(5),
+  .tabla-precios-web td:nth-child(5) {
+    width: 95px;
   }
 
   .tabla-precios-web .precio-web {
@@ -868,7 +893,7 @@ dd {
   }
 
   .encabezado-tabla-precios-fijo {
-    grid-template-columns: var(--tabla-precios-columnas, 175px 205px 130px 110px);
+    grid-template-columns: var(--tabla-precios-columnas, 160px 205px 120px 120px 95px);
   }
 
   .encabezado-tabla-precios-fijo > span {
