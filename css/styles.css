@@ -491,34 +491,35 @@ dd {
 
 .tabla-precios-web table {
   width: 100%;
-  min-width: 920px;
+  min-width: 0;
+  max-width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
 
 .tabla-precios-web th:nth-child(1),
 .tabla-precios-web td:nth-child(1) {
-  width: 24%;
+  width: 27%;
 }
 
 .tabla-precios-web th:nth-child(2),
 .tabla-precios-web td:nth-child(2) {
-  width: 31%;
+  width: 28%;
 }
 
 .tabla-precios-web th:nth-child(3),
 .tabla-precios-web td:nth-child(3) {
-  width: 145px;
+  width: 16%;
 }
 
 .tabla-precios-web th:nth-child(4),
 .tabla-precios-web td:nth-child(4) {
-  width: 145px;
+  width: 18%;
 }
 
 .tabla-precios-web th:nth-child(5),
 .tabla-precios-web td:nth-child(5) {
-  width: 120px;
+  width: 11%;
 }
 
 .tabla-precios-web th,
@@ -554,11 +555,14 @@ dd {
 
 .consulta-celda .boton-consultar {
   display: flex;
-  width: max-content;
+  width: 100%;
+  max-width: 88px;
+  min-width: 0;
   margin: 0 auto;
 }
 
-.tabla-precios-web th.precio-titulo {
+.tabla-precios-web th.precio-titulo,
+.tabla-precios-web th.precio-bulto-titulo {
   line-height: 1.12;
   padding-right: 0;
   font-size: 13px;
@@ -575,7 +579,7 @@ dd {
   left: var(--tabla-precios-izquierda, 0px);
   width: var(--tabla-precios-ancho, 100%);
   z-index: 28;
-  grid-template-columns: var(--tabla-precios-columnas, 24% 31% 145px 145px 120px);
+  grid-template-columns: var(--tabla-precios-columnas, 27% 28% 16% 18% 11%);
   color: #fff;
   background: var(--azul);
   border: 1px solid var(--linea);
@@ -630,11 +634,12 @@ dd {
 }
 
 .tabla-precios-web .precio-web {
-  display: grid;
-  grid-template-columns: 14px 104px;
-  gap: 8px;
+  display: inline-grid;
+  grid-template-columns: auto minmax(0, max-content);
+  gap: 5px;
   justify-content: center;
   align-items: baseline;
+  max-width: 100%;
   font-variant-numeric: tabular-nums;
 }
 
@@ -647,6 +652,7 @@ dd {
   display: block;
   color: var(--texto);
   text-align: right;
+  white-space: nowrap;
 }
 
 .precio-bulto-celda .precio-web strong {
@@ -671,6 +677,7 @@ dd {
   border-radius: 6px;
   font-size: 11px;
   line-height: 1.1;
+  white-space: nowrap;
 }
 
 .boton-consultar:hover,
@@ -831,7 +838,7 @@ dd {
   }
 
   .tabla-precios-web table {
-    min-width: 760px;
+    min-width: 720px;
   }
 
   .tabla-precios-web th,
@@ -843,35 +850,36 @@ dd {
 
   .tabla-precios-web th:nth-child(1),
   .tabla-precios-web td:nth-child(1) {
-    width: 175px;
+    width: 165px;
   }
 
   .tabla-precios-web th:nth-child(2),
   .tabla-precios-web td:nth-child(2) {
-    width: 205px;
+    width: 190px;
   }
 
   .tabla-precios-web th:nth-child(3),
   .tabla-precios-web td:nth-child(3) {
-    width: 130px;
+    width: 115px;
   }
 
   .tabla-precios-web th:nth-child(4),
   .tabla-precios-web td:nth-child(4) {
-    width: 120px;
+    width: 115px;
   }
 
   .tabla-precios-web th:nth-child(5),
   .tabla-precios-web td:nth-child(5) {
-    width: 95px;
+    width: 85px;
   }
 
   .tabla-precios-web .precio-web {
-    grid-template-columns: 12px 82px;
+    grid-template-columns: auto minmax(0, max-content);
     gap: 4px;
   }
 
-  .tabla-precios-web th.precio-titulo {
+  .tabla-precios-web th.precio-titulo,
+  .tabla-precios-web th.precio-bulto-titulo {
     font-size: 11px;
   }
 
@@ -893,7 +901,7 @@ dd {
   }
 
   .encabezado-tabla-precios-fijo {
-    grid-template-columns: var(--tabla-precios-columnas, 160px 205px 120px 120px 95px);
+    grid-template-columns: var(--tabla-precios-columnas, 165px 190px 115px 115px 85px);
   }
 
   .encabezado-tabla-precios-fijo > span {
