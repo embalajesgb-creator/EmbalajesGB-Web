@@ -1,7 +1,31 @@
 {
-  "actualizado": "01-07-2026 22:24",
-  "total": 88,
+  "actualizado": "02-07-2026 22:50",
+  "total": 90,
   "articulos": [
+    {
+      "articulo": "BD 16 a 20 cm",
+      "codigo": "BD 16 a 20 cm",
+      "nombre": "BD 16 a 20 cm",
+      "descripcion": "Material del cotizador para venta por kg",
+      "precio": 7344.0,
+      "precio_formateado": "$ 7.344,00",
+      "precio_bulto": null,
+      "precio_bulto_formateado": "No vende por bulto",
+      "unidad": "kg",
+      "categoria": "Otros"
+    },
+    {
+      "articulo": "BD 21 a (++) cm",
+      "codigo": "BD 21 a (++) cm",
+      "nombre": "BD 21 a (++) cm",
+      "descripcion": "Material del cotizador para venta por kg",
+      "precio": 6049.0,
+      "precio_formateado": "$ 6.049,00",
+      "precio_bulto": null,
+      "precio_bulto_formateado": "No vende por bulto",
+      "unidad": "kg",
+      "categoria": "Otros"
+    },
     {
       "articulo": "Bolsa camiseta 60x80 BD color (x100u)",
       "codigo": "Bolsa camiseta 60x80 BD color (x100u)",
@@ -117,8 +141,8 @@
       "descripcion": "Bulto de 4 pack x 50 u.",
       "precio": 53491.0,
       "precio_formateado": "$ 53.491,00",
-      "precio_bulto": 1213833.26,
-      "precio_bulto_formateado": "$ 1.213.833,26",
+      "precio_bulto": 97106.66,
+      "precio_bulto_formateado": "$ 97.106,66",
       "unidad": "unidad",
       "categoria": "Bolsas consorcio / residuo"
     },
@@ -129,8 +153,8 @@
       "descripcion": "Bulto de 4 pack x 50u",
       "precio": 28355.0,
       "precio_formateado": "$ 28.355,00",
-      "precio_bulto": 643428.04,
-      "precio_bulto_formateado": "$ 643.428,04",
+      "precio_bulto": 51474.24,
+      "precio_bulto_formateado": "$ 51.474,24",
       "unidad": "unidad",
       "categoria": "Bolsas consorcio / residuo"
     },
@@ -211,10 +235,10 @@
       "codigo": "Bolsa reforzada para escombros 45 x 60 cm (x10u)",
       "nombre": "Bolsa reforzada para escombros 45 x 60 cm (x10u)",
       "descripcion": "Bulto de 25 pack",
-      "precio": 18505.0,
-      "precio_formateado": "$ 18.505,00",
-      "precio_bulto": 419905.95,
-      "precio_bulto_formateado": "$ 419.905,95",
+      "precio": 20317.0,
+      "precio_formateado": "$ 20.317,00",
+      "precio_bulto": 46102.87,
+      "precio_bulto_formateado": "$ 46.102,87",
       "unidad": "unidad",
       "categoria": "Otros"
     },
