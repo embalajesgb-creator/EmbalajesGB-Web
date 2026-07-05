@@ -305,6 +305,10 @@ dd {
   border-radius: 5px;
 }
 
+.muestras-portada-web img.muestra-contain {
+  object-fit: contain;
+  padding: 4px;
+}
 .muestras-portada-web img:first-child {
   grid-row: 1 / span 2;
 }
