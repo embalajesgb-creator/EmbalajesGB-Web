@@ -1,30 +1,114 @@
 window.LISTA_PRECIOS_PUBLICADA = {
-  "actualizado": "02-07-2026 22:50",
-  "total": 90,
+  "actualizado": "05-07-2026 02:04",
+  "total": 91,
   "articulos": [
     {
-      "articulo": "BD 16 a 20 cm",
-      "codigo": "BD 16 a 20 cm",
-      "nombre": "BD 16 a 20 cm",
+      "articulo": "BD 09 a 11 cm",
+      "codigo": "BD 09 a 11 cm",
+      "nombre": "BD 09 a 11 cm",
+      "descripcion": "Polietileno cristal en rollo",
+      "precio": 10572.0,
+      "precio_formateado": "$ 10.572,00",
+      "precio_bulto": null,
+      "precio_bulto_formateado": "No vende por bulto",
+      "unidad": "kg",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "BD 12 a 15 cm",
+      "codigo": "BD 12 a 15 cm",
+      "nombre": "BD 12 a 15 cm",
       "descripcion": "Material del cotizador para venta por kg",
-      "precio": 7344.0,
-      "precio_formateado": "$ 7.344,00",
+      "precio": 8424.0,
+      "precio_formateado": "$ 8.424,00",
       "precio_bulto": null,
       "precio_bulto_formateado": "No vende por bulto",
       "unidad": "kg",
       "categoria": "Otros"
     },
     {
-      "articulo": "BD 21 a (++) cm",
-      "codigo": "BD 21 a (++) cm",
-      "nombre": "BD 21 a (++) cm",
-      "descripcion": "Material del cotizador para venta por kg",
-      "precio": 6049.0,
-      "precio_formateado": "$ 6.049,00",
+      "articulo": "BD 16 a 20 cm",
+      "codigo": "BD 16 a 20 cm",
+      "nombre": "BD 16 a 20 cm",
+      "descripcion": "Polietileno cristal en rollo",
+      "precio": 7050.0,
+      "precio_formateado": "$ 7.050,00",
       "precio_bulto": null,
       "precio_bulto_formateado": "No vende por bulto",
       "unidad": "kg",
-      "categoria": "Otros"
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "BD 21 a (++) cm",
+      "codigo": "BD 21 a (++) cm",
+      "nombre": "BD 21 a (++) cm",
+      "descripcion": "Polietileno cristal en rollo",
+      "precio": 5584.0,
+      "precio_formateado": "$ 5.584,00",
+      "precio_bulto": null,
+      "precio_bulto_formateado": "No vende por bulto",
+      "unidad": "kg",
+      "categoria": "Bolsas PP / cristal"
+    },
+    {
+      "articulo": "Bolsa camiseta 40x50 BD negra (x100u)",
+      "codigo": "Bolsa camiseta 40x50 BD negra (x100u)",
+      "nombre": "Bolsa camiseta 40x50 BD negra (x100u)",
+      "descripcion": "Bulto de 10 pack",
+      "precio": 3999.0,
+      "precio_formateado": "$ 3.999,00",
+      "precio_bulto": 36291.61,
+      "precio_bulto_formateado": "$ 36.291,61",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta 45x60 BD negra (x100u)",
+      "codigo": "Bolsa camiseta 45x60 BD negra (x100u)",
+      "nombre": "Bolsa camiseta 45x60 BD negra (x100u)",
+      "descripcion": "Bulto de 10 pack",
+      "precio": 5374.0,
+      "precio_formateado": "$ 5.374,00",
+      "precio_bulto": 48772.47,
+      "precio_bulto_formateado": "$ 48.772,47",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta 50x60 BD color (x100u)",
+      "codigo": "Bolsa camiseta 50x60 BD color (x100u)",
+      "nombre": "Bolsa camiseta 50x60 BD color (x100u)",
+      "descripcion": "Bulto de 5 pack",
+      "precio": 9233.0,
+      "precio_formateado": "$ 9.233,00",
+      "precio_bulto": 41899.62,
+      "precio_bulto_formateado": "$ 41.899,62",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta 50x60 BD negra (x100u)",
+      "codigo": "Bolsa camiseta 50x60 BD negra (x100u)",
+      "nombre": "Bolsa camiseta 50x60 BD negra (x100u)",
+      "descripcion": "Bulto de 5 pack",
+      "precio": 6897.0,
+      "precio_formateado": "$ 6.897,00",
+      "precio_bulto": 31300.33,
+      "precio_bulto_formateado": "$ 31.300,33",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
+    },
+    {
+      "articulo": "Bolsa camiseta 50x70 BD negra (x100u)",
+      "codigo": "Bolsa camiseta 50x70 BD negra (x100u)",
+      "nombre": "Bolsa camiseta 50x70 BD negra (x100u)",
+      "descripcion": "Bulto de 5 pack",
+      "precio": 8030.0,
+      "precio_formateado": "$ 8.030,00",
+      "precio_bulto": 36443.53,
+      "precio_bulto_formateado": "$ 36.443,53",
+      "unidad": "unidad",
+      "categoria": "Bolsas camiseta"
     },
     {
       "articulo": "Bolsa camiseta 60x80 BD color (x100u)",
@@ -47,66 +131,6 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "precio_formateado": "$ 10.977,00",
       "precio_bulto": 49815.88,
       "precio_bulto_formateado": "$ 49.815,88",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsa camiseta de 40x50 BD negra (x100u)",
-      "codigo": "Bolsa camiseta de 40x50 BD negra (x100u)",
-      "nombre": "Bolsa camiseta de 40x50 BD negra (x100u)",
-      "descripcion": "Bulto de 10 pack",
-      "precio": 3999.0,
-      "precio_formateado": "$ 3.999,00",
-      "precio_bulto": 36291.61,
-      "precio_bulto_formateado": "$ 36.291,61",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsa camiseta de 45x60 BD negra (x100u)",
-      "codigo": "Bolsa camiseta de 45x60 BD negra (x100u)",
-      "nombre": "Bolsa camiseta de 45x60 BD negra (x100u)",
-      "descripcion": "Bulto de 10 pack",
-      "precio": 5374.0,
-      "precio_formateado": "$ 5.374,00",
-      "precio_bulto": 48772.47,
-      "precio_bulto_formateado": "$ 48.772,47",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsa camiseta de 50x60 BD color (x100u)",
-      "codigo": "Bolsa camiseta de 50x60 BD color (x100u)",
-      "nombre": "Bolsa camiseta de 50x60 BD color (x100u)",
-      "descripcion": "Bulto de 5 pack",
-      "precio": 9233.0,
-      "precio_formateado": "$ 9.233,00",
-      "precio_bulto": 41899.62,
-      "precio_bulto_formateado": "$ 41.899,62",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsa camiseta de 50x60 BD negra (x100u)",
-      "codigo": "Bolsa camiseta de 50x60 BD negra (x100u)",
-      "nombre": "Bolsa camiseta de 50x60 BD negra (x100u)",
-      "descripcion": "Bulto de 5 pack",
-      "precio": 6897.0,
-      "precio_formateado": "$ 6.897,00",
-      "precio_bulto": 31300.33,
-      "precio_bulto_formateado": "$ 31.300,33",
-      "unidad": "unidad",
-      "categoria": "Bolsas camiseta"
-    },
-    {
-      "articulo": "Bolsa camiseta de 50x70 BD negra (x100u)",
-      "codigo": "Bolsa camiseta de 50x70 BD negra (x100u)",
-      "nombre": "Bolsa camiseta de 50x70 BD negra (x100u)",
-      "descripcion": "Bulto de 5 pack",
-      "precio": 8030.0,
-      "precio_formateado": "$ 8.030,00",
-      "precio_bulto": 36443.53,
-      "precio_bulto_formateado": "$ 36.443,53",
       "unidad": "unidad",
       "categoria": "Bolsas camiseta"
     },
@@ -315,9 +339,9 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "categoria": "Bolsas PP / cristal"
     },
     {
-      "articulo": "Bolsa Sobre PP Cristal 08x15 (x100)",
-      "codigo": "Bolsa Sobre PP Cristal 08x15 (x100)",
-      "nombre": "Bolsa Sobre PP Cristal 08x15 (x100)",
+      "articulo": "Bolsa Sobre PP Cristal 08x15 (x100u)",
+      "codigo": "Bolsa Sobre PP Cristal 08x15 (x100u)",
+      "nombre": "Bolsa Sobre PP Cristal 08x15 (x100u)",
       "descripcion": "Bulto de 50 pack",
       "precio": 1000.0,
       "precio_formateado": "$ 1.000,00",
@@ -603,9 +627,9 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "categoria": "Bolsas PP / cristal"
     },
     {
-      "articulo": "Bolsa Sobre PP Cristal 30x40 (x100)",
-      "codigo": "Bolsa Sobre PP Cristal 30x40 (x100)",
-      "nombre": "Bolsa Sobre PP Cristal 30x40 (x100)",
+      "articulo": "Bolsa Sobre PP Cristal 30x40 (x100u)",
+      "codigo": "Bolsa Sobre PP Cristal 30x40 (x100u)",
+      "nombre": "Bolsa Sobre PP Cristal 30x40 (x100u)",
       "descripcion": "Bulto de 10 pack",
       "precio": 6406.0,
       "precio_formateado": "$ 6.406,00",
@@ -1069,18 +1093,6 @@ window.LISTA_PRECIOS_PUBLICADA = {
       "precio_bulto_formateado": "No vende por bulto",
       "unidad": "kg",
       "categoria": "Laminas / rollos"
-    },
-    {
-      "articulo": "Rollo de polietileno cristal BD virgen",
-      "codigo": "Rollo de polietileno cristal BD virgen",
-      "nombre": "Rollo de polietileno cristal BD virgen",
-      "descripcion": "Mas de 21 cm x kg",
-      "precio": 7045.0,
-      "precio_formateado": "$ 7.045,00",
-      "precio_bulto": null,
-      "precio_bulto_formateado": "No vende por bulto",
-      "unidad": "kg",
-      "categoria": "Bolsas PP / cristal"
     }
   ]
 };

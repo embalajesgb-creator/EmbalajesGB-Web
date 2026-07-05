@@ -12,6 +12,10 @@ const CATEGORIAS_PUBLICAS = [
   'Otros',
 ];
 
+const catalogoImagenesProductos = window.IMAGENES_PRODUCTOS_GB || {};
+const productosImagenes = Array.isArray(catalogoImagenesProductos.productos)
+  ? catalogoImagenesProductos.productos
+  : [];
 function escaparHtml(valor) {
   return String(valor ?? '')
     .replaceAll('&', '&amp;')
@@ -50,8 +54,151 @@ function normalizarBusqueda(valor) {
     .trim();
 }
 
+function normalizarRelacionadosExactos(valores) {
+  if (!Array.isArray(valores)) return [];
+  return valores.map(normalizarBusqueda).filter(Boolean);
+}
+
+function normalizarRelacionadosIncluye(valores) {
+  if (!Array.isArray(valores)) return [];
+  return valores.map(normalizarBusqueda).filter(Boolean);
+}
+
+function coincideRelacionExactaArticulo(articulo, relacionadosExactos) {
+  if (!relacionadosExactos.length) return true;
+  const claves = [
+    articulo.articulo,
+    articulo.codigo,
+    articulo.nombre,
+  ].map(normalizarBusqueda).filter(Boolean);
+  return relacionadosExactos.some((relacionado) => claves.includes(relacionado));
+}
+
+function coincideRelacionIncluyeArticulo(articulo, relacionadosIncluye) {
+  if (!relacionadosIncluye.length) return true;
+  return relacionadosIncluye.every((relacionado) => articulo.textoBusqueda.includes(relacionado));
+}
+
+function productoImagenPorId(id) {
+  return productosImagenes.find((producto) => producto.id === id) || null;
+}
+
+function rutaImagenProducto(producto) {
+  if (!producto?.archivo) return '';
+  return `${catalogoImagenesProductos.basePath || ''}${producto.archivo}`;
+}
+
+function escaparRegExp(valor) {
+  return String(valor).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function contieneTermino(textoNormalizado, termino) {
+  const terminoNormalizado = normalizarBusqueda(termino);
+  if (!terminoNormalizado) return false;
+  if (terminoNormalizado.length <= 3) {
+    const patron = new RegExp(`(^|[^a-z0-9])${escaparRegExp(terminoNormalizado)}($|[^a-z0-9])`);
+    return patron.test(textoNormalizado);
+  }
+  return textoNormalizado.includes(terminoNormalizado);
+}
+
+function puntajeImagenArticulo(textoNormalizado, producto) {
+  const reglas = Array.isArray(producto.reglas) ? producto.reglas : [];
+  let puntaje = 0;
+
+  reglas.forEach((regla) => {
+    const terminos = Array.isArray(regla) ? regla : [regla];
+    if (terminos.every((termino) => contieneTermino(textoNormalizado, termino))) {
+      puntaje = Math.max(puntaje, terminos.length * 10);
+    }
+  });
+
+  const busqueda = normalizarBusqueda(producto.busqueda || producto.titulo || '');
+  busqueda.split(/\s+/).forEach((termino) => {
+    if (contieneTermino(textoNormalizado, termino)) puntaje += 1;
+  });
+
+  return puntaje;
+}
+
+function imagenParaArticulo(articulo) {
+  const texto = normalizarBusqueda([
+    articulo.articulo,
+    articulo.nombre,
+    articulo.codigo,
+    articulo.descripcion,
+    articulo.categoria,
+  ].join(' '));
+
+  return productosImagenes
+    .map((producto) => ({ producto, puntaje: puntajeImagenArticulo(texto, producto) }))
+    .filter((resultado) => resultado.puntaje > 0)
+    .sort((a, b) => b.puntaje - a.puntaje)[0]?.producto || null;
+}
+
 function urlWhatsApp(mensaje) {
   return `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
+}
+
+function mensajeProductoImagen(producto) {
+  return [
+    'Hola Embalajes GB, quiero consultar por este producto.',
+    `Producto: ${producto.titulo}`,
+    `Familia: ${producto.familia}`,
+    `Descripcion: ${producto.descripcion}`,
+  ].join('\n');
+}
+
+function tarjetaProductoDestacado(producto) {
+  return `
+    <article class="tarjeta-producto-web">
+      <img src="${escaparHtml(rutaImagenProducto(producto))}" alt="${escaparHtml(producto.titulo)}" loading="lazy" />
+      <div>
+        <span class="familia-producto-web">${escaparHtml(producto.familia)}</span>
+        <h3>${escaparHtml(producto.titulo)}</h3>
+      </div>
+      <p>${escaparHtml(producto.descripcion)}</p>
+      <div class="acciones-producto-web">
+        <button type="button" class="boton-ver-relacionados" data-producto="${escaparHtml(producto.id)}" data-busqueda="${escaparHtml(producto.filtroLista || producto.busqueda || producto.titulo)}">Ver relacionados</button>
+        <button type="button" class="boton-consultar-producto" data-producto="${escaparHtml(producto.id)}">Consultar</button>
+      </div>
+    </article>
+  `;
+}
+
+function renderizarProductosDestacados() {
+  const contenedor = document.getElementById('productosDestacadosWeb');
+  if (!contenedor || !productosImagenes.length) return;
+
+  contenedor.innerHTML = productosImagenes.map(tarjetaProductoDestacado).join('');
+  contenedor.addEventListener('click', (evento) => {
+    const botonRelacionados = evento.target.closest('.boton-ver-relacionados');
+    if (botonRelacionados) {
+      const producto = productoImagenPorId(botonRelacionados.dataset.producto);
+      const relacionadosExactos = Array.isArray(producto?.relacionadosExactos)
+        ? producto.relacionadosExactos
+        : [];
+      const relacionadosIncluye = Array.isArray(producto?.relacionadosIncluye)
+        ? producto.relacionadosIncluye
+        : [];
+      const tieneRelacionDefinida = relacionadosExactos.length || relacionadosIncluye.length;
+      document.dispatchEvent(new CustomEvent('gb:filtrar-relacionados', {
+        detail: {
+          busqueda: tieneRelacionDefinida ? '' : (botonRelacionados.dataset.busqueda || ''),
+          relacionadosExactos,
+          relacionadosIncluye,
+        },
+      }));
+      document.getElementById('lista-precios')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+
+    const botonConsultar = evento.target.closest('.boton-consultar-producto');
+    if (!botonConsultar) return;
+    const producto = productoImagenPorId(botonConsultar.dataset.producto);
+    if (!producto) return;
+    window.open(urlWhatsApp(mensajeProductoImagen(producto)), '_blank', 'noopener');
+  });
 }
 
 function categoriaInferida(articulo) {
@@ -139,10 +286,11 @@ function filaArticulo(articulo) {
   const precioBultoHtml = precioBultoTexto
     ? `<span class="precio-web precio-bulto-web"><span>${escaparHtml(precioBulto.simbolo)}</span><strong>${escaparHtml(precioBulto.importe)}</strong></span>`
     : '<span class="sin-precio-bulto">-</span>';
+  const nombreArticuloHtml = `<span class="nombre-articulo">${escaparHtml(articulo.articulo || articulo.nombre)}</span>`;
   return `
     <tr>
       <td>
-        <span class="nombre-articulo">${escaparHtml(articulo.articulo || articulo.nombre)}</span>
+        ${nombreArticuloHtml}
       </td>
       <td>${escaparHtml(articulo.descripcion)}</td>
       <td class="precio-celda">
@@ -276,30 +424,47 @@ async function cargarListaPrecios() {
     if (!articulos.length) throw new Error('sin-articulos');
 
     articulosListaPrecios = articulos.map(normalizarArticuloPublico);
+    let relacionadosExactosActivos = [];
+    let relacionadosIncluyeActivos = [];
 
     function renderizarLista() {
       const busqueda = normalizarBusqueda(buscador?.value || '');
       const categoria = filtroCategoria?.value || 'Todas';
+      const tieneRelacionExacta = relacionadosExactosActivos.length > 0;
+      const tieneRelacionIncluye = relacionadosIncluyeActivos.length > 0;
+      const tieneRelacionDefinida = tieneRelacionExacta || tieneRelacionIncluye;
       const articulosVisibles = articulosListaPrecios.filter((articulo) => {
-        const coincideBusqueda = !busqueda || articulo.textoBusqueda.includes(busqueda);
-        const coincideCategoria = categoria === 'Todas' || articulo.categoria === categoria;
-        return coincideBusqueda && coincideCategoria;
+        const coincideExacto = coincideRelacionExactaArticulo(articulo, relacionadosExactosActivos);
+        const coincideIncluye = coincideRelacionIncluyeArticulo(articulo, relacionadosIncluyeActivos);
+        const coincideBusqueda = tieneRelacionDefinida ? true : (!busqueda || articulo.textoBusqueda.includes(busqueda));
+        const coincideCategoria = tieneRelacionDefinida || categoria === 'Todas' || articulo.categoria === categoria;
+        return coincideExacto && coincideIncluye && coincideBusqueda && coincideCategoria;
       });
 
       const total = articulosListaPrecios.length;
       const visibles = articulosVisibles.length;
       const fecha = datos.actualizado || '-';
       const detalleCategoria = categoria === 'Todas' ? '' : ` - ${categoria}`;
-      estado.textContent = (busqueda || categoria !== 'Todas')
+      estado.textContent = (relacionadosExactosActivos.length || relacionadosIncluyeActivos.length || busqueda || categoria !== 'Todas')
         ? `Actualizada: ${fecha} - ${visibles} de ${total} articulos encontrados${detalleCategoria}`
         : `Actualizada: ${fecha} - ${total} articulos publicados`;
 
       tabla.innerHTML = articulosVisibles.length
         ? articulosVisibles.map(filaArticulo).join('')
-        : '<tr><td colspan="4">No se encontraron productos para esa busqueda.</td></tr>';
+        : '<tr><td colspan="5">No se encontraron productos para esa busqueda.</td></tr>';
     }
 
+    document.addEventListener('gb:filtrar-relacionados', (evento) => {
+      relacionadosExactosActivos = normalizarRelacionadosExactos(evento.detail?.relacionadosExactos);
+      relacionadosIncluyeActivos = normalizarRelacionadosIncluye(evento.detail?.relacionadosIncluye);
+      if (buscador) buscador.value = (relacionadosExactosActivos.length || relacionadosIncluyeActivos.length) ? '' : (evento.detail?.busqueda || '');
+      if (filtroCategoria) filtroCategoria.value = 'Todas';
+      renderizarLista();
+      prepararEncabezadoTablaPrecios();
+    });
     buscador?.addEventListener('input', () => {
+      relacionadosExactosActivos = [];
+      relacionadosIncluyeActivos = [];
       renderizarLista();
       prepararEncabezadoTablaPrecios();
     });
@@ -491,6 +656,7 @@ actualizarAlturaEncabezado();
 prepararEncabezadoListaPrecios();
 prepararEncabezadoTablaPrecios();
 prepararFormularioCotizacion();
+renderizarProductosDestacados();
 window.addEventListener('scroll', actualizarEncabezadoListaPrecios, { passive: true });
 window.addEventListener('resize', () => {
   prepararEncabezadoListaPrecios();
@@ -501,6 +667,14 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
+
+
+
+
+
+
+
+
 
 
 
