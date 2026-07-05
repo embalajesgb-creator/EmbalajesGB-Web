@@ -629,6 +629,28 @@ function abrirEmailCotizacion(mensaje) {
   window.location.href = `mailto:Embalajesgb@gmail.com?subject=${asunto}&body=${cuerpo}`;
 }
 
+function prepararGaleriasServicios() {
+  const botones = document.querySelectorAll('[data-galeria-servicio]');
+  if (!botones.length) return;
+  const galerias = document.querySelectorAll('.galeria-servicio-web');
+
+  botones.forEach((boton) => {
+    boton.addEventListener('click', () => {
+      const galeria = document.getElementById(boton.getAttribute('aria-controls'));
+      if (!galeria) return;
+      const estabaAbierta = boton.getAttribute('aria-expanded') === 'true';
+
+      botones.forEach((otroBoton) => otroBoton.setAttribute('aria-expanded', 'false'));
+      galerias.forEach((otraGaleria) => { otraGaleria.hidden = true; });
+
+      if (!estabaAbierta) {
+        boton.setAttribute('aria-expanded', 'true');
+        galeria.hidden = false;
+        galeria.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+}
 function prepararFormularioCotizacion() {
   const formulario = document.getElementById('formularioCotizacionWhatsapp');
   if (!formulario) return;
@@ -656,6 +678,7 @@ actualizarAlturaEncabezado();
 prepararEncabezadoListaPrecios();
 prepararEncabezadoTablaPrecios();
 prepararFormularioCotizacion();
+prepararGaleriasServicios();
 renderizarProductosDestacados();
 window.addEventListener('scroll', actualizarEncabezadoListaPrecios, { passive: true });
 window.addEventListener('resize', () => {
@@ -667,6 +690,7 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
+
 
 
 
