@@ -701,26 +701,31 @@ dd {
 
 .tabla-precios-web th:nth-child(1),
 .tabla-precios-web td:nth-child(1) {
-  width: 27%;
+  width: 30%;
 }
 
 .tabla-precios-web th:nth-child(2),
 .tabla-precios-web td:nth-child(2) {
-  width: 28%;
+  width: 13%;
 }
 
 .tabla-precios-web th:nth-child(3),
 .tabla-precios-web td:nth-child(3) {
-  width: 16%;
+  width: 14%;
 }
 
 .tabla-precios-web th:nth-child(4),
 .tabla-precios-web td:nth-child(4) {
-  width: 18%;
+  width: 16%;
 }
 
 .tabla-precios-web th:nth-child(5),
 .tabla-precios-web td:nth-child(5) {
+  width: 16%;
+}
+
+.tabla-precios-web th:nth-child(6),
+.tabla-precios-web td:nth-child(6) {
   width: 11%;
 }
 
@@ -739,13 +744,16 @@ dd {
   vertical-align: middle;
 }
 
-.tabla-precios-web .precio-celda {
+.tabla-precios-web .precio-celda,
+.tabla-precios-web .presentacion-celda,
+.tabla-precios-web .cantidad-bulto-celda {
   text-align: center;
 }
 
 .tabla-precios-web th.precio-titulo,
 .tabla-precios-web th.precio-bulto-titulo,
-.tabla-precios-web th:nth-child(5),
+.tabla-precios-web th:nth-child(4),
+.tabla-precios-web th:nth-child(6),
 .consulta-celda {
   text-align: center;
 }
@@ -1049,7 +1057,7 @@ dd {
   }
 
   .tabla-precios-web table {
-    min-width: 720px;
+    min-width: 860px;
   }
 
   .tabla-precios-web th,
@@ -1061,27 +1069,32 @@ dd {
 
   .tabla-precios-web th:nth-child(1),
   .tabla-precios-web td:nth-child(1) {
-    width: 165px;
+    width: 230px;
   }
 
   .tabla-precios-web th:nth-child(2),
   .tabla-precios-web td:nth-child(2) {
-    width: 190px;
+    width: 115px;
   }
 
   .tabla-precios-web th:nth-child(3),
   .tabla-precios-web td:nth-child(3) {
-    width: 115px;
+    width: 125px;
   }
 
   .tabla-precios-web th:nth-child(4),
   .tabla-precios-web td:nth-child(4) {
-    width: 115px;
+    width: 145px;
   }
 
   .tabla-precios-web th:nth-child(5),
   .tabla-precios-web td:nth-child(5) {
-    width: 85px;
+    width: 145px;
+  }
+
+  .tabla-precios-web th:nth-child(6),
+  .tabla-precios-web td:nth-child(6) {
+    width: 100px;
   }
   .tabla-precios-web .precio-web {
     grid-template-columns: auto minmax(0, max-content);
@@ -1145,6 +1158,9 @@ dd {
     height: 30px;
   }
 }
+
+
+
 
 
 

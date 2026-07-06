@@ -1,4 +1,4 @@
-﻿const WHATSAPP_NUMERO = '541164902019';
+const WHATSAPP_NUMERO = '541164902019';
 const MENSAJE_INICIAL_WHATSAPP = 'Hola Embalajes GB, quiero hacer una consulta/cotización.';
 const CATEGORIAS_PUBLICAS = [
   'Todas',
@@ -232,16 +232,25 @@ function normalizarArticuloPublico(articulo, indice) {
   const precioBultoFormateado = precioBulto !== null && precioBulto !== undefined
     ? (articulo.precio_bulto_formateado || formatearPrecio(precioBulto))
     : '';
+  const cantidadBulto = articulo.cantidad_bulto ?? articulo.cantidad_por_bulto ?? articulo.unidades_por_bulto ?? '';
+  const cantidadBultoFormateada = articulo.cantidad_bulto_formateada || articulo.cantidad_por_bulto_formateada || '';
   const base = {
     indice,
     articulo: nombre,
+    articulo_visual: articulo.articulo_visual || '',
     codigo,
     nombre,
     descripcion,
+    presentacion: articulo.presentacion || '',
     precio: articulo.precio ?? '',
     precio_formateado: precioFormateado,
     precio_bulto: precioBulto,
     precio_bulto_formateado: precioBultoFormateado,
+    cantidad_bulto: cantidadBulto,
+    cantidad_por_bulto: articulo.cantidad_por_bulto ?? cantidadBulto,
+    unidades_por_bulto: articulo.unidades_por_bulto ?? cantidadBulto,
+    cantidad_bulto_formateada: cantidadBultoFormateada,
+    cantidad_por_bulto_formateada: articulo.cantidad_por_bulto_formateada || cantidadBultoFormateada,
     unidad: unidadPublica(articulo),
     categoria: CATEGORIAS_PUBLICAS.includes(articulo.categoria) ? articulo.categoria : '',
   };
@@ -250,12 +259,118 @@ function normalizarArticuloPublico(articulo, indice) {
   return base;
 }
 
+function textoVisualLista(valor) {
+  return String(valor ?? '').replace(/\s+/g, ' ').trim();
+}
+
+function removerPresentacionNombreLista(nombre) {
+  return textoVisualLista(nombre)
+    .replace(/\s*\(\s*(?:pack\s*)?x\s*\d+\s*u(?:nidades?)?\s*\)\s*/gi, ' ')
+    .replace(/\s*\(\s*\d+\s*u(?:nidades?)?\s*\)\s*/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function descripcionEsBultoLista(descripcion) {
+  return /^bulto\b/i.test(textoVisualLista(descripcion));
+}
+
+function articuloVisualLista(articulo) {
+  const nombre = removerPresentacionNombreLista(articulo.articulo || articulo.nombre || articulo.codigo || '');
+  const descripcion = textoVisualLista(articulo.descripcion || '');
+  if (!descripcion || descripcionEsBultoLista(descripcion)) return nombre || '-';
+  const nombreNormalizado = normalizarBusqueda(nombre);
+  const descripcionNormalizada = normalizarBusqueda(descripcion);
+  if (!descripcionNormalizada || nombreNormalizado.includes(descripcionNormalizada)) return nombre || '-';
+  return `${nombre} - ${descripcion}`;
+}
+
+function contienePackCienLista(texto) {
+  return /\(\s*(?:pack\s*)?x?\s*100\s*u(?:nidades?)?\s*\)/i.test(texto)
+    || /\bpack\s*x\s*100\s*u(?:nidades?)?\b/i.test(texto)
+    || /\bx\s*100\s*u(?:nidades?)?\b/i.test(texto);
+}
+
+function presentacionVisualLista(articulo) {
+  const presentacionDirecta = textoVisualLista(articulo.presentacion || '');
+  if (presentacionDirecta) return presentacionDirecta;
+  const textoOriginal = [articulo.articulo, articulo.descripcion, articulo.unidad].map(textoVisualLista).join(' ');
+  const texto = normalizarBusqueda(textoOriginal);
+  const unidad = normalizarBusqueda(articulo.unidad || '');
+  if (contienePackCienLista(textoOriginal)) return 'Pack x 100 u';
+  if (unidad === 'kg' || unidad === 'kilo' || unidad === 'kilos') return '1 kg';
+  if (/\bventa\s+por\s+kg\b|\bpor\s+kilo\b|\bx\s*kg\b/.test(texto)) return '1 kg';
+  if (/\bcaja\b/.test(texto)) return 'Caja';
+  if (/\brollo\b|\bbobina\b/.test(texto)) return 'Rollo';
+  if (/\bpack\b|\bpaquete\b/.test(texto)) return 'Pack';
+  return 'Unidad';
+}
+
+function unidadCantidadBultoLista(unidad, cantidad) {
+  const texto = normalizarBusqueda(unidad);
+  const numero = Number(String(cantidad).replace(',', '.'));
+  const singular = Number.isFinite(numero) && numero === 1;
+  if (/^u$|^unid/.test(texto)) return singular ? 'unidad' : 'unidades';
+  if (/^pack|^paquete/.test(texto)) return singular ? 'pack' : 'packs';
+  if (/^kilo|^kg/.test(texto)) return 'kg';
+  if (/^rollo/.test(texto)) return singular ? 'rollo' : 'rollos';
+  if (/^caja/.test(texto)) return singular ? 'caja' : 'cajas';
+  return textoVisualLista(unidad);
+}
+
+function cantidadPorBultoVisualLista(articulo) {
+  const cantidadFormateada = textoVisualLista(articulo.cantidad_bulto_formateada || articulo.cantidad_por_bulto_formateada || '');
+  if (cantidadFormateada) return cantidadFormateada;
+  const cantidadDirecta = [
+    articulo.cantidad_bulto,
+    articulo.cantidad_por_bulto,
+    articulo.unidades_por_bulto,
+  ].find((valor) => valor !== undefined && valor !== null && String(valor).trim() !== '');
+
+  if (cantidadDirecta !== undefined && cantidadDirecta !== null && String(cantidadDirecta).trim() !== '') {
+    const presentacion = presentacionVisualLista(articulo);
+    const unidad = presentacion === '1 kg' ? 'kg' : presentacion.toLowerCase();
+    return `${String(cantidadDirecta).replace('.', ',')} ${unidadCantidadBultoLista(unidad, cantidadDirecta)}`;
+  }
+
+  const descripcion = textoVisualLista(articulo.descripcion || '');
+  const patrones = [
+    /\bbulto\s+(?:de\s+)?(\d+(?:[.,]\d+)?)\s*(packs?|paquetes?|unidades?|u|kg|kilos?|rollos?|cajas?)\b/i,
+    /\b(\d+(?:[.,]\d+)?)\s*(packs?|paquetes?|unidades?|u|kg|kilos?|rollos?|cajas?)\s*(?:por|x)\s*bulto\b/i,
+  ];
+  for (const patron of patrones) {
+    const match = descripcion.match(patron);
+    if (match) return `${match[1].replace('.', ',')} ${unidadCantidadBultoLista(match[2], match[1])}`;
+  }
+  return '-';
+}
+
+function precioBultoVisualLista(articulo) {
+  const texto = textoVisualLista(articulo.precio_bulto_formateado || '');
+  if (!texto) return '-';
+  const normalizado = normalizarBusqueda(texto);
+  if (normalizado === 'no vende por bulto' || normalizado === 'null' || normalizado === 'undefined') return '-';
+  return texto;
+}
+
+function adaptarVisualLista(articulo) {
+  return {
+    articulo: textoVisualLista(articulo.articulo_visual || '') || articuloVisualLista(articulo),
+    presentacion: textoVisualLista(articulo.presentacion || '') || presentacionVisualLista(articulo),
+    precio: articulo.precio_formateado || formatearPrecio(articulo.precio),
+    cantidadBulto: textoVisualLista(articulo.cantidad_bulto_formateada || articulo.cantidad_por_bulto_formateada || '') || cantidadPorBultoVisualLista(articulo),
+    precioBulto: precioBultoVisualLista(articulo),
+  };
+}
 function textoBusquedaArticulo(articulo) {
   return normalizarBusqueda([
     articulo.articulo,
     articulo.codigo,
     articulo.nombre,
     articulo.descripcion,
+    articulo.presentacion,
+    articulo.cantidad_bulto_formateada,
+    articulo.cantidad_por_bulto_formateada,
     articulo.precio_formateado,
     articulo.precio,
     articulo.precio_bulto_formateado,
@@ -279,23 +394,22 @@ function mensajeProducto(articulo) {
 }
 
 function filaArticulo(articulo) {
-  const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio);
-  const precio = partesPrecio(precioTexto);
-  const precioBultoTexto = articulo.precio_bulto_formateado || '';
-  const precioBulto = partesPrecio(precioBultoTexto);
-  const precioBultoHtml = precioBultoTexto
+  const visual = adaptarVisualLista(articulo);
+  const precio = partesPrecio(visual.precio);
+  const precioBulto = partesPrecio(visual.precioBulto);
+  const precioBultoHtml = visual.precioBulto !== '-'
     ? `<span class="precio-web precio-bulto-web"><span>${escaparHtml(precioBulto.simbolo)}</span><strong>${escaparHtml(precioBulto.importe)}</strong></span>`
     : '<span class="sin-precio-bulto">-</span>';
-  const nombreArticuloHtml = `<span class="nombre-articulo">${escaparHtml(articulo.articulo || articulo.nombre)}</span>`;
   return `
     <tr>
       <td>
-        ${nombreArticuloHtml}
+        <span class="nombre-articulo">${escaparHtml(visual.articulo)}</span>
       </td>
-      <td>${escaparHtml(articulo.descripcion)}</td>
+      <td class="presentacion-celda">${escaparHtml(visual.presentacion)}</td>
       <td class="precio-celda">
         <span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span>
       </td>
+      <td class="cantidad-bulto-celda">${escaparHtml(visual.cantidadBulto)}</td>
       <td class="precio-celda precio-bulto-celda">
         ${precioBultoHtml}
       </td>
@@ -303,7 +417,6 @@ function filaArticulo(articulo) {
     </tr>
   `;
 }
-
 let espaciadorListaPrecios;
 let posicionNaturalListaPrecios = 0;
 let encabezadoTablaPreciosFijo;
@@ -451,7 +564,7 @@ async function cargarListaPrecios() {
 
       tabla.innerHTML = articulosVisibles.length
         ? articulosVisibles.map(filaArticulo).join('')
-        : '<tr><td colspan="5">No se encontraron productos para esa busqueda.</td></tr>';
+        : '<tr><td colspan="6">No se encontraron productos para esa busqueda.</td></tr>';
     }
 
     document.addEventListener('gb:filtrar-relacionados', (evento) => {
@@ -690,6 +803,7 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
+
 
 
 
