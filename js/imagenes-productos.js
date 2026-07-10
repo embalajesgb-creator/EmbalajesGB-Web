@@ -132,6 +132,21 @@ window.IMAGENES_PRODUCTOS_GB = {
         ['cristal', 'transparente'],
       ],
     },
+    {
+      id: 'bolsas-polipropileno-solapa-adhesiva',
+      titulo: 'Bolsas de polipropileno con solapa adhesiva',
+      familia: 'Polipropileno',
+      descripcion: 'Presentacion transparente con solapa adhesiva para textiles, indumentaria y productos exhibidos.',
+      archivo: 'bolsas-polipropileno-solapa-adhesiva.png',
+      busqueda: 'bolsa sobre pp polipropileno cristal transparente solapa adhesiva textil indumentaria',
+      filtroLista: 'pp cristal',
+      relacionadosIncluye: ['bolsa', 'sobre', 'pp', 'cristal', 'x100'],
+      reglas: [
+        ['polipropileno', 'solapa', 'adhesiva'],
+        ['pp', 'solapa', 'adhesiva'],
+        ['sobre', 'pp', 'adhesiva'],
+      ],
+    },
   ],
 };
 
