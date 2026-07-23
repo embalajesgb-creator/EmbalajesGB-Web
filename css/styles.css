@@ -701,12 +701,12 @@ dd {
 
 .tabla-precios-web th:nth-child(1),
 .tabla-precios-web td:nth-child(1) {
-  width: 30%;
+  width: 28%;
 }
 
 .tabla-precios-web th:nth-child(2),
 .tabla-precios-web td:nth-child(2) {
-  width: 13%;
+  width: 12%;
 }
 
 .tabla-precios-web th:nth-child(3),
@@ -716,17 +716,17 @@ dd {
 
 .tabla-precios-web th:nth-child(4),
 .tabla-precios-web td:nth-child(4) {
-  width: 16%;
+  width: 14%;
 }
 
 .tabla-precios-web th:nth-child(5),
 .tabla-precios-web td:nth-child(5) {
-  width: 16%;
+  width: 20%;
 }
 
 .tabla-precios-web th:nth-child(6),
 .tabla-precios-web td:nth-child(6) {
-  width: 11%;
+  width: 12%;
 }
 
 .tabla-precios-web th,
@@ -751,7 +751,6 @@ dd {
 }
 
 .tabla-precios-web th.precio-titulo,
-.tabla-precios-web th.precio-bulto-titulo,
 .tabla-precios-web th:nth-child(4),
 .tabla-precios-web th:nth-child(6),
 .consulta-celda {
@@ -771,8 +770,7 @@ dd {
   margin: 0 auto;
 }
 
-.tabla-precios-web th.precio-titulo,
-.tabla-precios-web th.precio-bulto-titulo {
+.tabla-precios-web th.precio-titulo {
   line-height: 1.12;
   padding-right: 0;
   font-size: 13px;
@@ -789,7 +787,7 @@ dd {
   left: var(--tabla-precios-izquierda, 0px);
   width: var(--tabla-precios-ancho, 100%);
   z-index: 28;
-  grid-template-columns: var(--tabla-precios-columnas, 27% 28% 16% 18% 11%);
+  grid-template-columns: var(--tabla-precios-columnas, 28% 12% 14% 14% 20% 12%);
   color: #fff;
   background: var(--azul);
   border: 1px solid var(--linea);
@@ -813,7 +811,8 @@ dd {
 
 .encabezado-tabla-precios-fijo > span:nth-child(3),
 .encabezado-tabla-precios-fijo > span:nth-child(4),
-.encabezado-tabla-precios-fijo > span:nth-child(5) {
+.encabezado-tabla-precios-fijo > span:nth-child(5),
+.encabezado-tabla-precios-fijo > span:nth-child(6) {
   text-align: center;
 }
 
@@ -868,8 +867,14 @@ dd {
   white-space: nowrap;
 }
 
-.precio-bulto-celda .precio-web strong {
+.precio-mayorista-web strong {
   color: #113f24;
+}
+
+.condicion-bulto {
+  display: inline-block;
+  color: #113f24;
+  font-weight: 700;
 }
 
 .sin-precio-bulto {
@@ -1074,7 +1079,7 @@ dd {
 
   .tabla-precios-web th:nth-child(2),
   .tabla-precios-web td:nth-child(2) {
-    width: 115px;
+    width: 100px;
   }
 
   .tabla-precios-web th:nth-child(3),
@@ -1084,12 +1089,12 @@ dd {
 
   .tabla-precios-web th:nth-child(4),
   .tabla-precios-web td:nth-child(4) {
-    width: 145px;
+    width: 125px;
   }
 
   .tabla-precios-web th:nth-child(5),
   .tabla-precios-web td:nth-child(5) {
-    width: 145px;
+    width: 155px;
   }
 
   .tabla-precios-web th:nth-child(6),
@@ -1101,8 +1106,7 @@ dd {
     gap: 4px;
   }
 
-  .tabla-precios-web th.precio-titulo,
-  .tabla-precios-web th.precio-bulto-titulo {
+  .tabla-precios-web th.precio-titulo {
     font-size: 11px;
   }
 

@@ -267,12 +267,20 @@ function removerPresentacionNombreLista(nombre) {
   return textoVisualLista(nombre)
     .replace(/\s*\(\s*(?:pack\s*)?x\s*\d+\s*u(?:nidades?)?\s*\)\s*/gi, ' ')
     .replace(/\s*\(\s*\d+\s*u(?:nidades?)?\s*\)\s*/gi, ' ')
+    .replace(/\s*-\s*\(\s*(?:pack|bulto)\s*x\s*\d+\s*(?:rollos?|packs?|paquetes?|unidades?|u|kg|kilos?|cajas?)\s*\)\s*$/gi, ' ')
+    .replace(/\s*-\s*(?:pack\s*)?x\s*\d+\s*u(?:nidades?)?\s*$/gi, ' ')
+    .replace(/\s*-\s*(?:pack|bulto)\s*x\s*\d+\s*(?:rollos?|packs?|paquetes?|unidades?|u|kg|kilos?|cajas?)\s*$/gi, ' ')
+    .replace(/\s*-\s*precio\s*x\s*kg\s*$/gi, ' ')
+    .replace(/\s*-\s*x\s*\d+\s*u(?:nidades?)?\s*$/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
 
 function descripcionEsBultoLista(descripcion) {
-  return /^bulto\b/i.test(textoVisualLista(descripcion));
+  const texto = textoVisualLista(descripcion);
+  return /^bulto\b/i.test(texto)
+    || /^\(\s*(?:pack|bulto)\s*x\s*\d+\s*(?:rollos?|packs?|paquetes?|unidades?|u|kg|kilos?|cajas?)\s*\)$/i.test(texto)
+    || /^(?:pack|bulto)\s*x\s*\d+\s*(?:rollos?|packs?|paquetes?|unidades?|u|kg|kilos?|cajas?)$/i.test(texto);
 }
 
 function articuloVisualLista(articulo) {
@@ -283,6 +291,19 @@ function articuloVisualLista(articulo) {
   const descripcionNormalizada = normalizarBusqueda(descripcion);
   if (!descripcionNormalizada || nombreNormalizado.includes(descripcionNormalizada)) return nombre || '-';
   return `${nombre} - ${descripcion}`;
+}
+
+function articuloVisualPublicoLista(articulo) {
+  const visualDirecto = textoVisualLista(articulo.articulo_visual || '');
+  const visualLimpio = articuloVisualLista(articulo);
+  if (!visualDirecto) return visualLimpio;
+
+  const visualDirectoNormalizado = normalizarBusqueda(removerPresentacionNombreLista(visualDirecto));
+  const visualLimpioNormalizado = normalizarBusqueda(visualLimpio);
+  if (visualDirectoNormalizado && visualDirectoNormalizado === visualLimpioNormalizado) {
+    return visualLimpio;
+  }
+  return visualDirecto;
 }
 
 function contienePackCienLista(texto) {
@@ -353,13 +374,24 @@ function precioBultoVisualLista(articulo) {
   return texto;
 }
 
+function condicionVisualLista(articulo) {
+  const cantidad = textoVisualLista(
+    articulo.cantidad_bulto_formateada
+    || articulo.cantidad_por_bulto_formateada
+    || cantidadPorBultoVisualLista(articulo)
+  );
+  if (!cantidad || cantidad === '-' || /no vende por bulto/i.test(cantidad)) return '-';
+  if (/^bulto\b/i.test(cantidad)) return cantidad;
+  return `Bulto x ${cantidad}`;
+}
+
 function adaptarVisualLista(articulo) {
   return {
-    articulo: textoVisualLista(articulo.articulo_visual || '') || articuloVisualLista(articulo),
+    articulo: articuloVisualPublicoLista(articulo),
     presentacion: textoVisualLista(articulo.presentacion || '') || presentacionVisualLista(articulo),
-    precio: articulo.precio_formateado || formatearPrecio(articulo.precio),
-    cantidadBulto: textoVisualLista(articulo.cantidad_bulto_formateada || articulo.cantidad_por_bulto_formateada || '') || cantidadPorBultoVisualLista(articulo),
-    precioBulto: precioBultoVisualLista(articulo),
+    precioMinorista: articulo.precio_minorista_formateado || articulo.precio_formateado || formatearPrecio(articulo.precio_minorista ?? articulo.precio),
+    precioMayorista: articulo.precio_mayorista_formateado || formatearPrecio(articulo.precio_mayorista ?? articulo.precio),
+    condicion: condicionVisualLista(articulo),
   };
 }
 function textoBusquedaArticulo(articulo) {
@@ -381,24 +413,26 @@ function textoBusquedaArticulo(articulo) {
 }
 
 function mensajeProducto(articulo) {
-  const precioTexto = articulo.precio_formateado || formatearPrecio(articulo.precio) || 'A consultar';
-  const precioBultoTexto = articulo.precio_bulto_formateado || '';
+  const precioMinorista = articulo.precio_minorista_formateado || articulo.precio_formateado || formatearPrecio(articulo.precio_minorista ?? articulo.precio) || 'A consultar';
+  const precioMayorista = articulo.precio_mayorista_formateado || formatearPrecio(articulo.precio_mayorista ?? articulo.precio) || 'A consultar';
+  const condicion = condicionVisualLista(articulo);
   return [
     'Hola Embalajes GB, quiero consultar por este producto:',
     `Articulo/codigo: ${articulo.codigo || articulo.articulo || '-'}`,
     `Descripcion: ${articulo.descripcion || '-'}`,
-    `Precio mostrado: ${precioTexto}`,
-    ...(precioBultoTexto ? [`Precio por bulto: ${precioBultoTexto}`] : []),
+    `Precio minorista: ${precioMinorista}`,
+    `Precio mayorista: ${precioMayorista}`,
+    ...(condicion !== '-' ? [`Condicion: ${condicion}`] : []),
     `Unidad: ${articulo.unidad || '-'}`,
   ].join('\n');
 }
 
 function filaArticulo(articulo) {
   const visual = adaptarVisualLista(articulo);
-  const precio = partesPrecio(visual.precio);
-  const precioBulto = partesPrecio(visual.precioBulto);
-  const precioBultoHtml = visual.precioBulto !== '-'
-    ? `<span class="precio-web precio-bulto-web"><span>${escaparHtml(precioBulto.simbolo)}</span><strong>${escaparHtml(precioBulto.importe)}</strong></span>`
+  const precioMinorista = partesPrecio(visual.precioMinorista);
+  const precioMayorista = partesPrecio(visual.precioMayorista);
+  const condicionHtml = visual.condicion !== '-'
+    ? `<span class="condicion-bulto">${escaparHtml(visual.condicion)}</span>`
     : '<span class="sin-precio-bulto">-</span>';
   return `
     <tr>
@@ -407,11 +441,13 @@ function filaArticulo(articulo) {
       </td>
       <td class="presentacion-celda">${escaparHtml(visual.presentacion)}</td>
       <td class="precio-celda">
-        <span class="precio-web"><span>${escaparHtml(precio.simbolo)}</span><strong>${escaparHtml(precio.importe)}</strong></span>
+        <span class="precio-web"><span>${escaparHtml(precioMinorista.simbolo)}</span><strong>${escaparHtml(precioMinorista.importe)}</strong></span>
       </td>
-      <td class="cantidad-bulto-celda">${escaparHtml(visual.cantidadBulto)}</td>
-      <td class="precio-celda precio-bulto-celda">
-        ${precioBultoHtml}
+      <td class="precio-celda">
+        <span class="precio-web precio-mayorista-web"><span>${escaparHtml(precioMayorista.simbolo)}</span><strong>${escaparHtml(precioMayorista.importe)}</strong></span>
+      </td>
+      <td class="cantidad-bulto-celda">
+        ${condicionHtml}
       </td>
       <td class="consulta-celda"><button type="button" class="boton-consultar" data-indice="${articulo.indice}">Consultar</button></td>
     </tr>
@@ -597,7 +633,7 @@ async function cargarListaPrecios() {
     prepararEncabezadoTablaPrecios();
   } catch (error) {
     estado.textContent = 'Lista pendiente de publicacion.';
-    tabla.innerHTML = '<tr><td colspan="5">Todavia no hay precios publicados en la web.</td></tr>';
+    tabla.innerHTML = '<tr><td colspan="6">Todavia no hay precios publicados en la web.</td></tr>';
   }
 }
 
@@ -742,28 +778,6 @@ function abrirEmailCotizacion(mensaje) {
   window.location.href = `mailto:Embalajesgb@gmail.com?subject=${asunto}&body=${cuerpo}`;
 }
 
-function prepararGaleriasServicios() {
-  const botones = document.querySelectorAll('[data-galeria-servicio]');
-  if (!botones.length) return;
-  const galerias = document.querySelectorAll('.galeria-servicio-web');
-
-  botones.forEach((boton) => {
-    boton.addEventListener('click', () => {
-      const galeria = document.getElementById(boton.getAttribute('aria-controls'));
-      if (!galeria) return;
-      const estabaAbierta = boton.getAttribute('aria-expanded') === 'true';
-
-      botones.forEach((otroBoton) => otroBoton.setAttribute('aria-expanded', 'false'));
-      galerias.forEach((otraGaleria) => { otraGaleria.hidden = true; });
-
-      if (!estabaAbierta) {
-        boton.setAttribute('aria-expanded', 'true');
-        galeria.hidden = false;
-        galeria.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    });
-  });
-}
 function prepararFormularioCotizacion() {
   const formulario = document.getElementById('formularioCotizacionWhatsapp');
   if (!formulario) return;
@@ -791,7 +805,6 @@ actualizarAlturaEncabezado();
 prepararEncabezadoListaPrecios();
 prepararEncabezadoTablaPrecios();
 prepararFormularioCotizacion();
-prepararGaleriasServicios();
 renderizarProductosDestacados();
 window.addEventListener('scroll', actualizarEncabezadoListaPrecios, { passive: true });
 window.addEventListener('resize', () => {
@@ -803,7 +816,6 @@ window.addEventListener('load', () => {
   prepararEncabezadoTablaPrecios();
 });
 cargarListaPrecios();
-
 
 
 
