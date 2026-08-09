@@ -118,6 +118,19 @@ window.IMAGENES_PRODUCTOS_GB = {
       ],
     },
     {
+      id: 'carton-corrugado',
+      titulo: 'Carton corrugado',
+      familia: 'Papeles y proteccion',
+      descripcion: 'Anchos disponibles: 70, 90, 100, 120 y 140 cm x 25 metros.',
+      archivo: 'carton-corrugado.png',
+      busqueda: 'carton corrugado rollo 70 90 100 120 140 x 25 metros',
+      filtroLista: 'carton corrugado',
+      reglas: [
+        ['carton', 'corrugado'],
+        ['rollo', 'carton', 'corrugado'],
+      ],
+    },
+    {
       id: 'bolsas-polipropileno',
       titulo: 'Bolsas de polipropileno',
       familia: 'Polipropileno',
