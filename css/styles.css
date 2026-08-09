@@ -828,6 +828,31 @@ dd {
   background: var(--suave);
 }
 
+.tabla-precios-web tr.articulo-destacado-web td {
+  background: #fff3b8;
+}
+
+.tabla-precios-web tr.articulo-destacado-web td:first-child {
+  box-shadow: inset 4px 0 #d89b00;
+}
+
+.etiqueta-destacado-web {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  margin-top: 5px;
+  padding: 2px 8px;
+  border: 1px solid #c58b00;
+  border-radius: 999px;
+  color: #4f3900;
+  background: #ffe28a;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 .nombre-articulo {
   display: block;
   font-weight: 700;

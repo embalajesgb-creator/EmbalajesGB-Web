@@ -261,6 +261,7 @@ function normalizarArticuloPublico(articulo, indice) {
     cantidad_por_bulto_formateada: articulo.cantidad_por_bulto_formateada || cantidadBultoFormateada,
     unidad: unidadPublica(articulo),
     categoria: CATEGORIAS_PUBLICAS.includes(articulo.categoria) ? articulo.categoria : '',
+    resaltado: articulo.resaltado === true || articulo.resaltado_lista_precios === true,
   };
   base.categoria = base.categoria || categoriaInferida(base);
   base.textoBusqueda = textoBusquedaArticulo(base);
@@ -446,10 +447,15 @@ function filaArticulo(articulo) {
   const condicionHtml = visual.condicion !== '-'
     ? `<span class="condicion-bulto">${escaparHtml(visual.condicion)}</span>`
     : '<span class="sin-precio-bulto">-</span>';
+  const claseResaltado = articulo.resaltado ? ' class="articulo-destacado-web"' : '';
+  const etiquetaResaltado = articulo.resaltado
+    ? '<span class="etiqueta-destacado-web">Destacado</span>'
+    : '';
   return `
-    <tr>
+    <tr${claseResaltado}>
       <td>
         <span class="nombre-articulo">${escaparHtml(visual.articulo)}</span>
+        ${etiquetaResaltado}
       </td>
       <td class="presentacion-celda">${escaparHtml(visual.presentacion)}</td>
       <td class="precio-celda">
