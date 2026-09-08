@@ -189,7 +189,7 @@ function renderizarProductosDestacados() {
           relacionadosIncluye,
         },
       }));
-      document.getElementById('lista-precios')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      mostrarInicioListaPrecios();
       return;
     }
 
@@ -475,6 +475,7 @@ let espaciadorListaPrecios;
 let posicionNaturalListaPrecios = 0;
 let encabezadoTablaPreciosFijo;
 let articulosListaPrecios = [];
+let reubicacionListaPreciosPendiente;
 
 function actualizarAlturaEncabezado() {
   const encabezado = document.querySelector('.encabezado');
@@ -519,6 +520,40 @@ function actualizarEncabezadoListaPrecios() {
   encabezadoLista.classList.toggle('esta-fijo', debeFijarse);
   espaciadorListaPrecios.classList.toggle('activo', debeFijarse);
   actualizarEncabezadoTablaPrecios();
+}
+
+function mostrarInicioListaPrecios() {
+  cancelAnimationFrame(reubicacionListaPreciosPendiente);
+  reubicacionListaPreciosPendiente = requestAnimationFrame(() => {
+    const tabla = document.querySelector('.tabla-precios-web table');
+    const encabezado = document.querySelector('.encabezado');
+    const encabezadoLista = document.querySelector('.encabezado-lista-precios');
+    if (!tabla || !encabezado || !encabezadoLista) return;
+
+    actualizarEncabezadoListaPrecios();
+    // Los resultados deben comenzar debajo de los controles y de sus titulos.
+    const altoEncabezado = encabezado.getBoundingClientRect().height;
+    const altoControles = encabezadoLista.getBoundingClientRect().height;
+    const inicioTabla = tabla.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: Math.max(0, inicioTabla - altoEncabezado - altoControles),
+      behavior: 'instant',
+    });
+    actualizarEncabezadoListaPrecios();
+  });
+}
+
+function prepararEnlacesListaPrecios() {
+  document.querySelectorAll('a[href="#lista-precios"]').forEach((enlace) => {
+    enlace.addEventListener('click', (evento) => {
+      if (evento.ctrlKey || evento.metaKey || evento.shiftKey || evento.altKey) return;
+      evento.preventDefault();
+      if (window.location.hash !== '#lista-precios') {
+        window.history.pushState(null, '', '#lista-precios');
+      }
+      mostrarInicioListaPrecios();
+    });
+  });
 }
 
 function prepararScrollHorizontalTablaPrecios() {
@@ -634,10 +669,12 @@ async function cargarListaPrecios() {
       relacionadosIncluyeActivos = [];
       renderizarLista();
       prepararEncabezadoTablaPrecios();
+      mostrarInicioListaPrecios();
     });
     filtroCategoria?.addEventListener('change', () => {
       renderizarLista();
       prepararEncabezadoTablaPrecios();
+      mostrarInicioListaPrecios();
     });
     tabla.addEventListener('click', (evento) => {
       const boton = evento.target.closest('.boton-consultar');
@@ -649,6 +686,7 @@ async function cargarListaPrecios() {
 
     renderizarLista();
     prepararEncabezadoTablaPrecios();
+    if (window.location.hash === '#lista-precios') mostrarInicioListaPrecios();
   } catch (error) {
     estado.textContent = 'Lista pendiente de publicacion.';
     tabla.innerHTML = '<tr><td colspan="6">Todavia no hay precios publicados en la web.</td></tr>';
@@ -823,6 +861,7 @@ actualizarAlturaEncabezado();
 prepararEncabezadoListaPrecios();
 prepararEncabezadoTablaPrecios();
 prepararFormularioCotizacion();
+prepararEnlacesListaPrecios();
 renderizarProductosDestacados();
 window.addEventListener('scroll', actualizarEncabezadoListaPrecios, { passive: true });
 window.addEventListener('resize', () => {
@@ -832,6 +871,10 @@ window.addEventListener('resize', () => {
 window.addEventListener('load', () => {
   prepararEncabezadoListaPrecios();
   prepararEncabezadoTablaPrecios();
+  if (window.location.hash === '#lista-precios') mostrarInicioListaPrecios();
+});
+window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#lista-precios') mostrarInicioListaPrecios();
 });
 cargarListaPrecios();
 
